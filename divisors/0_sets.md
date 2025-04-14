@@ -11,7 +11,7 @@ I am not here to justify set theory. I am here to graciously thank others for do
 5. Any element of a set has an interpretation as a set.
 6. For example, any number corresponds to a set given by a particular construction.
 7. A *subset* $A$ of a set $B$ can be constructed from an unambiguous property $P$.
-8. We write this $A = \set{x \in B \mid P(x)}$.
+8. We write this: $A = \set{x \in B \mid P(x)}$.
 9. A calque of this is: $A$ is the set of elements $x$ in $B$ which satisfy the property described by $P$.
 10. We write that $A$ is a subset of $B$ as $A \subseteq B$.
 11. A set $A$ is a subset of set $B$ if, for all elements $x$ in $A$, $x$ is also in $B$.
@@ -40,9 +40,9 @@ I am not here to justify set theory. I am here to graciously thank others for do
 34. To illustrate, suppose $R \in R$. Since $R$ is a set, we can construct a set $R' = \set{R}$. However, $R'$ and $R$ both contain $R$, and $R$ is the only element of $R'$. As such, the idea that some set could contain itself contradicts the Axiom of Foundation.
 35. The set of elements common to two sets $A$ and $B$ is called their *intersection*. We write this $A \cap B = \set{x \mid x \in A \land x \in B}$.
 36. The set of elements which are in $A$ and *not* in $B$ is called the *relative complement* of $B$ in $A$.
-37. We write this $A \setminus B = \set{x \mid x \in A \land x \notin B}$.
+37. We write this: $A \setminus B = \set{x \mid x \in A \land x \notin B}$.
 38. The set of all elements which are in either $A$ or $B$ but *not* both is called the *symmetric difference* of $A$ and $B$.
-39. We write this $A \triangle B = \set {x \mid (x \in A \lor x \in B) \land \lnot (x \in A \land x \in B)}$.
+39. We write this: $A \triangle B = \set {x \mid (x \in A \lor x \in B) \land \lnot (x \in A \land x \in B)}$.
 40. This can be "literally translated" as "the symmetric difference of $A$ and $B$ is the set of all elements $x$ such that $x$ is in $A$ *or* $x$ is in $B$ *and* it is *not* the case that $x$ is in $A$  *and* $x$ is in $B$."
 41. For any set $S$, there exists a set $P(S)$ called the *power set* of $S$.
 42. The *subsets* of $S$ are the *elements* of $P(S)$.
