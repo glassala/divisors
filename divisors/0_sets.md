@@ -30,7 +30,7 @@ I am not here to justify set theory. I am here to graciously thank others for do
 24. The *cardinality* of the empty set is 0.
 25. The cardinality of a set is how many elements it contains.
 26. If $X$ and $Y$ are sets, then there exists a set $Z$ which contains exactly $X$ and $Y$ as elements.
-27. We can write the set $Z$ as $Z = \set {X, \;Y}$.
+27. We can write the set $Z$ as $Z = \set {X, Y}$.
 28. As a consequence (i.e. suppose $X=Y$), if $X$ is a set, then there exists a set $X' = \set{X}$.
 29. Let $A$ and $B$ be sets. There exists a set called the *union* of $A$ and $B$ which contains every element which is in $A$ along with every element which is in $B$. The union of $A$ and $B$ is written $A \cup B$. 
 30. We can describe the union of two sets using set-builder notation: $A \cup B = \set {x \mid x \in A \lor x \in B}$.
