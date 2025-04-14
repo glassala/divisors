@@ -63,4 +63,4 @@ I am not here to justify set theory. I am here to graciously thank others for do
 57. This provides a "natural" ordering where $n < S(n)$ and $n < m \land m < k \implies n < k$, and if neither $n < m$ nor $m < n$ then $n = m$.
 58. An ordering is not "native" to a set; it must be imposed on it.
 59. Any set can have an ordering imposed on it such that each of its non-empty subsets has a minimum element.
-60. For any sets $A$ and $B$, there exists the *Cartesian product* $A \times B$, which is the set of ordered pairs $(x,\: y)$ such that $x$ is in $A$ and $y$ is in $B$.
+60. For any sets $A$ and $B$, there exists the *Cartesian product* $A \times B$, which is the set of ordered pairs $(x,  y)$ such that $x$ is in $A$ and $y$ is in $B$.
