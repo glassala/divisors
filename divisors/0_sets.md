@@ -6,22 +6,22 @@ We are not here to justify set theory. We are here to graciously thank others fo
 
 1. A set is a collection of elements.
 2. An element is an arbitrary object.
-3. We write that an element $x$ is in a set $A$ as "$x \in A$."
+3. We write that an element $x$ is in a set $A$ as $x \in A$.
 4. If two sets contain the same elements, they are the same set.
 5. Any element of a set has an interpretation as a set.
 6. For example, any number corresponds to a set given by a particular construction.
 7. A *subset* $A$ of a set $B$ can be constructed from an unambiguous property $P$.
 8. We write this $A = \set{x \in B \mid P(x)}$.
 9. A calque of this is "$A$ is the set of elements $x$ in $B$ which satisfy the property described by $P$."
-10. We write that $A$ is a subset of $B$ as "$A \subseteq B$."
+10. We write that $A$ is a subset of $B$ as $A \subseteq B$.
 11. A set $A$ is a subset of set $B$ if, for all elements $x$ in $A$, $x$ is also in $B$.
-12. We write the condition for $A$ to be a subset of $B$ "$\forall{x} \in A,\, x \in B$."
+12. We write the condition for $A$ to be a subset of $B$ $\forall{x} \in A,\, x \in B$.
 13. A set *contains* its elements. A set *includes* its subsets.
 14. Every set is a subset of itself.
 15. If $A$ is a subset of $B$ and $B$ is a subset of $A$, then $A=B$.
-16. We can write the above as "$(A \subseteq B \land B \subseteq A)\implies (A = B)$."
+16. We can write the above as $(A \subseteq B \land B \subseteq A)\implies (A = B)$.
 17. If $A$ is a subset of $B$ and $B$ is a subset of some set $C$, then $A$ is a subset of $C$.
-18. We can write the above as "$(A \subseteq B \land B \subseteq C)\implies(A \subseteq C)$.
+18. We can write the above as $(A \subseteq B \land B \subseteq C)\implies(A \subseteq C)$.
 19. If, for sets $A$ and $B$, $A$ is a subset of $B$, but $A$ is *not* the same set as $B$, then $A$ is called a *proper* subset of $B$.
 20. In symbols, $(A \subseteq B \land A \neq B)\implies(A \subset B)$.
 21. There is a set with no elements in it called the empty set.
@@ -38,11 +38,11 @@ We are not here to justify set theory. We are here to graciously thank others fo
 32. If a set $X$ is not empty, then it contains an element which itself contains no elements in common with $X$. This is called the Axiom of Foundation.
 33. This axiom is insurance against paradoxes.
 34. To illustrate, suppose $R \in R$. Since $R$ is a set, we can construct a set $R' = \set{R}$. However, $R'$ and $R$ both contain $R$, and $R$ is the only element of $R'$. As such, the idea that some set could contain itself contradicts the Axiom of Foundation.
-35. The set of elements common to two sets $A$ and $B$ is called their *intersection*. We write this "$A \cap B = \set{x \mid x \in A \land x \in B}$."
+35. The set of elements common to two sets $A$ and $B$ is called their *intersection*. We write this $A \cap B = \set{x \mid x \in A \land x \in B}$.
 36. The set of elements which are in $A$ and *not* in $B$ is called the *relative complement* of $B$ in $A$.
-37. We write this "$A \setminus B = \set{x \mid x \in A \land x \notin B}$."
+37. We write this $A \setminus B = \set{x \mid x \in A \land x \notin B}$.
 38. The set of all elements which are in either $A$ or $B$ but *not* both is called the *symmetric difference* of $A$ and $B$.
-39. We write this "$A \,\triangle\, B = \set {x \mid (x \in A \lor x \in B) \land \lnot (x \in A \land x \in B)}$."
+39. We write this $A \,\triangle\, B = \set {x \mid (x \in A \lor x \in B) \land \lnot (x \in A \land x \in B)}$.
 40. This can be "literally translated" as "the symmetric difference of $A$ and $B$ is the set of all elements $x$ such that $x$ is in $A$ *or* $x$ is in $B$ *and* it is *not* the case that $x$ is in $A$  *and* $x$ is in $B$."
 41. For any set $S$, there exists a set $P(S)$ called the *power set* of $S$.
 42. The *subsets* of $S$ are the *elements* of $P(S)$.
@@ -63,4 +63,4 @@ We are not here to justify set theory. We are here to graciously thank others fo
 57. This provides a "natural" ordering where $n < S(n)$ and $n < m \land m < k \implies n < k$, and if neither $n < m$ nor $m < n$ then $n = m$.
 58. An ordering is not "native" to a set; it must be imposed on it.
 59. Any set can have an ordering imposed on it such that each of its non-empty subsets has a minimum element.
-60. For any sets $A$ and $B$, there exists the *Cartesian product*    $A \times B$, which is the set of ordered pairs $(x,\: y)$ such that $x$ is in $A$ and $y$ is in $B$.
+60. For any sets $A$ and $B$, there exists the *Cartesian product* $A \times B$, which is the set of ordered pairs $(x,\: y)$ such that $x$ is in $A$ and $y$ is in $B$.
