@@ -1,6 +1,6 @@
 # The basic relations of sets
 
-We are not here to justify set theory. We are here to graciously thank others for doing the hard work of justifying set theory, so that we may use the tools it offers us for talking about integers.
+I am not here to justify set theory. I am here to graciously thank others for doing the hard work of justifying set theory, so that I may use the tools it offers for talking about integers.
 
 ## Terse primer on the language of sets
 
@@ -12,7 +12,7 @@ We are not here to justify set theory. We are here to graciously thank others fo
 6. For example, any number corresponds to a set given by a particular construction.
 7. A *subset* $A$ of a set $B$ can be constructed from an unambiguous property $P$.
 8. We write this $A = \set{x \in B \mid P(x)}$.
-9. A calque of this is "$A$ is the set of elements $x$ in $B$ which satisfy the property described by $P$."
+9. A calque of this is: $A$ is the set of elements $x$ in $B$ which satisfy the property described by $P$.
 10. We write that $A$ is a subset of $B$ as $A \subseteq B$.
 11. A set $A$ is a subset of set $B$ if, for all elements $x$ in $A$, $x$ is also in $B$.
 12. We write the condition for $A$ to be a subset of $B$ $\forall{x} \in A,\, x \in B$.
