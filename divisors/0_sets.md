@@ -15,7 +15,7 @@ I am not here to justify set theory. I am here to graciously thank others for do
 9. A calque of this is: $A$ is the set of elements $x$ in $B$ which satisfy the property described by $P$.
 10. We write that $A$ is a subset of $B$ as $A \subseteq B$.
 11. A set $A$ is a subset of set $B$ if, for all elements $x$ in $A$, $x$ is also in $B$.
-12. We write the condition for $A$ to be a subset of $B$ $\forall{x} \in A,\, x \in B$.
+12. We write the condition for $A$ to be a subset of $B$: $\forall{x} \in A, x \in B$.
 13. A set *contains* its elements. A set *includes* its subsets.
 14. Every set is a subset of itself.
 15. If $A$ is a subset of $B$ and $B$ is a subset of $A$, then $A=B$.
