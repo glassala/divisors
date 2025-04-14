@@ -1,6 +1,6 @@
 # The basic relations of sets
 
-I am not here to justify set theory. I am here to graciously thank others for doing the hard work of justifying set theory, so that I may use the tools it offers for talking about integers.
+I am not here to justify set theory. I am here to graciously thank others for doing the hard work of justifying set theory, so that I may use the tools it offers for talking about integers and their divisors.
 
 ## Terse primer on the language of sets
 
