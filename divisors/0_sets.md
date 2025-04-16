@@ -38,33 +38,41 @@ I am not here to justify set theory. I am here to graciously thank others for do
 32. Let $A$ and $B$ be sets. There exists a set called the *union* of $A$ and $B$ which contains every element which is in $A$ along with every element which is in $B$. The union of $A$ and $B$ is written $A \cup B$. 
 33. We can describe the union of two sets using set-builder notation: $A \cup B = \set {x \mid x \in A \lor x \in B}$.
 34. We can translate this as "the union of $A$ and $B$ is the set of elements $x$, such that $x$ is in $A$ or $x$ is in $B$."
-35. If a set $X$ is not empty, then it contains an element which itself contains no elements in common with $X$.
-36. This is called the Axiom of Foundation.
-37. This axiom is insurance against paradoxes.
-38. To illustrate, suppose $R \in R$. Since $R$ is a set, we can construct a set $R' = \set{R}$. However, $R'$ and $R$ both contain $R$, and $R$ is the only element of $R'$. As such, the idea that some set could contain itself contradicts the Axiom of Foundation.
-39. The set of elements common to two sets $A$ and $B$ is called their *intersection*. We write this $A \cap B = \set{x \mid x \in A \land x \in B}$.
-40. The set of elements which are in $A$ and *not* in $B$ is called the *relative complement* of $B$ in $A$.
-41. We write this: $A \setminus B = \set{x \mid x \in A \land x \notin B}$.
-42. The set of all elements which are in either $A$ or $B$ but *not* both is called the *symmetric difference* of $A$ and $B$.
-43. We write this: $A \triangle B = \set {x \mid (x \in A \lor x \in B) \land \lnot (x \in A \land x \in B)}$.
-44. This can be "literally translated" as "the symmetric difference of $A$ and $B$ is the set of all elements $x$ such that $x$ is in $A$ *or* $x$ is in $B$ *and* it is *not* the case that $x$ is in $A$  *and* $x$ is in $B$."
-45. For any set $S$, there exists a set $P(S)$ called the *power set* of $S$.
-46. The *subsets* of $S$ are the *elements* of $P(S)$.
-47. If a set $S$ has $n$ elements, then $S$ has $2^n$ subsets.
-48. In symbols, $|P(S)| = 2^{|S|}$.
-49. If the source of a function is a set, then the target of a function is a set.
-50. One can also say that if a function $f$ is defined for all elements of a set $A$, then there exists a set $B = \set{f(x) \mid x \in A}$.
-51. This set $B$ is called the *image* of $A$ under $f$, where $A$ is the *domain* of $f$.
-52. There is a function of a set called the *successor* function $S(n) = n \cup \set{n}$.
-53. If, for sets $n$, $m$, $S(n) = S(m)$, then $n = m$.
-54. There is a set $I$ such that $\varnothing \in I$ and an element $n$ being in $I$ implies that $S(n)$ is in $I$.
-55. If we restrict $I$ such that it *only* has the empty set and its successors, then $I$ is the basis for the counting, or "natural" numbers.
-56. One can say that the natural numbers are the labels for the elements of $I$ by cardinality.
-57. The arithmetic interpretation of the successor of a natural number $n$ emerges as $S(n) = n + 1$.
-58. We write the set of natural numbers $\mathbb{N}$.
-59. We assign $0$ to $\varnothing$.
-60. We assign $n$ to the $n$-th successor of $S(0)$.
-61. This provides a "natural" ordering where $n < S(n)$ and $n < m \land m < k \implies n < k$, and if neither $n < m$ nor $m < n$ then $n = m$.
-62. An ordering is not "native" to a set; it must be imposed on it.
-63. Any set can have an ordering imposed on it such that each of its non-empty subsets has a minimum element.
-64. For any sets $A$ and $B$, there exists the *Cartesian product* $A \times B$, which is the set of ordered pairs $(x,  y)$ such that $x$ is in $A$ and $y$ is in $B$.
+35. Set union is commutative.
+36. This means that the order of operands with respect to the operation does not matter.
+37. In symbols, $A \cup B = B \cup A$.
+38. Set union is associative.
+39. This means that the grouping of terms with respect to the operation does not matter.
+40. In symbols, $A \cup (B \cup C) = (A \cup B) \cup C$.
+41. If a set $X$ is not empty, then it contains an element which itself contains no elements in common with $X$.
+42. This is called the Axiom of Foundation.
+43. This axiom is insurance against paradoxes.
+44. To illustrate, suppose $R \in R$. Since $R$ is a set, we can construct a set $R' = \set{R}$. However, $R'$ and $R$ both contain $R$, and $R$ is the only element of $R'$. As such, the idea that some set could contain itself contradicts the Axiom of Foundation.
+45. The set of elements common to two sets $A$ and $B$ is called their *intersection*. We write this $A \cap B = \set{x \mid x \in A \land x \in B}$.
+46. Set intersection is commutative and associative.
+47. The set of elements which are in $A$ and *not* in $B$ is called the *relative complement* of $B$ in $A$.
+48. We write this: $A \setminus B = \set{x \mid x \in A \land x \notin B}$.
+49. The set of all elements which are in either $A$ or $B$ but *not* both is called the *symmetric difference* of $A$ and $B$.
+50. We write this: $A \triangle B = \set {x \mid (x \in A \lor x \in B) \land \lnot (x \in A \land x \in B)}$.
+51. This can be "literally translated" as "the symmetric difference of $A$ and $B$ is the set of all elements $x$ such that $x$ is in $A$ *or* $x$ is in $B$ *and* it is *not* the case that $x$ is in $A$  *and* $x$ is in $B$."
+52. The symmetric difference is commutative and associative.
+53. For any set $S$, there exists a set $P(S)$ called the *power set* of $S$.
+54. The *subsets* of $S$ are the *elements* of $P(S)$.
+55. If a set $S$ has $n$ elements, then $S$ has $2^n$ subsets.
+56. In symbols, $|P(S)| = 2^{|S|}$.
+57. If the source of a function is a set, then the target of a function is a set.
+58. One can also say that if a function $f$ is defined for all elements of a set $A$, then there exists a set $B = \set{f(x) \mid x \in A}$.
+59. This set $B$ is called the *image* of $A$ under $f$, where $A$ is the *domain* of $f$.
+60. There is a function of a set called the *successor* function $S(n) = n \cup \set{n}$.
+61. If, for sets $n$, $m$, $S(n) = S(m)$, then $n = m$.
+62. There is a set $I$ such that $\varnothing \in I$ and an element $n$ being in $I$ implies that $S(n)$ is in $I$.
+63. If we restrict $I$ such that it *only* has the empty set and its successors, then $I$ is the basis for the counting, or "natural" numbers.
+64. One can say that the natural numbers are the labels for the elements of $I$ by cardinality.
+65. The arithmetic interpretation of the successor of a natural number $n$ emerges as $S(n) = n + 1$.
+66. We write the set of natural numbers $\mathbb{N}$.
+67. We assign $0$ to $\varnothing$.
+68. We assign $n$ to the $n$-th successor of $S(0)$.
+69. This provides a "natural" ordering where $n < S(n)$ and $n < m \land m < k \implies n < k$, and if neither $n < m$ nor $m < n$ then $n = m$.
+70. An ordering is not "native" to a set; it must be imposed on it.
+71. Any set can have an ordering imposed on it such that each of its non-empty subsets has a minimum element.
+72. For any sets $A$ and $B$, there exists the *Cartesian product* $A \times B$, which is the set of ordered pairs $(x,  y)$ such that $x$ is in $A$ and $y$ is in $B$.
