@@ -1,6 +1,6 @@
 # Divisors in brief
 
-"Number" by itself is always to be taken as meaning "natural number," and "nonzero natural number" when it doesn't make sense for zero to be part of the conversation.
+"Number" by itself is always to be taken as meaning "natural number" or "nonzero natural number" when it doesn't make sense for zero to be part of the conversation.
 
 "->" is usually used to mean "rewrite."
 
