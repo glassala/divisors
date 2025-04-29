@@ -23,7 +23,7 @@
 15. This property is called the *antisymmetry* of divisibility.
 16. For integers $a$, $b$, $c$, if $a \mid b$ and $b \mid c$, then $a \mid c$.
 17. Consider that if $a \mid b$, then there exists an integer $x$ such that $b = ax$, and if $b \mid c$, then there exists an integer $y$ such that $c = by$.
-18. We can write $c = axy$, so $a$ must divide $c$. 
+18. We can write $c = axy$, so $a$ must divide $c$.
 19. This property is called the *transitivity* of divisibility.
 20. $1$ divides every integer.
 21. $1$ is the unique positive integer which has only $1$ divisor.
@@ -68,7 +68,7 @@
 60. The properties $\gcd(n, 0) = n$ and $\gcd(a, b) = \gcd(b, a \bmod b)$ provide a base case and a recursive step respectively for an algorithm which computes the greatest common divisor of two numbers.
 61. This algorithm is called Euclid's algorithm.
 62. Euclid's algorithm always terminates, because $a \bmod b$ is always strictly less than $b$.
-63. We can write its steps as a sequence of modified division lemmas: $a = bq_1 + r_1$ -> $b = r_1q_2 + r_2$ -> $r_1 = r_2q_3 + r_3$... where, if   $r_n = 0$, then the product with $q_n$ (i.e. $r_{n-1}$) is the GCD of $a$ and   $b$. 
+63. We can write its steps as a sequence of modified division lemmas: $a = bq_1 + r_1$ -> $b = r_1q_2 + r_2$ -> $r_1 = r_2q_3 + r_3$... where, if   $r_n = 0$, then the product with $q_n$ (i.e. $r_{n-1}$) is the GCD of $a$ and $b$.
 64. Closed form expressions emerge: $r_{n-3} = r_{n-2}q_{n-1} + r_{n-1}$ -> $r_{n-1} = r_{n-3} - r_{n-2}q_{n-1}$.
 65. Since $r_n = 0$, $r_{n-1} = \gcd(a, b)$.
 66. For any integers $a$, $b$, there exist integers $x$ and $y$ such that $ax + by = \gcd(a, b)$.
