@@ -1,17 +1,17 @@
 # Primality
 
 1. There are infinitely many prime numbers.
-2. Since $a > b \implies \gcd(a, b) = \gcd(b, a \bmod b)$, for any number $n$, the only divisor common to $n$ and $n+1$ is $1$.
-3. There is a function of a natural number called the *factorial* function.
-4. The factorial of a number $n$ is denoted $n!$.
-5. The factorial is characterized by a recursive formula: the base case is that $0! = 1$, and the recursive step is that $n! = (n-1)!n$.
-6. In practice, for any positive integer $n$, $n!$ is the product of every positive integer less than or equal to $n$.
-7. As a consequence of this, for all positive integers $k \le n$, $k$ divides $n!$.
-8. Suppose there is a largest prime number $p$.
-9. Then, $p!$ is divisible by every prime number.
-10. However, this would imply that $p! + 1$ is divisible by *no* prime number, which cannot be the case.
-11. As such, for every largest prime number which is found, a larger prime awaits.
-12. This is called Euclid's theorem.
+2. This is called Euclid's theorem.
+3. Since $a > b \implies \gcd(a, b) = \gcd(b, a \bmod b)$, for any number $n$, the only divisor common to $n$ and $n+1$ is $1$.
+4. There is a function of a natural number called the *factorial* function.
+5. The factorial of a number $n$ is denoted $n!$.
+6. The factorial is characterized by a recursive formula: the base case is that $0! = 1$, and the recursive step is that $n! = (n-1)!n$.
+7. In practice, for any positive integer $n$, $n!$ is the product of every positive integer less than or equal to $n$.
+8. As a consequence of this, for all positive integers $k \le n$, $k$ divides $n!$.
+9. Suppose there is a largest prime number $p$.
+10. Then, $p!$ is divisible by every prime number.
+11. However, this would imply that $p! + 1$ is divisible by *no* prime number, which cannot be the case.
+12. As such, for every largest prime number which is found, a larger prime awaits.
 13. If two numbers $a$ and $b$ have a GCD of $1$, then $a$ and $b$ are called *relatively prime* to one another.
 14. A way to characterize a prime number $n$ is as a number which is  relatively prime to every positive integer less than $n$.
 15. If a prime number $p$ divides a composite number $ab$, then $p$ divides at least either $a$ or $b$.
