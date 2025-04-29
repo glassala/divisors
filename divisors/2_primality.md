@@ -71,4 +71,4 @@
 69. Starting from $ab$, we have the divisors $1,$ $a$, $b$, and $ab$. Multiplying $c$ by $ab$, we gain $c$, $ac$, $bc$, and $abc$ as new divisors.
 70. However, multiplying $a$ by $ab$, we only gain $a^2$ and $a^2b$ as new divisors.
 71. The set of divisors of a square-free number $n$ has the same structure as the power set of the prime factors of $n$.
-72. If a number $n$ is *not* square-free, then the set of divisors of $n$lacks this correspondence to the power set of its prime factors.
+72. If a number $n$ is *not* square-free, then the set of divisors of $n$ lacks this correspondence to the power set of its prime factors.
