@@ -4,7 +4,7 @@
 2. Since $a > b \implies \gcd(a, b) = \gcd(b, a \bmod b)$, for any number $n$, the only divisor common to $n$ and $n+1$ is $1$.
 3. There is a function of a natural number called the *factorial* function.
 4. The factorial of a number $n$ is denoted $n!$.
-5. The factorial is characterized by a recursive formula: the base case is that $0! = 1$, and the recursive step is that $n! = (n-1)!\,n$.
+5. The factorial is characterized by a recursive formula: the base case is that $0! = 1$, and the recursive step is that $n! = (n-1)!n$.
 6. In practice, for any positive integer $n$, $n!$ is the product of every positive integer less than or equal to $n$.
 7. As a consequence of this, for all positive integers $k \le n$, $k$ divides $n!$.
 8. Suppose there is a largest prime number $p$.
