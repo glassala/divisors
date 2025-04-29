@@ -1,6 +1,6 @@
 # Divisors in brief
 
-"Number" by itself is always to be taken as meaning "natural number," and "nonzero natural number" when it doesn't make sense for zero to be part of the conversation.
+"Number" by itself is always to be taken as meaning "natural number" or "nonzero natural number" when it doesn't make sense for zero to be part of the conversation.
 
 "->" is usually used to mean "rewrite."
 
@@ -40,7 +40,7 @@
 32. $1$ is a perfect square.
 33. If a number has an odd amount of divisors, it must be a perfect square.
 34. This is because divisors come in pairs.
-35. Consider the meaning of a divisor of a positive integer, i.e. $(\exists{k \in \mathbb{Z}^+}: m = nk)\implies(n \mid m \land k \mid m)$.
+35. Consider the meaning of a divisor of a positive integer, i.e. $(\exists{k \in \mathbb{Z}^+} : m = nk)\implies(n \mid m \land k \mid m)$.
 36. That is, if $n$ divides $m$, there exists some $k$ which divides $m$.
 37. So, it is only if $n = k$ that $n$ dividing $m$ does not entail that a *separate* $k$ also divides $m$.
 38. The notation for if a number $n$ *doesn't* divide another number $m$is $n \nmid m$.
