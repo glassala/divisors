@@ -11,7 +11,7 @@
 9. Suppose there is a largest prime number $p$.
 10. Then, $p!$ is divisible by every prime number.
 11. However, this would imply that $p! + 1$ is divisible by *no* prime number, which cannot be the case.
-12. As such, for every largest prime number which is found, a larger prime awaits.
+12. As such, for every largest prime number which is found, a larger prime waits.
 13. If two numbers $a$ and $b$ have a GCD of $1$, then $a$ and $b$ are called *relatively prime* to one another.
 14. A way to characterize a prime number $n$ is as a number which is  relatively prime to every positive integer less than $n$.
 15. If a prime number $p$ divides a composite number $ab$, then $p$ divides at least either $a$ or $b$.
