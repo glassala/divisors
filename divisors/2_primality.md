@@ -49,7 +49,7 @@
 47. Another way of putting it is that $\Omega(n)$ counts the sum of all powers to which the prime factors of $n$ are taken.
 48. That is, $\Omega(n^k)=k\Omega(n)$.
 49. The small omega function is an *additive* function.
-50. An additive function is a function $f$ of a positive integer such that if some numbers $a$ and $b$ are relatively prime, then $f(ab) = f(a) + f(b)$.
+50. An additive function is a function $f$ of a positive integer such that if some numbers $a$ and $b$ are relatively prime, then $f(ab) = f(a) + f(b).$
 51. The big omega function is a *completely additive* function.
 52. A completely additive function is a function $f$ for which the property $f(ab) = f(a) + f(b)$ holds for *all* positive integers $a$ and $b$.
 53. A *square-free* number is a positive integer such that no prime in its factorization is raised to a power higher than $1$.
