@@ -11,7 +11,7 @@
 9. Suppose there is a largest prime number $p$.
 10. Then, $p!$ is divisible by every prime number.
 11. However, this would imply that $p! + 1$ is divisible by *no* prime number, which cannot be the case.
-12. As such, for every largest prime number which is found, a larger prime awaits.
+12. As such, for every largest prime number which is found, a larger prime waits.
 13. If two numbers $a$ and $b$ have a GCD of $1$, then $a$ and $b$ are called *relatively prime* to one another.
 14. A way to characterize a prime number $n$ is as a number which is  relatively prime to every positive integer less than $n$.
 15. If a prime number $p$ divides a composite number $ab$, then $p$ divides at least either $a$ or $b$.
@@ -30,7 +30,7 @@
 28. Another characterization of a prime number $p$ is that the only proper divisor of $p$ is $1$.
 29. The *prime factorization* of a number $n$ is the unique representation of $n$ as a product of powers of prime numbers.
 30. If $n$ is prime, then that product is exactly $n$.
-31. Since $2$ has a prime factorization, assume every number $2 < n \le k$for some number $k$ has a prime factorization.
+31. Since $2$ has a prime factorization, assume every number $2 < n \le k$ for some number $k$ has a prime factorization.
 32. If $k + 1$ is prime, then $k + 1$ is its factorization.
 33. If $k + 1$ is composite, then there exist numbers $a$, $b$ which are greater than $1$ and less than $k+1$ such that $k+1 = ab$.
 34. Since $a$ and $b$ have prime factorizations, $k+1$ must have one as well.
@@ -49,7 +49,7 @@
 47. Another way of putting it is that $\Omega(n)$ counts the sum of all powers to which the prime factors of $n$ are taken.
 48. That is, $\Omega(n^k)=k\Omega(n)$.
 49. The small omega function is an *additive* function.
-50. An additive function is a function $f$ of a positive integer such that if some numbers $a$ and $b$ are relatively prime, then $f(ab) = f(a) + f(b)$.
+50. An additive function is a function $f$ of a positive integer such that if some numbers $a$ and $b$ are relatively prime, then $f(ab) = f(a) + f(b).$
 51. The big omega function is a *completely additive* function.
 52. A completely additive function is a function $f$ for which the property $f(ab) = f(a) + f(b)$ holds for *all* positive integers $a$ and $b$.
 53. A *square-free* number is a positive integer such that no prime in its factorization is raised to a power higher than $1$.
@@ -59,7 +59,7 @@
 57. However, if $a$ is relatively prime to $b$, it is not necessarily the case that $ab$ is square-free, as $a$ and/or $b$ could themselves contain higher powers of primes in their factorizations.
 58. Given a set $S$, a $k$-combination of elements of $S$ is a subset of $S$ with $k$ elements.
 59. The products of numbers $a$ and $b$ which are relatively prime to one another have nicer combinatorial properties around the sets of divisors of $a$ and $b$ as opposed to products of numbers which are not relatively prime.
-60. For example, suppose $x = ab$ and $y = cd$ for some prime numbers $a$,  $b$, $c$, and $d$.
+60. For example, suppose $x = ab$ and $y = cd$ for some prime numbers $a$, $b$, $c$, and $d$.
 61. Then, $xy = abcd$, and as such, the divisors of $xy$ are exactly the $16$ products of $k$-combinations of its prime factors $a$, $b$, $c$, and $d$, where $1$ is the product of a $0$-combination.
 62. Since the set of all $k$-combinations of the elements of a set $S$ is effectively the power set of $S$, if $S$ has $n$ elements, then there are $2^n$ $k$-combinations of elements of $S$.
 63. If a number $a$ has $n$ prime factors and a number $b$ has $m$ prime factors, and $a$ is relatively prime to $b$, then $ab$ has $n + m$ prime factors.
@@ -68,7 +68,7 @@
 66. Then, $nm = a^2bc$, i.e. $\omega(n) = 2$ and $\omega(m) = 2$, but $\omega(nm) = 3$: this is an example of how the additive function property fails to hold for numbers which are not relatively prime.
 67. As such, the divisors of $nm$ are not exactly the products of the $k$-combinations of its prime factors $a$, $b$, and $c$.
 68. Moreover, while e.g. $\Omega(abc) = \Omega(a^2b) = 3$, the latter has fewer divisors than the former.
-69. Starting from $ab$, we have the divisors $1,$ $a$, $b$, and $ab$. Multiplying $c$ by $ab$, we gain $c$, $ac$, $bc$, and $abc$ as new divisors.
+69. Starting from $ab$, we have the divisors $1$, $a$, $b$, and $ab$. Multiplying $c$ by $ab$, we gain $c$, $ac$, $bc$, and $abc$ as new divisors.
 70. However, multiplying $a$ by $ab$, we only gain $a^2$ and $a^2b$ as new divisors.
 71. The set of divisors of a square-free number $n$ has the same structure as the power set of the prime factors of $n$.
 72. If a number $n$ is *not* square-free, then the set of divisors of $n$ lacks this correspondence to the power set of its prime factors.
