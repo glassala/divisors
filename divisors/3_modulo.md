@@ -30,8 +30,8 @@
 28. A group is a structure comprising a set and an operation which together satisfy certain requirements.
 29. Let $S$ be an arbitrary set and $*$ be an arbitrary operation.
 30. The first requirement is closure under the operation: $\forall{a, b}\in{S}, a * b\in{S}$.
-31. The second is that the operation has an identity: $\exists{e}\in{S}:\forall{a}\in{S},a*e=e*a=a$.
-32. The third is that the operation is associative: $\forall{a, b, c}\in{S}, a * (b*c)=(a*b)*c$
+31. The second is that the operation has an identity: $\exists{e}\in{S}:\forall{a}\in{S},a * e = e * a=a$.
+32. The third is that the operation is associative: $\forall{a, b, c}\in{S}, a * (b * c)=(a * b) * c$
 33. The fourth (and most restrictive) requirement is that every element in the set has an *inverse* under the operation.
 34. That is, $\forall{a}\in S, \exists{a^{-1}} \in S: a * a^{-1}= a^{-1} * a=e$.
 35. An *abelian* group is a group whose operation is commutative.
