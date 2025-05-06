@@ -85,15 +85,15 @@
 83. Since it is only for prime $n$ where every positive integer $\le n$ has a multiplicative inverse modulo $n$, it is only for prime $n$ where the product of every positive integer less than $n$ inevitably takes the form $(1)(1)...(-1)$.
 84. As such, $(p - 1)! \equiv -1 \pmod{p}$ holds for all prime $p$ and only for prime $p$.
 85. The above property is called Wilson's theorem.
-86. If $a$ is an integer and $p$ is a prime number, then $a^p \equiv a \pmod {p}$.
+86. If $a$ is a natural number and $p$ is a prime number, then $a^p \equiv a \pmod {p}$.
 87. The binomial theorem is a statement about the expansion of expressions in the form $(x + y)^n$:$$(x + y)^n = \sum^{n}_{k=0}\binom{n}{k}x^{k}y^{n-k};\binom{n}{k} = \frac{n!}{k!(n - k)!}$$
 88. $\binom{n}{k}$ is called a *binomial coefficient,* and is read out as "$n$ choose $k$."
 89. A binomial coefficient is always an integer: all multiples of primes in the factorization of $k!(n - k)!$ must also be in the factorization of $n!$.
 90. If $n$ is prime, then $n$ divides $\binom{n}{k}$ for all $0 < k < n$. This is because $n$ always divides $n!$, but since $n$ is prime, it cannot divide $k!(n - k)!$ unless $k = 0$ or $k = n$.
 91. As a consequence of this for prime $n$, the only terms of the sum not "zeroed out" by a coefficient which is a multiple of $n$ are $\binom{n}{0}x^{0}y^{p}$ and $\binom{n}{n}x^{p}y^{0}$.
 92. This means that if $n$ is prime, then $(x + y)^n \equiv x^n + y^n \pmod{n}$.
-93. Trivially, it holds that $1^p \equiv 1 \pmod {p}$ for a prime $p$.
-94. If we assume that for some integer $k$, $k^p \equiv k \pmod {p}$ is the case, then we can say that since the freshman's dream comes true for a prime modulus $p$, i.e. $(k + 1)^p \equiv k^p + 1^p \pmod{p}$, it follows that $(k + 1)^p \equiv k + 1 \pmod{p}$.
+93. Trivially, it holds that $0^p \equiv 0 \pmod {p}$ for a prime $p$.
+94. If we assume that for some positive integer $k$, $k^p \equiv k \pmod {p}$ is the case, then we can say that since the freshman's dream comes true for a prime modulus $p$, i.e. $(k + 1)^p \equiv k^p + 1^p \pmod{p}$, it follows that $(k + 1)^p \equiv k + 1 \pmod{p}$.
 95. This is exactly our original statement $a^p \equiv a \pmod {p}$, which is called Fermat's little theorem.
 96. A *primitive root* modulo $m$ is a number $n$ in $(\mathbb{Z}/m\mathbb{Z})^{\times}$ which *generates* every element of $(\mathbb{Z}/m\mathbb{Z})^{\times}$ through repeated multiplication.
 97. That is, if $c$ being an element of $(\mathbb{Z}/m\mathbb{Z})^{\times}$ implies that there exists an integer $k$ such that $c \equiv n^k \pmod{m}$, then $n$ is a primitive root modulo $m$.
