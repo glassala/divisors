@@ -86,8 +86,8 @@
 84. As such, $(p - 1)! \equiv -1 \pmod{p}$ holds for all prime $p$ and only for prime $p$.
 85. The above property is called Wilson's theorem.
 86. If $a$ is an integer and $p$ is a prime number, then $a^p \equiv a \pmod {p}$.
-87. The binomial theorem is a statement about the expansion of expressions in the form $(x + y)^n$:$$(x + y)^n = \sum^{n}_{k=0}\binom{n}{k}x^{k}y^{n-k};\binom{n}{k} = \frac{n!}{k!(n - k)!}$$
-88. $\binom{n}{k}$ is called a *binomial coefficient,* and is read out as "$n$ choose $k$."
+87. The binomial theorem is a statement about the expansion of expressions in the form $(x + y)^n = \sum^{n}_{k=0}\binom{n}{k}x^{k}y^{n-k};\binom{n}{k} = \frac{n!}{k!(n - k)!}$
+88. $\binom{n}{k}$ is called a *binomial coefficient,* and is read out as $n$ choose $k$.
 89. A binomial coefficient is always an integer: all multiples of primes in the factorization of $k!(n - k)!$ must also be in the factorization of $n!$.
 90. If $n$ is prime, then $n$ divides $\binom{n}{k}$ for all $0 < k < n$. This is because $n$ always divides $n!$, but since $n$ is prime, it cannot divide $k!(n - k)!$ unless $k = 0$ or $k = n$.
 91. As a consequence of this for prime $n$, the only terms of the sum not "zeroed out" by a coefficient which is a multiple of $n$ are $\binom{n}{0}x^{0}y^{p}$ and $\binom{n}{n}x^{p}y^{0}$.
