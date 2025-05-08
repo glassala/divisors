@@ -34,77 +34,77 @@
 32. The third is that the operation is associative: $\forall{a, b, c}\in{S}, a * (b * c)=(a * b) * c$
 33. The fourth (and most restrictive) requirement is that every element in the set has an *inverse* under the operation.
 34. That is, $\forall{a}\in S, \exists{a^{-1}} \in S: a * a^{-1}= a^{-1} * a=e$.
-35. An *abelian* group is a group whose operation is commutative.
-36. That is, $\forall{a, b} \in S, a * b = b * a$.
-37. Groups from arithmetic tend to be commutative because e.g. addition and multiplication of individual numbers are both commutative, and our focus is largely on groups formed out of these operations, but there are many ways to achieve a group structure without commutativity.
-38. For example, the set of all element rearrangements (or permutations) of a set of $n$ elements forms a group under composition of permutations (called the *symmetric group of degree $n$*), but the composition of permutations is not in general commutative.
-39. The *order* of a group is the cardinality of its underlying set, or how many elements are in the group.
-40. Addition over $\mathbb{Z}$ is an abelian group. Every positive integer $n$ has a corresponding negative integer $-n$ (and vice versa) which serves as its *additive inverse.*
-41. $0$ is its own inverse, because it is the additive identity, and it follows from the definition of an identity of a group that a two-sided identity element is always its own inverse.
-42. If a set has elements without inverses w/r/t an operation, but retains closure, associativity, and an identity element, then that set and operation form a *monoid* as opposed to a group.
-43. Multiplication over $\mathbb{Z}$ is a monoid and *not* a group, because non-unit integers do not have other integers as multiplicative inverses.
-44. For any modulus $m$, any element $n$ of $\mathbb{Z}/m\mathbb{Z}$ has a corresponding element $k = m - n$ such that $n + k \equiv 0 \pmod m$, so an additive inverse is always present.
-45. From the clock perspective, this is expressed in the notion that whatever hour it is, there is always some number of hours one can wait until the day ends.
-46. From the clock perspective, the more "highly composite" a modulus $m$ is, i.e. the more divisors it has relative to its size, the better it is for convenient time-keeping.
-47. For any modulus $m$, the equivalence class whose representative is $0$ is the set of multiples of $m$.
-48. Consider $ab \equiv 0 \pmod{p}$, where $p$ is prime: since the divisors of $p$ are exactly $1$ and $p$, for any product of positive integers $a$ and $b$, given $ab = p$, either $a = p$ and $b = 1$ or $a = 1$ and $b = p$.
-49. So, effectively, the only way to get a product of $0$ in a prime modulus is to multiply a number by $0$ or a multiple of $p$.
-50. Now, consider a product like $ab \equiv 0 \pmod{12}$: $a$ could be $2$ if $b$ is $6$, or $a$ could be $3$ if $b$ is $4$, and vice versa.
-51. This is to say, two numbers, of which neither is in the "0 class" of the modulus, can multiply with each other to get 0.
-52. We will denote the *multiplicative* group of a modulus $m$ with $(\mathbb{Z}/m\mathbb{Z})^{\times}$.
-53. While the order of $(\mathbb{Z}/m\mathbb{Z})^{+}$ is always $m$, the set underlying $(\mathbb{Z}/m\mathbb{Z})^{\times}$ has to have at most $m-1$ elements, provided $m > 1$.
-54. This is because $1$ is the identity element of multiplication, and there is no way to get a number which is not $0$ from a product with $0$ as a term.
-55. That is, $0$ can never have a multiplicative inverse, so it is excluded from the set.
-56. The exception to this is the case where $m = 1$, since all of $\mathbb{Z}$ is collapsed into a single equivalence class represented by $0$, and $0$ times $0$ is $0$, meaning $(\mathbb{Z}/1\mathbb{Z})^{\times}$ is actually a group of order $1$.
-57. So, if $ab \equiv 0 \pmod{m}$, and neither $a$ nor $b$ is $0$, then $a$ and $b$ violate the closure condition required of a group.
-58. For this reason, the set of representatives underlying $(\mathbb{Z}/m\mathbb{Z})^{\times}$ is the set of positive integers less than or equal to $m$ which are relatively prime to $m$.
-59. There is a function defined on positive integers called *Euler's phi function*.
-60. For a number $n$, $\varphi(n)$ counts the number of positive integers less than *or equal to* $n$ which are relatively prime to $n$.
-61. $1$ is the unique number which is relatively prime to itself, because $\gcd(n, n) = n$.
-62. This means that $1$ is the unique value for $n$ such that $\varphi(n) = n$.
-63. It is the case that $p$ is a prime number if and only if $\varphi(p) = p - 1$.
-64. For $\varphi(p) = p - 1$ to not be the case, then there would have to be a number less than $p$ but greater than $1$ which divides $p$.
-65. So, it follows that the order of $(\mathbb{Z}/m\mathbb{Z})^{\times}$ is $\varphi(m)$, i.e. $m - 1$ if and only if $m$ is prime.
-66. It is often useful to consider the *negative* class representatives of a modulus, for the reason that $-a \equiv m-a \pmod{m}$.
-67. $1$ is its own mutiplicative inverse for any modulus, and since $(-1)(-1) = 1$, $m - 1$ is also its own multiplicative inverse for any modulus.
-68. Bézout's identity guarantees that if an integer $a$ is relatively prime to $m$, then there exist integers $x$ and $y$ such that $ax + my = 1$.
-69. It follows, then, that $ax \equiv{1} \pmod{m}$, i.e. $x$ is the multiplicative inverse of $a$ modulo $m$.
-70. There is yet another way to characterize the prime numbers, equivalent to the previous characterizations.
-71. A number $p$ is prime if and only if it is the case that $(p - 1)! \equiv -1 \pmod{p}$.
-72. Suppose $(n - 1)! \equiv -1 \pmod{n}$ were the case for some composite $n$.
-73. A composite number $n$ is divisible by some number $k$ such that $2 \le k < n$.
-74. Therefore, since $(n - 1)!$ is divisible by every number less than $n$, $k$ must divide both $n$ and $(n - 1)!$, and so $\gcd((n - 1)!, n)$ must be at least $k$.
-75. However, for $(n - 1)! \equiv -1 \pmod{n}$ to be the case, then $\gcd((n - 1)!, n)$ must equal $1$.
-76. Note that for $a \equiv -1 \pmod{m}$ to be the case, then there must exist an integer $k$ such that $a = km - 1$.
-77. This can be rewritten as $a - km = -1$.
-78. If a number divides both $a$ and $km$, then it must divide $a - km$, i.e. $-1$, and so $\gcd(a, km) = 1$.
-79. Since $\gcd((n - 1)!, n) \ge k \ge 2$, $(n - 1)! \equiv -1 \pmod{n}$ cannot hold for composite $n$.
-80. If $n$ is $1$, then, trivially, $0! \equiv 0 \pmod{1}$.
-81. For prime $n$, consider that every element of $(\mathbb{Z}/n\mathbb{Z})^{\times}$ has a multiplicative inverse.
-82. Since $(n - 1)!$ is the product of the entire least residue system of modulo $n$ (excepting $0$), $(n - 1)!$ can be arranged into a product of pairs of elements of $(\mathbb{Z}/n\mathbb{Z})^{\times}$ in the form $ab \equiv 1 \pmod{n}$ and $n - 1 \equiv -1 \pmod {n}$.
-83. Since it is only for prime $n$ where every positive integer $\le n$ has a multiplicative inverse modulo $n$, it is only for prime $n$ where the product of every positive integer less than $n$ inevitably takes the form $(1)(1)...(-1)$.
-84. As such, $(p - 1)! \equiv -1 \pmod{p}$ holds for all prime $p$ and only for prime $p$.
-85. The above property is called Wilson's theorem.
-86. If $a$ is a natural number and $p$ is a prime number, then $a^p \equiv a \pmod {p}$.
-87. The binomial theorem is a statement about the expansion of expressions in the form $(x + y)^n$:$$(x + y)^n = \sum^{n}_{k=0}\binom{n}{k}x^{k}y^{n-k};\binom{n}{k} = \frac{n!}{k!(n - k)!}$$
-88. $\binom{n}{k}$ is called a *binomial coefficient,* and is read out as "$n$ choose $k$."
-89. A binomial coefficient is always an integer: all multiples of primes in the factorization of $k!(n - k)!$ must also be in the factorization of $n!$.
-90. If $n$ is prime, then $n$ divides $\binom{n}{k}$ for all $0 < k < n$. This is because $n$ always divides $n!$, but since $n$ is prime, it cannot divide $k!(n - k)!$ unless $k = 0$ or $k = n$.
-91. As a consequence of this for prime $n$, the only terms of the sum not "zeroed out" by a coefficient which is a multiple of $n$ are $\binom{n}{0}x^{0}y^{p}$ and $\binom{n}{n}x^{p}y^{0}$.
-92. This means that if $n$ is prime, then $(x + y)^n \equiv x^n + y^n \pmod{n}$.
-93. Trivially, it holds that $0^p \equiv 0 \pmod {p}$ for a prime $p$.
-94. If we assume that for some positive integer $k$, $k^p \equiv k \pmod {p}$ is the case, then we can say that since the freshman's dream comes true for a prime modulus $p$, i.e. $(k + 1)^p \equiv k^p + 1^p \pmod{p}$, it follows that $(k + 1)^p \equiv k + 1 \pmod{p}$.
-95. This is exactly our original statement $a^p \equiv a \pmod {p}$, which is called Fermat's little theorem.
-96. A *primitive root* modulo $m$ is a number $n$ in $(\mathbb{Z}/m\mathbb{Z})^{\times}$ which *generates* every element of $(\mathbb{Z}/m\mathbb{Z})^{\times}$ through repeated multiplication.
-97. That is, if $c$ being an element of $(\mathbb{Z}/m\mathbb{Z})^{\times}$ implies that there exists an integer $k$ such that $c \equiv n^k \pmod{m}$, then $n$ is a primitive root modulo $m$.
-98. Only certain moduli have primitive roots: only if $m$ is $1$, $2$, $4$, $p^k$, or $2p^k$, where $p$ is an odd prime and $k$ is a positive integer, then the modulus $m$ has at least one primitive root.
-99. If $n$ is a primitive root modulo $m$, then the multiplicative inverse of $n$ is also a primitive root modulo $m$.
-100. A group where all of its elements can be generated by repeat iterations of its operation on a single element and that element's inverse is called a *cyclic* group.
-101. The integers under addition form the archetypal infinite cyclic group, since any integer can be reached from a sum of terms of $-1$ and $1$.
-102. $(\mathbb{Z}/m\mathbb{Z})^{+}$ is the archetypal finite cyclic group, being cyclic for every modulus: the cyclic group of order $m$ is often denoted simply $\mathbb{Z}_m$.
-103. For any modulus $m$, one can get all of the elements in $\mathbb{Z}_m$ from repeated addition by 1.
-104. All cyclic groups are abelian, but not every abelian group is cyclic.
-105. It follows from the definition of a primitive root that a group $(\mathbb{Z}/m\mathbb{Z})^{\times}$ is cyclic if and only if it has a primitive root.
-106. The primitive roots of a modulus give rise to the idea of the *index of a residue,* or its generalization for any finite group, the "discrete logarithm."
-107. The index of a residue $a$ with respect to a base $b$ and modulus $m$ is the power $k$ to which $b$ must be raised such that $b^k \equiv a \pmod{m}$.
-108. That is, if one knows only $b$ and $k$ for some modulus $m$, it is easy to find $a$, but if one knows only $b$ and $a$, it is much harder to find $k$.
+35. It follows from the above requirements that the inverse of any element $a$ in a group is unique to $a$.
+36. Suppose for some group $G$ with elements $a$, $b$, and $c$ and identity $e$, were to have $b$ and $c$ each be separate inverses of $a$.
+37. That is, $a * b = b * a = e$ and $a * c = c * a = e$.
+38. We have $(b * a) * c = e * c$, but we also have $b * (a * c) = b * e$, so it follows from the associative property that it must be the case that $b = c$.
+39. An *abelian* group is a group whose operation is commutative. That is, $\forall{a, b} \in S, a * b = b * a$.
+40. Groups from arithmetic tend to be commutative because e.g. addition and multiplication of individual numbers are both commutative, and our focus is largely on groups formed out of these operations, but there are many ways to achieve a group structure without commutativity.
+41. For example, the set of all element rearrangements (or permutations) of a set of $n$ elements forms a group under composition of permutations (called the *symmetric group of degree $n$*), but the composition of permutations is not in general commutative.
+42. The *order* of a group is the cardinality of its underlying set, or how many elements are in the group.
+43. Addition over $\mathbb{Z}$ is an abelian group. Every positive integer $n$ has a corresponding negative integer $-n$ (and vice versa) which serves as its *additive inverse.*
+44. $0$ is its own inverse, because it is the additive identity, and it follows from the definition of an identity of a group that a two-sided identity element is always its own inverse.
+45. If a set has elements without inverses w/r/t an operation, but retains closure, associativity, and an identity element, then that set and operation form a *monoid* as opposed to a group.
+46. Multiplication over $\mathbb{Z}$ is a monoid and *not* a group, because non-unit integers do not have other integers as multiplicative inverses.
+47. For any modulus $m$, any element $n$ of $\mathbb{Z}/m\mathbb{Z}$ has a corresponding element $k = m - n$ such that $n + k \equiv 0 \pmod m$, so an additive inverse is always present.
+48. From the clock perspective, this is expressed in the notion that whatever hour it is, there is always some number of hours one can wait until the day ends.
+49. From the clock perspective, the more "highly composite" a modulus $m$ is, i.e. the more divisors it has relative to its size, the better it is for convenient time-keeping.
+50. For any modulus $m$, the equivalence class whose representative is $0$ is the set of multiples of $m$.
+51. Consider $ab \equiv 0 \pmod{p}$, where $p$ is prime: since the divisors of $p$ are exactly $1$ and $p$, for any product of positive integers $a$ and $b$, given $ab = p$, either $a = p$ and $b = 1$ or $a = 1$ and $b = p$.
+52. So, effectively, the only way to get a product of $0$ in a prime modulus is to multiply a number by $0$ or a multiple of $p$.
+53. Now, consider a product like $ab \equiv 0 \pmod{12}$: $a$ could be $2$ if $b$ is $6$, or $a$ could be $3$ if $b$ is $4$, and vice versa.
+54. This is to say, two numbers, of which neither is in the "0 class" of the modulus, can multiply with each other to get 0.
+55. We will denote the *multiplicative* group of a modulus $m$ with $(\mathbb{Z}/m\mathbb{Z})^{\times}$.
+56. While the order of $(\mathbb{Z}/m\mathbb{Z})^{+}$ is always $m$, the set underlying $(\mathbb{Z}/m\mathbb{Z})^{\times}$ has to have at most $m-1$ elements, provided $m > 1$.
+57. This is because $1$ is the identity element of multiplication, and there is no way to get a number which is not $0$ from a product with $0$ as a term.
+58. That is, $0$ can never have a multiplicative inverse, so it is excluded from the set.
+59. The exception to this is the case where $m = 1$, since all of $\mathbb{Z}$ is collapsed into a single equivalence class represented by $0$, and $0$ times $0$ is $0$, meaning $(\mathbb{Z}/1\mathbb{Z})^{\times}$ is actually a group of order $1$.
+60. So, if $ab \equiv 0 \pmod{m}$, and neither $a$ nor $b$ is $0$, then $a$ and $b$ violate the closure condition required of a group.
+61. For this reason, the set of representatives underlying $(\mathbb{Z}/m\mathbb{Z})^{\times}$ is the set of positive integers less than or equal to $m$ which are relatively prime to $m$.
+62. There is a function defined on positive integers called *Euler's phi function*.
+63. For a number $n$, $\varphi(n)$ counts the number of positive integers less than *or equal to* $n$ which are relatively prime to $n$.
+64. $1$ is the unique number which is relatively prime to itself, because $\gcd(n, n) = n$.
+65. This means that $1$ is the unique value for $n$ such that $\varphi(n) = n$.
+66. It is the case that $p$ is a prime number if and only if $\varphi(p) = p - 1$.
+67. For $\varphi(p) = p - 1$ to not be the case, then there would have to be a number less than $p$ but greater than $1$ which divides $p$.
+68. So, it follows that the order of $(\mathbb{Z}/m\mathbb{Z})^{\times}$ is $\varphi(m)$, i.e. $m - 1$ if and only if $m$ is prime.
+69. It is often useful to consider the *negative* class representatives of a modulus, for the reason that $-a \equiv m-a \pmod{m}$.
+70. $1$ is its own mutiplicative inverse for any modulus, and since $(-1)(-1) = 1$, $m - 1$ is also its own multiplicative inverse for any modulus.
+71. Bézout's identity guarantees that if an integer $a$ is relatively prime to $m$, then there exist integers $x$ and $y$ such that $ax + my = 1$.
+72. It follows, then, that $ax \equiv{1} \pmod{m}$, i.e. $x$ is the multiplicative inverse of $a$ modulo $m$.
+73. There is yet another way to characterize the prime numbers, equivalent to the previous characterizations.
+74. A number $p$ is prime if and only if it is the case that $(p - 1)! \equiv -1 \pmod{p}$.
+75. Suppose $(n - 1)! \equiv -1 \pmod{n}$ were the case for some composite $n$.
+76. A composite number $n$ is divisible by some number $k$ such that $2 \le k < n$.
+77. Therefore, since $(n - 1)!$ is divisible by every number less than $n$, $k$ must divide both $n$ and $(n - 1)!$, and so $\gcd((n - 1)!, n)$ must be at least $k$.
+78. However, for $(n - 1)! \equiv -1 \pmod{n}$ to be the case, then $\gcd((n - 1)!, n)$ must equal $1$.
+79. Note that for $a \equiv -1 \pmod{m}$ to be the case, then there must exist an integer $k$ such that $a = km - 1$.
+80. This can be rewritten as $a - km = -1$.
+81. If a number divides both $a$ and $km$, then it must divide $a - km$, i.e. $-1$, and so $\gcd(a, km) = 1$.
+82. Since $\gcd((n - 1)!, n) \ge k \ge 2$, $(n - 1)! \equiv -1 \pmod{n}$ cannot hold for composite $n$.
+83. If $n$ is $1$, then, trivially, $0! \equiv 0 \pmod{1}$.
+84. For prime $n$, consider that every element of $(\mathbb{Z}/n\mathbb{Z})^{\times}$ has a multiplicative inverse.
+85. Since $(n - 1)!$ is the product of the entire least residue system of modulo $n$ (excepting $0$), $(n - 1)!$ can be arranged into a product of pairs of elements of $(\mathbb{Z}/n\mathbb{Z})^{\times}$ in the form $ab \equiv 1 \pmod{n}$ and $n - 1 \equiv -1 \pmod {n}$.
+86. Since it is only for prime $n$ where every positive integer $\le n$ has a multiplicative inverse modulo $n$, it is only for prime $n$ where the product of every positive integer less than $n$ inevitably takes the form $(1)(1)...(-1)$.
+87. As such, $(p - 1)! \equiv -1 \pmod{p}$ holds for all prime $p$ and only for prime $p$.
+88. The above property is called Wilson's theorem.
+89. If $a$ is a natural number and $p$ is a prime number, then $a^p \equiv a \pmod {p}$.
+90. The binomial theorem is a statement about the expansion of expressions in the form $(x + y)^n$:$$(x + y)^n = \sum^{n}_{k=0}\binom{n}{k}x^{k}y^{n-k};\binom{n}{k} = \frac{n!}{k!(n - k)!}$$
+91. $\binom{n}{k}$ is called a *binomial coefficient,* and is read out as "$n$ choose $k$."
+92. A binomial coefficient is always an integer: all multiples of primes in the factorization of $k!(n - k)!$ must also be in the factorization of $n!$.
+93. If $n$ is prime, then $n$ divides $\binom{n}{k}$ for all $0 < k < n$. This is because $n$ always divides $n!$, but since $n$ is prime, it cannot divide $k!(n - k)!$ unless $k = 0$ or $k = n$.
+94. As a consequence of this for prime $n$, the only terms of the sum not "zeroed out" by a coefficient which is a multiple of $n$ are $\binom{n}{0}x^{0}y^{p}$ and $\binom{n}{n}x^{p}y^{0}$.
+95. This means that if $n$ is prime, then $(x + y)^n \equiv x^n + y^n \pmod{n}$.
+96. Trivially, it holds that $0^p \equiv 0 \pmod {p}$ for a prime $p$.
+97. If we assume that for some positive integer $k$, $k^p \equiv k \pmod {p}$ is the case, then we can say that since the freshman's dream comes true for a prime modulus $p$, i.e. $(k + 1)^p \equiv k^p + 1^p \pmod{p}$, it follows that $(k + 1)^p \equiv k + 1 \pmod{p}$.
+98. This is exactly our original statement $a^p \equiv a \pmod {p}$, which is called Fermat's little theorem.
+99. A *primitive root* modulo $m$ is a number $n$ in $(\mathbb{Z}/m\mathbb{Z})^{\times}$ which *generates* every element of $(\mathbb{Z}/m\mathbb{Z})^{\times}$ through repeated multiplication.
+100. That is, if $c$ being an element of $(\mathbb{Z}/m\mathbb{Z})^{\times}$ implies that there exists an integer $k$ such that $c \equiv n^k \pmod{m}$, then $n$ is a primitive root modulo $m$.
+101. Only certain moduli have primitive roots: only if $m$ is $1$, $2$, $4$, $p^k$, or $2p^k$, where $p$ is an odd prime and $k$ is a positive integer, then the modulus $m$ has at least one primitive root.
+102. If $n$ is a primitive root modulo $m$, then the multiplicative inverse of $n$ is also a primitive root modulo $m$.
+103. A group where all of its elements can be generated by repeat iterations of its operation on a single element and that element's inverse is called a *cyclic* group.
+104. The integers under addition form the archetypal infinite cyclic group, since any integer can be reached from a sum of terms of $-1$ and $1$.
+105. $(\mathbb{Z}/m\mathbb{Z})^{+}$ is the archetypal finite cyclic group, being cyclic for every modulus: the cyclic group of order $m$ is often denoted simply $\mathbb{Z}_m$.
+106. For any modulus $m$, one can get all of the elements in $\mathbb{Z}_m$ from repeated addition by 1.
+107. All cyclic groups are abelian, but not every abelian group is cyclic.
+108. It follows from the definition of a primitive root that a group $(\mathbb{Z}/m\mathbb{Z})^{\times}$ is cyclic if and only if it has a primitive root.
