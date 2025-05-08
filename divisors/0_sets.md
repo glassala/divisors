@@ -30,26 +30,26 @@ I am not here to justify set theory. I am here to graciously thank others for do
 24. There is a set with no elements in it called the empty set.
 25. The symbol for the empty set is $\varnothing$.
 26. The empty set is a subset of every set.
-27. The *cardinality* of the empty set is 0.
-28. The cardinality of a set is how many elements it contains.
-29. If $X$ and $Y$ are sets, then there exists a set $Z$ which contains exactly $X$ and $Y$ as elements.
-30. We can write the set $Z$ as $Z = \set {X, Y}$.
-31. As a consequence (i.e. suppose $X=Y$), if $X$ is a set, then there exists a set $X' = \set{X}$.
-32. Let $A$ and $B$ be sets. There exists a set called the *union* of $A$ and $B$ which contains every element which is in $A$ along with every element which is in $B$. The union of $A$ and $B$ is written $A \cup B$. 
-33. We can describe the union of two sets using set-builder notation: $A \cup B = \set {x \mid x \in A \lor x \in B}$.
-34. We can translate this as "the union of $A$ and $B$ is the set of elements $x$, such that $x$ is in $A$ or $x$ is in $B$."
-35. Set union is commutative.
-36. This means that the order of operands with respect to the operation does not matter.
-37. In symbols, $A \cup B = B \cup A$.
-38. Set union is associative.
-39. This means that the grouping of terms with respect to the operation does not matter.
-40. In symbols, $A \cup (B \cup C) = (A \cup B) \cup C$.
-41. If a set $X$ is not empty, then it contains an element which itself contains no elements in common with $X$.
-42. This is called the Axiom of Foundation.
-43. This axiom is insurance against paradoxes.
-44. To illustrate, suppose $R \in R$. Since $R$ is a set, we can construct a set $R' = \set{R}$. However, $R'$ and $R$ both contain $R$, and $R$ is the only element of $R'$. As such, the idea that some set could contain itself contradicts the Axiom of Foundation.
-45. The set of elements common to two sets $A$ and $B$ is called their *intersection*. We write this $A \cap B = \set{x \mid x \in A \land x \in B}$.
-46. Set intersection is commutative and associative.
+27. The *cardinality* of a set is how many elements it contains.
+28. If $X$ and $Y$ are sets, then there exists a set $Z$ which contains exactly $X$ and $Y$ as elements.
+29. We can write the set $Z$ as $Z = \set {X, Y}$.
+30. As a consequence (i.e. suppose $X=Y$), if $X$ is a set, then there exists a set $X' = \set{X}$.
+31. Let $A$ and $B$ be sets. There exists a set called the *union* of $A$ and $B$ which contains every element which is in $A$ along with every element which is in $B$. The union of $A$ and $B$ is written $A \cup B$. 
+32. We can describe the union of two sets using set-builder notation: $A \cup B = \set {x \mid x \in A \lor x \in B}$.
+33. We can translate this as "the union of $A$ and $B$ is the set of elements $x$, such that $x$ is in $A$ or $x$ is in $B$."
+34. Set union is commutative.
+35. This means that the order of operands with respect to the operation does not matter.
+36. In symbols, $A \cup B = B \cup A$.
+37. Set union is associative.
+38. This means that the grouping of terms with respect to the operation does not matter.
+39. In symbols, $A \cup (B \cup C) = (A \cup B) \cup C$.
+40. If a set $X$ is not empty, then it contains an element which itself contains no elements in common with $X$.
+41. This is called the Axiom of Foundation.
+42. This axiom is insurance against paradoxes.
+43. To illustrate, suppose $R \in R$. Since $R$ is a set, we can construct a set $R' = \set{R}$. However, $R'$ and $R$ both contain $R$, and $R$ is the only element of $R'$. As such, the idea that some set could contain itself contradicts the Axiom of Foundation.
+44. The set of elements common to two sets $A$ and $B$ is called their *intersection*. We write this $A \cap B = \set{x \mid x \in A \land x \in B}$.
+45. Set intersection is commutative and associative.
+46. If two sets $A$ and $B$ have no elements in common, i.e. $A \cap B = \varnothing$, then $A$ and $B$ are said to be *disjoint*.
 47. The set of elements which are in $A$ and *not* in $B$ is called the *relative complement* of $B$ in $A$.
 48. We write this: $A \setminus B = \set{x \mid x \in A \land x \notin B}$.
 49. The set of all elements which are in either $A$ or $B$ but *not* both is called the *symmetric difference* of $A$ and $B$.
