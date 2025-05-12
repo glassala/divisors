@@ -12,8 +12,8 @@
 10. Then, $p!$ is divisible by every prime number.
 11. However, this would imply that $p! + 1$ is divisible by *no* prime number, which cannot be the case.
 12. As such, for every largest prime number which is found, a larger prime waits.
-13. If two numbers $a$ and $b$ have a GCD of $1$, then $a$ and $b$ are called *relatively prime* to one another.
-14. A way to characterize a prime number $n$ is as a number which is  relatively prime to every positive integer less than $n$.
+13. If two numbers $a$ and $b$ have a GCD of $1$, then $a$ and $b$ are called *relatively prime* to one another. A way to denote that $a$ and $b$ are relatively prime is $a \bot b$.
+14. A way to characterize a prime number $n$ is as a number which is relatively prime to every positive integer less than $n$.
 15. If a prime number $p$ divides a composite number $ab$, then $p$ divides at least either $a$ or $b$.
 16. If $p$ does not divide $a$, then, because $1$ is the only other divisor of $p$, $\gcd(p, a)=1$.
 17. So, there must exist integers $x$ and $y$ such that $px + ay = 1$.
@@ -49,14 +49,14 @@
 47. Another way of putting it is that $\Omega(n)$ counts the sum of all powers to which the prime factors of $n$ are taken.
 48. That is, $\Omega(n^k)=k\Omega(n)$.
 49. The small omega function is an *additive* function.
-50. An additive function is a function $f$ of a positive integer such that if some numbers $a$ and $b$ are relatively prime, then $f(ab) = f(a) + f(b).$
+50. An additive function is a function $f$ of a positive integer such that if some numbers $a$ and $b$ are relatively prime, then $f(ab) = f(a) + f(b)$.
 51. The big omega function is a *completely additive* function.
 52. A completely additive function is a function $f$ for which the property $f(ab) = f(a) + f(b)$ holds for *all* positive integers $a$ and $b$.
 53. A *square-free* number is a positive integer such that no prime in its factorization is raised to a power higher than $1$.
 54. $1$ is square-free, because there are no primes in its factorization.
 55. Every prime number is square-free.
-56. If a composite number $ab$ is square-free, then $a$ must be relatively prime to $b$.
-57. However, if $a$ is relatively prime to $b$, it is not necessarily the case that $ab$ is square-free, as $a$ and/or $b$ could themselves contain higher powers of primes in their factorizations.
+56. If a composite number $ab$ is square-free, then $a \bot b$.
+57. However, if $a \bot b$, it is not necessarily the case that $ab$ is square-free, as $a$ and/or $b$ could themselves contain higher powers of primes in their factorizations.
 58. Given a set $S$, a $k$-combination of elements of $S$ is a subset of $S$ with $k$ elements.
 59. The products of numbers $a$ and $b$ which are relatively prime to one another have nicer combinatorial properties around the sets of divisors of $a$ and $b$ as opposed to products of numbers which are not relatively prime.
 60. For example, suppose $x = ab$ and $y = cd$ for some prime numbers $a$, $b$, $c$, and $d$.
