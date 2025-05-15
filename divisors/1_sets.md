@@ -58,11 +58,11 @@ I am not here to justify set theory. I am here to graciously thank others for do
 52. The symmetric difference is commutative and associative.
 53. For any set $S$, there exists a set $P(S)$ called the *power set* of $S$.
 54. The *subsets* of $S$ are the *elements* of $P(S)$.
-55. If a set $S$ has $n$ elements, then $S$ has $2^n$ subsets.
-56. In symbols, $|P(S)| = 2^{|S|}$.
-57. If the source of a function is a set, then the target of a function is a set.
-58. One can also say that if a function $f$ is defined for all elements of a set $A$, then there exists a set $B = \set{f(x) \mid x \in A}$.
-59. This set $B$ is called the *image* of $A$ under $f$, where $A$ is the *domain* of $f$.
+55. If a set $S$ has $n$ elements, then $S$ has $2^n$ subsets. In symbols, $|P(S)| = 2^{|S|}$.
+56. If the source of a function is a set, then the target of a function is a set.
+57. If $f: A \to B$ is a function, then $A$ is called the *domain* of $f$ while $B$ is the *codomain* of $f$.
+58. If a function $f$ is defined for all elements of a set $A$, then there exists a subset of $B$ called the *image* $C$ of $A$ under $f$ defined as $C = \set{f(x) \mid x \in A}$.
+59. Any subset of the domain of $f$ can also be said to have an image under $f$.
 60. There is a function of a set called the *successor* function $S(n) = n \cup \set{n}$.
 61. If, for sets $n$, $m$, $S(n) = S(m)$, then $n = m$.
 62. There is a set $I$ such that $\varnothing \in I$ and an element $n$ being in $I$ implies that $S(n)$ is in $I$.
