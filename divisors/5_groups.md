@@ -67,7 +67,7 @@
 65. Note that, w/r/t addition modulo $6$, $\set{0, 2, 4}$ is cyclic and of order $3$, and as such must be isomorphic to $\mathbb{Z}_3$.
 66. The set $\set{0, 3}$, w/r/t addition modulo $6$, is likewise isomorphic to $\mathbb{Z}_2$.
 67. $\mathbb{Z}_3$ induces $2$ cosets in $\mathbb{Z}_6$, while $\mathbb{Z}_2$ induces $3$.
-68. More generally, if $H$ is a subgroup of a finite group $G$, and $|G|$denotes the order of a group, then the number of cosets $H$ induces in $G$ is given by $\frac{|G|}{|H|}$.
+68. More generally, if $H$ is a subgroup of a finite group $G$, and $|G|$ denotes the order of a group, then the number of cosets $H$ induces in $G$ is given by $\frac{|G|}{|H|}$.
 69. If $H$ is a subgroup of a group of finite order $G$, then the order of $H$ divides the order of $G$.
 70. This stems from the very ideas of subgroup and coset: a coset is an effective "translation" of an entire subgroup by an element in the group.
 71. Suppose $H$ is a subgroup of the finite group $G$ and $|H|$ doesn't divide $|G|$.
