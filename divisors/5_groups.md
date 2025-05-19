@@ -50,7 +50,7 @@
 48. The one-element *trivial group*, which consists of the identity element, is a subgroup of every group.
 49. A group can have at minimum $1$ element.
 50. Consider that the empty set can never be the underlying set of a group, because a group requires an identity element, and the empty set has no elements.
-51. A subgroup $H$ of a group $G$ partitions the underlying set $S$ of $G$into a set of *left cosets* and a set of *right cosets.*
+51. A subgroup $H$ of a group $G$ partitions the underlying set $S$ of $G$ into a set of *left cosets* and a set of *right cosets.*
 52. A left coset of $H$ in $G$ is the set $g*H = \set{g * h \mid h \in H}$ for some fixed $g \in G$.
 53. A right coset of $H$ in $G$ is the set $H*g = \set{h * g \mid h \in H}$ for some fixed $g \in G$.
 54. Left and right cosets can be viewed as equivalence classes formed out of the relations $g \sim h \iff -g * h \in H$ and $g \sim h \iff h * -g \in H$ (for fixed $g \in G$) respectively.
