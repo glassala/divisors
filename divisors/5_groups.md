@@ -16,7 +16,7 @@
 14. As such, $(p - 1)! \equiv -1 \pmod{p}$ holds for all prime $p$ and only for prime $p$.
 15. The above property is called Wilson's theorem.
 16. If $a$ is a natural number and $p$ is a prime number, then $a^p \equiv a \pmod {p}$.
-17. The binomial theorem is a statement about the expansion of expressions in the form $(x + y)^n$:$(x + y)^n = \sum^{n}_{k=0}\binom{n}{k}x^{k}y^{n-k};\binom{n}{k} = \frac{n!}{k!(n - k)!}$
+17. The binomial theorem is a statement about the expansion of expressions in the form $(x + y)^n$: $(x + y)^n = \sum^{n}_{k=0}\binom{n}{k}x^{k}y^{n-k};\binom{n}{k} = \frac{n!}{k!(n - k)!}$
 18. $\binom{n}{k}$ is called a *binomial coefficient,* and is read out as "$n$ choose $k$."
 19. A binomial coefficient is always an integer: all multiples of primes in the factorization of $k!(n - k)!$ must also be in the factorization of $n!$.
 20. If $n$ is prime, then $n$ divides $\binom{n}{k}$ for all $0 < k < n$. This is because $n$ always divides $n!$, but since $n$ is prime, it cannot divide $k!(n - k)!$ unless $k = 0$ or $k = n$.
