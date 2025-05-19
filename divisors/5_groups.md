@@ -42,7 +42,7 @@
 40. In small groups like these, one can verify the isomorphism simply by exhausting all possible operation outcomes: we match $0$ and $1$ in the former to $1$ and $2$ in the latter respectively, and we match addition in the former to multiplication to the latter.
 41. We can then take note that $0 + n \equiv n \pmod{2}$ and $1 + 1 \equiv 0 \pmod{2}$, while $(1)n \equiv n \pmod{3}$ and $(2)(2) \equiv 1 \pmod{3}$.
 42. Since this covers every way elements can be combined within these groups, it is apparent that their basic structure is the same.
-43. Every finite cyclic group of order $n$ is isomorphic to $\mathbb{Z}_n$ (aka $(\mathbb{Z}/n\mathbb{Z})^{+}$).
+43. Every finite cyclic group of order $n$ is isomorphic to $(\mathbb{Z}/n\mathbb{Z})^{+}$.
 44. This property emerges from the fact that because for any cyclic group, having a single generator $g$, one can write all of its elements as the $k$-th multiple of that generator $kg$ (where $-kg$ denotes the $k$-th multiple of the generator's inverse and $0g$ is the identity).
 45. If a group $G$ comprises the set $S$ and the operation $*$, then a *subgroup* of $G$ is a group formed from a subset $S' \subseteq S$ under the same operation $*$.
 46. Much like it is often convenient to refer to equivalence classes by their representatives, it is convenient to say "elements of a group" to mean the elements of the group's underlying set.
