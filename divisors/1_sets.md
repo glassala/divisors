@@ -89,7 +89,7 @@ I am not here to justify set theory. I am here to graciously thank others for do
 83. That is, if for every $a$, $b$ in the domain $A$ of $f$, $a \neq b \implies f(a) \neq f(b)$, or equivalently, $a = b \implies f(a) = f(b)$.
 84. A function $f : A \to B$ is *surjective* if its codomain $B$ is the image of $A$.
 85. A function $f$ is *bijective* if it is both injective and surjective.
-86. A function being bijective is equivalent to it being  *invertible*.
+86. A function being bijective is equivalent to it being *invertible*.
 87. A bijective function is a one-to-one correspondence between each element of its domain and each element of its codomain.
 88. The successor function $s : \mathbb{N} \to \mathbb{N}$ where $s(n) = n + 1$ is injective but it is not surjective, since $0$ is in $\mathbb{N}$ but not in the image of $s$.
 89. Any function which is not surjective can be redefined as a surjective function by restricting its codomain to be the same as its image.

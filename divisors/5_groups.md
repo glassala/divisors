@@ -35,7 +35,7 @@
 33. For any modulus $m$, one can get all of the elements in $\mathbb{Z}_m$ from repeated addition by 1.
 34. All cyclic groups are abelian, but not every abelian group is cyclic.
 35. It follows from the definition of a primitive root that a group $(\mathbb{Z}/m\mathbb{Z})^{\times}$ is cyclic if and only if it has a primitive root.
-36. A group $A$ is *isomorphic* to a group $B$ if there exists a one-to-one correspondence between the elements of the set underlying $A$ and the elements of the set underlying $B$ which preserves group structure in both directions.
+36. A group $A$ is *isomorphic* to a group $B$ if there exists a one-to-one correspondence (i.e. a bijection) between the elements of the set underlying $A$ and the elements of the set underlying $B$ which preserves group structure in both directions.
 37. We write that $A$ is isomorphic to $B$ as $A \cong B$.
 38. For example, $\mathbb{Z}_{2} \cong (\mathbb{Z}/3\mathbb{Z})^{\times}$.
 39. The representatives of the set underlying $\mathbb{Z}_{2}$ are $\set{0, 1}$, while the corresponding representatives for $(\mathbb{Z}/3\mathbb{Z})^{\times}$ are $\set{1, 2}$.
@@ -84,7 +84,7 @@
 82. As such, $a$ generates a cyclic subgroup of some order $k$ in $(\mathbb{Z}/m\mathbb{Z})^{\times}$.
 83. By definition, since $1$ represents the identity class, $a^k\equiv 1 \pmod{m}$.
 84. By Lagrange's theorem, since $\varphi(m)$ is the order of $(\mathbb{Z}/m\mathbb{Z})^{\times}$, $k \mid \varphi(m)$, and therefore there must exist some positive integer $n$ such that $\varphi(m) = nk$.
-85. Following from this, since $a^{\varphi(m)}$ can be written as $(a^k)^n$, i.e.   $1^n$, $a^{\varphi(m)} \equiv 1 \pmod{m}$.
+85. Following from this, since $a^{\varphi(m)}$ can be written as $(a^k)^n$, i.e. $1^n$, $a^{\varphi(m)} \equiv 1 \pmod{m}$.
 86. In addition, for a power of $a$ to be congruent to $1$ modulo $m$, $a$ must have an inverse modulo $m$, meaning that if $a^{\varphi(m)} \equiv 1 \pmod{m}$ holds, then $a$ must be part of a class in $(\mathbb{Z}/m\mathbb{Z})^{\times}$, i.e. $a$ must be relatively prime to $m$.
 87. This property is called *Euler's theorem*.
 88. Note that, since for prime $p$, $\varphi(p) = p-1$, so one can write $a^{p-1} \equiv 1 \pmod{p}$ if $a$ is relatively prime to $p$.  
