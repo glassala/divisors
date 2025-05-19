@@ -4,30 +4,30 @@
 2. This is called Euclid's theorem.
 3. Since $a > b \implies \gcd(a, b) = \gcd(b, a \bmod b)$, for any number $n$, the only divisor common to $n$ and $n+1$ is $1$.
 4. There is a function of a natural number called the *factorial* function.
-5. The factorial of a number $n$ is denoted $n!$.
-6. The factorial is characterized by a recursive formula: the base case is that $0! = 1$, and the recursive step is that $n! = (n-1)!n$.
-7. In practice, for any positive integer $n$, $n!$ is the product of every positive integer less than or equal to $n$.
-8. As a consequence of this, for all positive integers $k \le n$, $k$ divides $n!$.
-9. Suppose there is a largest prime number $p$.
-10. Then, $p!$ is divisible by every prime number.
-11. However, this would imply that $p! + 1$ is divisible by *no* prime number, which cannot be the case.
-12. As such, for every largest prime number which is found, a larger prime waits.
-13. If two numbers $a$ and $b$ have a GCD of $1$, then $a$ and $b$ are called *relatively prime* to one another. A way to denote that $a$ and $b$ are relatively prime is $a \bot b$.
-14. A way to characterize a prime number $n$ is as a number which is relatively prime to every positive integer less than $n$.
-15. If a prime number $p$ divides a composite number $ab$, then $p$ divides at least either $a$ or $b$.
-16. If $p$ does not divide $a$, then, because $1$ is the only other divisor of $p$, $\gcd(p, a)=1$.
-17. So, there must exist integers $x$ and $y$ such that $px + ay = 1$.
-18. Suppose we multiply this expression by $b$: $pbx + aby = b$.
-19. We know that $p \mid ab$, so we can see that $p$ can be factored out of the left side, and so $p \mid b$.
-20. This property is called Euclid's lemma.
-21. This lemma is indeed a lemma about division attributed to Euclid, but it is not to be confused with Euclid's division lemma.
-22. Every natural number which is greater than $1$ has a unique representation as a product of the powers of prime numbers.
-23. A proper divisor of a number $n$ is a divisor of $n$ which is not itself $n$.
-24. Every divisor of a number has its own set of divisors.
-25. If a number $d$ divides $n$, then the set of divisors of $d$ is a subset of the set of divisors of $n$.
-26. If $d$ is a proper divisor of $n$, then the set of divisors of $d$ is a proper subset of the divisors of $n$.
-27. A proper divisor of a natural number $n$ has strictly fewer divisors than $n$.
-28. Another characterization of a prime number $p$ is that the only proper divisor of $p$ is $1$.
+5. The factorial of a number $n$ is denoted $n!$ and characterized by a recursive formula: the base case is that $0! = 1$, and the recursive step is that $n! = (n-1)!n$.
+6. In practice, for any positive integer $n$, $n!$ is the product of every positive integer less than or equal to $n$.
+7. As a consequence of this, for all positive integers $k \le n$, $k$ divides $n!$.
+8. Suppose there is a largest prime number $p$.
+9. Then, $p!$ is divisible by every prime number.
+10. However, this would imply that $p! + 1$ is divisible by *no* prime number, which cannot be the case.
+11. As such, for every largest prime number which is found, a larger prime exists.
+12. If two numbers $a$ and $b$ have a GCD of $1$, then $a$ and $b$ are called *relatively prime* to one another. A way to denote that $a$ and $b$ are relatively prime is $a \bot b$.
+13. A way to characterize a prime number $n$ is as a number which is relatively prime to every positive integer less than $n$.
+14. There is a function defined on positive integers called *Euler's phi function*.
+15. For a number $n$, $\varphi(n)$ counts the number of positive integers less than *or equal to* $n$ which are relatively prime to $n$.
+16. $1$ is the unique number which is relatively prime to itself, because $\gcd(n, n) = n$.
+17. This means that $1$ is the unique value for $n$ such that $\varphi(n) = n$.
+18. It is the case that $p$ is a prime number if and only if $\varphi(p) = p - 1$.
+19. For $\varphi(p) = p - 1$ to not be the case, then there would have to be a number less than $p$ but greater than $1$ which divides $p$.
+20. If a prime number $p$ divides a composite number $ab$, then $p$ divides at least either $a$ or $b$.
+21. If $p$ does not divide $a$, then, because $1$ is the only other divisor of $p$, $\gcd(p, a)=1$.
+22. So, there must exist integers $x$ and $y$ such that $px + ay = 1$.
+23. Suppose we multiply this expression by $b$: $pbx + aby = b$.
+24. We know that $p \mid ab$, so we can see that $p$ can be factored out of the left side, and so $p \mid b$.
+25. This property is called Euclid's lemma.
+26. This lemma is indeed a lemma about division attributed to Euclid, but it is not to be confused with Euclid's division lemma.
+27. Every divisor of a number has its own set of divisors.
+28. Every natural number which is greater than $1$ has a unique representation as a product of the powers of prime numbers.
 29. The *prime factorization* of a number $n$ is the unique representation of $n$ as a product of powers of prime numbers.
 30. If $n$ is prime, then that product is exactly $n$.
 31. Since $2$ has a prime factorization, assume every number $2 < n \le k$ for some number $k$ has a prime factorization.
@@ -64,7 +64,7 @@
 62. Since the set of all $k$-combinations of the elements of a set $S$ is effectively the power set of $S$, if $S$ has $n$ elements, then there are $2^n$ $k$-combinations of elements of $S$.
 63. If a number $a$ has $n$ prime factors and a number $b$ has $m$ prime factors, and $a$ is relatively prime to $b$, then $ab$ has $n + m$ prime factors.
 64. This is a restatement of the additivity of the small omega function.
-65. Suppose that $n = ab$ and $m = ac$ for some prime numbers $a$, $b$, and  $c$.
+65. Suppose that $n = ab$ and $m = ac$ for some prime numbers $a$, $b$, and $c$.
 66. Then, $nm = a^2bc$, i.e. $\omega(n) = 2$ and $\omega(m) = 2$, but $\omega(nm) = 3$: this is an example of how the additive function property fails to hold for numbers which are not relatively prime.
 67. As such, the divisors of $nm$ are not exactly the products of the $k$-combinations of its prime factors $a$, $b$, and $c$.
 68. Moreover, while e.g. $\Omega(abc) = \Omega(a^2b) = 3$, the latter has fewer divisors than the former.

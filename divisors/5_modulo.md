@@ -59,19 +59,19 @@
 57. This is because $1$ is the identity element of multiplication, and there is no way to get a number which is not $0$ from a product with $0$ as a term.
 58. That is, $0$ can never have a multiplicative inverse, so it is excluded from the set.
 59. The exception to this is the case where $m = 1$, since all of $\mathbb{Z}$ is collapsed into a single equivalence class represented by $0$, and $0$ times $0$ is $0$, meaning $(\mathbb{Z}/1\mathbb{Z})^{\times}$ is actually a group of order $1$.
-60. So, if $ab \equiv 0 \pmod{m}$, and neither $a$ nor $b$ is $0$, then $a$ and $b$ violate the closure condition required of a group.
+60. So, if $ab \equiv 0 \pmod{m}$, and neither $a$ nor $b$ is $0$, then $a$ and $b$ would violate the closure condition required of a group.
 61. For this reason, the set of representatives underlying $(\mathbb{Z}/m\mathbb{Z})^{\times}$ is the set of positive integers less than or equal to $m$ which are relatively prime to $m$.
-62. There is a function defined on positive integers called *Euler's phi function*.
-63. For a number $n$, $\varphi(n)$ counts the number of positive integers less than *or equal to* $n$ which are relatively prime to $n$.
-64. $1$ is the unique number which is relatively prime to itself, because $\gcd(n, n) = n$.
-65. This means that $1$ is the unique value for $n$ such that $\varphi(n) = n$.
-66. It is the case that $p$ is a prime number if and only if $\varphi(p) = p - 1$.
-67. For $\varphi(p) = p - 1$ to not be the case, then there would have to be a number less than $p$ but greater than $1$ which divides $p$.
-68. So, it follows that the order of $(\mathbb{Z}/m\mathbb{Z})^{\times}$ is $\varphi(m)$, i.e. $m - 1$ if and only if $m$ is prime.
-69. It is often useful to consider the *negative* class representatives of a modulus, for the reason that $-a \equiv m-a \pmod{m}$.
-70. $1$ is its own multiplicative inverse for any modulus, and since $(-1)(-1) = 1$, $m - 1$ is also its own multiplicative inverse for any modulus.
-71. Bézout's identity guarantees that if an integer $a$ is relatively prime to $m$, then there exist integers $x$ and $y$ such that $ax + my = 1$.
-72. It follows, then, that $ax \equiv{1} \pmod{m}$, i.e. $x$ is the multiplicative inverse of $a$ modulo $m$.
+62. So, it follows that the order of $(\mathbb{Z}/m\mathbb{Z})^{\times}$ is $\varphi(m)$, i.e. $m - 1$ if and only if $m$ is prime.
+63. It is often useful to consider the *negative* class representatives of a modulus, for the reason that $-a \equiv m-a \pmod{m}$.
+64. $1$ is its own multiplicative inverse for any modulus, and since $(-1)(-1) = 1$, $m - 1$ is also its own multiplicative inverse for any modulus.
+65. Bézout's identity guarantees that if an integer $a$ is relatively prime to $m$, then there exist integers $x$ and $y$ such that $ax + my = 1$.
+66. It follows, then, that $ax \equiv{1} \pmod{m}$, i.e. $x$ is the multiplicative inverse of $a$ modulo $m$
+67. Let $n$ and $m$ be positive integers which are relatively prime to one another. Then, the system of linear congruences $x \equiv a \pmod{n}; x \equiv b \pmod{m}$ has a unique solution modulo $nm$. Since $n$ and $m$ are relatively prime, then by Bézout's identity, there exist integers $x$ and $y$ such that $nx + my = 1$.
+68. As such, $nx \equiv 1 \pmod{m}$ but $nx \equiv 0 \pmod{n}$ and $my \equiv 0 \pmod{m}$ but $my \equiv 1 \pmod{n}$.
+69. One can conclude that $x = mya + nxb$, since $x \equiv 1a + 0b \equiv a \pmod{n}$ and $x \equiv 0a + 1b \equiv b \pmod{m}$.
+70. Since this property holds for a system of two congruences with relatively prime moduli $n$, $m$, it follows that one can find such a unique solution for a system of any number of congruences whose moduli are all mutually (or *pairwise*) relatively prime to one another.
+71. That is, if some modulus $k$ is relatively prime to both $n$ and   $m$ (where $n \bot m$), then $k \bot{nm}$, and so one can set up the system of linear congruences $x \equiv p \pmod{nm};x \equiv q \pmod{k}$ for some integers $p$ and $q$.
+72. That a unique solution exists for such systems over pairwise relatively prime moduli is called *Sunzi's theorem.*
 
 ## Exercises
 
