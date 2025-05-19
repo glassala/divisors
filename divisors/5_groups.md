@@ -18,7 +18,7 @@
 16. If $a$ is a natural number and $p$ is a prime number, then $a^p \equiv a \pmod {p}$.
 17. The binomial theorem is a statement about the expansion of expressions in the form $(x + y)^n$: $(x + y)^n = \sum^{n}_{k=0}\binom{n}{k}x^{k}y^{n-k};\binom{n}{k} = \frac{n!}{k!(n - k)!}$
 18. $\binom{n}{k}$ is called a *binomial coefficient,* and is read out as "$n$ choose $k$."
-19. A binomial coefficient is always an integer: all multiples of primes in the factorization of $k!(n - k)!$ must also be in the factorization of $n!$ .
+19. A binomial coefficient is always an integer: all multiples of primes in the factorization of $k!(n - k)!$ must also be in the factorization of $n!$
 20. If $n$ is prime, then $n$ divides $\binom{n}{k}$ for all $0 < k < n$. This is because $n$ always divides $n!$, but since $n$ is prime, it cannot divide $k!(n - k)!$ unless $k = 0$ or $k = n$.
 21. As a consequence of this for prime $n$, the only terms of the sum not "zeroed out" by a coefficient which is a multiple of $n$ are $\binom{n}{0}x^{0}y^{p}$ and $\binom{n}{n}x^{p}y^{0}$.
 22. This means that if $n$ is prime, then $(x + y)^n \equiv x^n + y^n \pmod{n}$.
