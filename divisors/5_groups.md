@@ -18,7 +18,7 @@
 16. If $a$ is a natural number and $p$ is a prime number, then $a^p \equiv a \pmod {p}$.
 17. The binomial theorem is a statement about the expansion of expressions in the form $(x + y)^n$: $(x + y)^n = \sum^{n}_{k=0}\binom{n}{k}x^{k}y^{n-k};\binom{n}{k} = \frac{n!}{k!(n - k)!}$
 18. $\binom{n}{k}$ is called a *binomial coefficient,* and is read out as "$n$ choose $k$."
-19. A binomial coefficient is always an integer: all multiples of primes in the factorization of $k!(n - k)!$ must also be in the factorization of $n!$.
+19. A binomial coefficient is always an integer: all multiples of primes in the factorization of $k!(n - k)!$ must also be in the factorization of $n!$
 20. If $n$ is prime, then $n$ divides $\binom{n}{k}$ for all $0 < k < n$. This is because $n$ always divides $n!$, but since $n$ is prime, it cannot divide $k!(n - k)!$ unless $k = 0$ or $k = n$.
 21. As a consequence of this for prime $n$, the only terms of the sum not "zeroed out" by a coefficient which is a multiple of $n$ are $\binom{n}{0}x^{0}y^{p}$ and $\binom{n}{n}x^{p}y^{0}$.
 22. This means that if $n$ is prime, then $(x + y)^n \equiv x^n + y^n \pmod{n}$.
@@ -42,7 +42,7 @@
 40. In small groups like these, one can verify the isomorphism simply by exhausting all possible operation outcomes: we match $0$ and $1$ in the former to $1$ and $2$ in the latter respectively, and we match addition in the former to multiplication to the latter.
 41. We can then take note that $0 + n \equiv n \pmod{2}$ and $1 + 1 \equiv 0 \pmod{2}$, while $(1)n \equiv n \pmod{3}$ and $(2)(2) \equiv 1 \pmod{3}$.
 42. Since this covers every way elements can be combined within these groups, it is apparent that their basic structure is the same.
-43. Every finite cyclic group of order $n$ is isomorphic to $\mathbb{Z}_n$ (aka $(\mathbb{Z}/n\mathbb{Z})^{+}$).
+43. Every finite cyclic group of order $n$ is isomorphic to $(\mathbb{Z}/n\mathbb{Z})^{+}$.
 44. This property emerges from the fact that because for any cyclic group, having a single generator $g$, one can write all of its elements as the $k$-th multiple of that generator $kg$ (where $-kg$ denotes the $k$-th multiple of the generator's inverse and $0g$ is the identity).
 45. If a group $G$ comprises the set $S$ and the operation $*$, then a *subgroup* of $G$ is a group formed from a subset $S' \subseteq S$ under the same operation $*$.
 46. Much like it is often convenient to refer to equivalence classes by their representatives, it is convenient to say "elements of a group" to mean the elements of the group's underlying set.
@@ -50,7 +50,7 @@
 48. The one-element *trivial group*, which consists of the identity element, is a subgroup of every group.
 49. A group can have at minimum $1$ element.
 50. Consider that the empty set can never be the underlying set of a group, because a group requires an identity element, and the empty set has no elements.
-51. A subgroup $H$ of a group $G$ partitions the underlying set $S$ of $G$into a set of *left cosets* and a set of *right cosets.*
+51. A subgroup $H$ of a group $G$ partitions the underlying set $S$ of $G$ into a set of *left cosets* and a set of *right cosets.*
 52. A left coset of $H$ in $G$ is the set $g*H = \set{g * h \mid h \in H}$ for some fixed $g \in G$.
 53. A right coset of $H$ in $G$ is the set $H*g = \set{h * g \mid h \in H}$ for some fixed $g \in G$.
 54. Left and right cosets can be viewed as equivalence classes formed out of the relations $g \sim h \iff -g * h \in H$ and $g \sim h \iff h * -g \in H$ (for fixed $g \in G$) respectively.
