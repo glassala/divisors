@@ -72,3 +72,9 @@
 70. In a cyclic group $\mathbb{Z}/n\mathbb{Z}^+$, the elements which generate the group through addition are the congruence classes of numbers relatively prime to $n$.
 71. An automorphism of an additive group must preserve addition as well as inverses, so $\epsilon(1)$ must be a generator of $\mathbb{Z}/n\mathbb{Z}^+$.
 72. This means that the order of $\text{Aut}(\mathbb{Z}/n\mathbb{Z}^+)$ is given by $\varphi(n)$.
+
+## Exercises
+
+1. The canonical projection to a quotient group is always surjective. Is it possible for a canonical projection between groups $\pi : A \to A/B$ to be injective? If so, what sort of group would $B$ have to be?
+2. Demonstrate that if $H$ is a subgroup of an abelian group $G$, then $G/H$ is an abelian group.
+3. Prove that $\text{Aut}(\mathbb{Z}/n\mathbb{Z}^+) \cong \mathbb{Z}/n\mathbb{Z}^\times$.

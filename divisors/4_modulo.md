@@ -3,7 +3,7 @@
 1. Modular arithmetic is "wrap-around" arithmetic.
 2. Given a *modulus* $m$, arithmetic operations on numbers "wrap around" at $m$.
 3. It is sometimes introduced as "clock arithmetic," because the temporal units which divide a day, half-day, hour, and so on wrap around at $24$, $12$, and $60$ respectively, and so provide natural examples of moduli: if it is $17:00$, waiting for $10$ hours brings one to $3:00$ on the next day, as opposed to some $27:00$.
-4. The properties of arithmetic over a modulus $m$ depend on the  set of divisors of $m$, so the description "clock arithmetic" has a critical flaw preventing it from being fully faithful to modular arithmetic.
+4. The properties of arithmetic over a modulus $m$ depend on the set of divisors of $m$, so the description "clock arithmetic" has a critical flaw preventing it from being fully faithful to modular arithmetic.
 5. That is, for e.g. hours of the day, addition and subtraction are the only arithmetic operations with motivation.
 6. The properties which make a modulus $m$ a nice choice to serve as a temporal period are the same properties which make *multiplication* modulo $m$, structurally speaking, "very bad."
 7. There is an equivalence relation between integers called *congruence modulo m*, where $m$ is a positive integer.
@@ -45,7 +45,7 @@
 43. Addition over $\mathbb{Z}$ is an abelian group. Every positive integer $n$ has a corresponding negative integer $-n$ (and vice versa) which serves as its *additive inverse.*
 44. $0$ is its own inverse, because it is the additive identity, and it follows from the definition of an identity of a group that a two-sided identity element is always its own inverse.
 45. If a set has elements without inverses w/r/t an operation, but retains closure, associativity, and an identity element, then that set and operation form a *monoid* as opposed to a group.
-46. Multiplication over $\mathbb{Z}$ is a monoid and *not* a group, because non-unit integers do not have other integers as multiplicative inverses.
+46. Multiplication over $\mathbb{Z}$ is a monoid and *not* a group, because non-unit integers do not have other integers as multiplicative inverses in the confines of this set.
 47. For any modulus $m$, any element $n$ of $\mathbb{Z}/m\mathbb{Z}$ has a corresponding element $k = m - n$ such that $n + k \equiv 0 \pmod m$, so an additive inverse is always present.
 48. From the clock perspective, this is expressed in the notion that whatever hour it is, there is always some number of hours one can wait until the day ends.
 49. From the clock perspective, the more "highly composite" a modulus $m$ is, i.e. the more divisors it has relative to its size, the better it is for convenient time-keeping.
@@ -69,6 +69,12 @@
 67. For $\varphi(p) = p - 1$ to not be the case, then there would have to be a number less than $p$ but greater than $1$ which divides $p$.
 68. So, it follows that the order of $(\mathbb{Z}/m\mathbb{Z})^{\times}$ is $\varphi(m)$, i.e. $m - 1$ if and only if $m$ is prime.
 69. It is often useful to consider the *negative* class representatives of a modulus, for the reason that $-a \equiv m-a \pmod{m}$.
-70. $1$ is its own mutiplicative inverse for any modulus, and since $(-1)(-1) = 1$, $m - 1$ is also its own multiplicative inverse for any modulus.
+70. $1$ is its own multiplicative inverse for any modulus, and since $(-1)(-1) = 1$, $m - 1$ is also its own multiplicative inverse for any modulus.
 71. Bézout's identity guarantees that if an integer $a$ is relatively prime to $m$, then there exist integers $x$ and $y$ such that $ax + my = 1$.
 72. It follows, then, that $ax \equiv{1} \pmod{m}$, i.e. $x$ is the multiplicative inverse of $a$ modulo $m$.
+
+## Exercises
+
+1. Prove that for any modulus $m$, if $a \equiv -b pmod{m}$, then $a^2 \equiv b^2 \pmod{m}$. Note that any $a \equiv -b pmod{m}$ can be written as $nm + a = km - b$ for some integers $n$, $k$.
+2. Demonstrate that $\mathbb{Q} \setminus \set{0}$, the set of non-zero rational numbers (that is, fractions $\frac{p}{q}$ of two integers $p$ and $q$, where $p$ and $q$ are both non-zero) forms a group under multiplication.
+3. Prove that if $a$ is not relatively prime to $n$, then $a$ has no multiplicative inverse modulo $n$.

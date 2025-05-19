@@ -16,7 +16,7 @@
 14. As such, $(p - 1)! \equiv -1 \pmod{p}$ holds for all prime $p$ and only for prime $p$.
 15. The above property is called Wilson's theorem.
 16. If $a$ is a natural number and $p$ is a prime number, then $a^p \equiv a \pmod {p}$.
-17. The binomial theorem is a statement about the expansion of expressions in the form $(x + y)^n$:$(x + y)^n = \sum^{n}_{k=0}\binom{n}{k}x^{k}y^{n-k};\binom{n}{k} = \frac{n!}{k!(n - k)!}$
+17. The binomial theorem is a statement about the expansion of expressions in the form $(x + y)^n$: $(x + y)^n = \sum^{n}_{k=0}\binom{n}{k}x^{k}y^{n-k};\binom{n}{k} = \frac{n!}{k!(n - k)!}$
 18. $\binom{n}{k}$ is called a *binomial coefficient,* and is read out as "$n$ choose $k$."
 19. A binomial coefficient is always an integer: all multiples of primes in the factorization of $k!(n - k)!$ must also be in the factorization of $n!$.
 20. If $n$ is prime, then $n$ divides $\binom{n}{k}$ for all $0 < k < n$. This is because $n$ always divides $n!$, but since $n$ is prime, it cannot divide $k!(n - k)!$ unless $k = 0$ or $k = n$.
@@ -57,7 +57,7 @@
 55. A subgroup always induces the same number of left cosets as it does right cosets.
 56. Every coset in a partition is *disjoint* to every other coset in the same partition.
 57. If $G$ is abelian, then the left coset partition induced by $H$ is itself the same as the right coset partition induced by $H$.
-58. The number of cosets induced in the underlying set of a group $G$by a subgroup $H$ is called the *index of $H$ in $G$* and is denoted $[G:H]$.
+58. The number of cosets induced in the underlying set of a group $G$ by a subgroup $H$ is called the *index of $H$ in $G$* and is denoted $[G:H]$.
 59. $H$ induces its own underlying set as both a left and a right coset.
 60. That is, if $e$ is the identity of $G$, then it is apparent that $\set{e * h \mid h \in H} = \set{h * e \mid h \in H}$.
 61. Moreover, if $H$ is a subgroup of $G$, then $H$ must contain the identity element of $G$.
@@ -90,3 +90,9 @@
 88. Note that, since for prime $p$, $\varphi(p) = p-1$, so one can write $a^{p-1} \equiv 1 \pmod{p}$ if $a$ is relatively prime to $p$.  
 89. This immediately implies Fermat's little theorem, or, one can say that Fermat's little theorem is a special case of Euler's theorem.
 90. That is, if one multiplies both sides of $a^{p-1} \equiv 1 \pmod{p}$ by $a$, one gets $a^{p} \equiv a \pmod{p}$.
+
+## Exercises
+
+1. If a group $G$ is cyclic of prime order, what are the subgroups of $G$?
+2. Does the converse of Lagrange's theorem hold true for abelian groups in particular? That is, if $G$ is a finite abelian group, and some number $n$ divides $|G|$, must there exist a subgroup of $G$ whose order is $n$?
+3. Demonstrate that if $H$ is a subgroup of the finite group $G$ with operation $*$, and the set of left cosets induced by $H$ is not the same as the set of right cosets induced by $H$, then the quotient set $G/H$ cannot form a group under $\circ$, defined as $\forall a, b \in G$, $(a * H) \circ (b * H) = (a * b) * H$. Hint: if the sets of left and right cosets are different, can this operation be well-defined?

@@ -64,7 +64,7 @@
 62. Since the set of all $k$-combinations of the elements of a set $S$ is effectively the power set of $S$, if $S$ has $n$ elements, then there are $2^n$ $k$-combinations of elements of $S$.
 63. If a number $a$ has $n$ prime factors and a number $b$ has $m$ prime factors, and $a$ is relatively prime to $b$, then $ab$ has $n + m$ prime factors.
 64. This is a restatement of the additivity of the small omega function.
-65. Suppose that $n = ab$ and $m=ac$ for some prime numbers $a$, $b$, and  $c$.
+65. Suppose that $n = ab$ and $m = ac$ for some prime numbers $a$, $b$, and  $c$.
 66. Then, $nm = a^2bc$, i.e. $\omega(n) = 2$ and $\omega(m) = 2$, but $\omega(nm) = 3$: this is an example of how the additive function property fails to hold for numbers which are not relatively prime.
 67. As such, the divisors of $nm$ are not exactly the products of the $k$-combinations of its prime factors $a$, $b$, and $c$.
 68. Moreover, while e.g. $\Omega(abc) = \Omega(a^2b) = 3$, the latter has fewer divisors than the former.
@@ -72,3 +72,9 @@
 70. However, multiplying $a$ by $ab$, we only gain $a^2$ and $a^2b$ as new divisors.
 71. The set of divisors of a square-free number $n$ has the same structure as the power set of the prime factors of $n$.
 72. If a number $n$ is *not* square-free, then the set of divisors of $n$ lacks this correspondence to the power set of its prime factors.
+
+## Exercises
+
+1. If $p^k$ is a prime power, i.e. $p$ is a prime number and $k$ is a positive integer, how many divisors does $p^k$ have?
+2. Show that if a prime number $p$ is greater than $3$, then it is the case that either $p = 6k + 1$ or $p = 6k - 1$ for some positive integer $k$.
+3. Demonstrate that, if $k$ is a fixed integer, then $f(n) = k^{\omega(n)}$ has the property that, for relatively prime $n$, $m$, $f(nm) = f(n)f(m)$.

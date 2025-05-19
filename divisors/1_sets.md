@@ -66,7 +66,7 @@ I am not here to justify set theory. I am here to graciously thank others for do
 60. Any subset of the domain of $f$ can also be said to have an image under $f$.
 61. There is a function of a set called the *successor* function $S(n) = n \cup \set{n}$.
 62. If, for sets $n$, $m$, $S(n) = S(m)$, then $n = m$.
-63. There is a set $I$ such that $\varnothing \in I$ and an element $n$ being in $I$ implies that $S(n)$ is in $I$.
+63. There is a set $I$ called an *inductive set* such that $\varnothing \in I$ and an element $n$ being in $I$ implies that $S(n)$ is in $I$.
 64. If we restrict $I$ such that it *only* has the empty set and its successors, then $I$ is the basis for the counting, or "natural" numbers.
 65. One can say that the natural numbers are the labels for the elements of $I$ by cardinality.
 66. The arithmetic interpretation of the successor of a natural number $n$ emerges as $S(n) = n + 1$.
@@ -94,3 +94,13 @@ I am not here to justify set theory. I am here to graciously thank others for do
 88. The successor function $s : \mathbb{N} \to \mathbb{N}$ where $s(n) = n + 1$ is injective but it is not surjective, since $0$ is in $\mathbb{N}$ but not in the image of $s$.
 89. Any function which is not surjective can be redefined as a surjective function by restricting its codomain to be the same as its image.
 90. So, the variant of the successor $s : \mathbb{N} \to \mathbb{N}$ is not bijective, but $s : \mathbb{N} \to \mathbb{Z}^{+}$ is (where $\mathbb{Z}^{+}$ is the set of all *positive* integers), even though both are described by $s(n) = n + 1$.
+
+## On exercises
+
+The methodology of solving exercises (including the trivial methodology of not solving them) is to be treated at the reader's discretion. It is at the very least recommended to read them over and it is gently suggested to give them the old college try. It is not ever out of bounds to look things up. For one, finding the right textbooks is its own exercise. For another, learning how to read Wikipedia pages on math is its own hard-won skill. And if you have the mathematical ability required in order to parse nLab or the like, then this whole text is likely so much babbling of a small child who is only now learning to count. As hard as any given exercise may end up being, trying to write the blasted things to broadly appropriate difficulty levels is surely at least as hard.
+
+## Exercises
+
+1. A function between infinite sets is one of infinitely many rules of element assignment, but a function is fully determined by the assignment of elements from one set to the other, as opposed to the abstract rule. So, a function between finite sets is one of finitely many regimes of element assignment. If $A$ and $B$ are each sets with finitely many elements, how many possible functions are there from $A$ to $B$?
+2. Prove that the sum of the first $n$ odd numbers is equal to $n^2$. Hint: *Induction* is one of the most powerful methods for proving things about numbers. Induction takes 3 steps. If one wants to prove P by (weak) induction, first, one proves a base case. For number theory problems, this is usually to prove P holds for 0 or 1. Second, one *assumes* $P$ is true for an arbitrary natural number $k$. This is called an *inductive hypothesis*. Third, one proves that $P$ holding true for $k$ implies that $P$ is also true for $k + 1$. This proves $P$ for all natural numbers.
+3. A permutation $\sigma : A \to A$ is a bijective function from a set $A$ to itself. A permutation is often thought about as a rearrangement, since the domain and image are entirely the same, but elements of $A$ are assigned to elements of $A$. If $A$ is a finite set with $n$ elements, how many permutations of $A$ exist?
