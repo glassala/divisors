@@ -128,15 +128,14 @@
 
 ## Exercises
 
-1. Does the set of all arithmetic functions $f$ for which $f(1) \neq 0$ form a group under the operation of DIrichlet convolution? Does the set of all multiplicative functions?
-2. In order for an arithmetic function $f$ to be multiplicative, it must be the case that $f(1) = 1$. Why?
-3. Find functions $f$ and $g$ such that $f$ and $g$ are both completely multiplicative, but $(f * g)$ is not completely multiplicative.
-4. Find the function $f$ such that $f = 1 * 1$.
-5. Show that $\lambda * |\mu| = \varepsilon$.
-6. Let $q(n)$ be the arithmetic function which evaluates to $1$ if $n$ is a perfect square and $0$ if $n$ is not a perfect square. Find the function $f$ such that $f * 1 = q$.
-7. Prove that if an arithmetic function $f$ is multiplicative, then its Dirichlet inverse $f^{-1}$ is also multiplicative.
-8. Let $g_{k}$ be an arithmetic function such that $g_{k}(n) = \gcd(n, k)$ for some fixed integer $k$. Demonstrate whether or not $g_{k}$ is multiplicative for all $k$.
-9. A perfect number is a number $n$ such that the sum of the proper divisors of $n$ is equal to $n$. Equivalently, $n$ is perfect if $\sigma(n) = 2n$. Where $k$ is a positive integer, prove that if $2^k - 1$ is prime, then $2^{k-1}(2^{k} - 1)$ is perfect.[^2]
+1. In order for an arithmetic function $f$ to be multiplicative, it must be the case that $f(1) = 1$. Why?
+2. Find functions $f$ and $g$ such that $f$ and $g$ are both completely multiplicative, but $(f * g)$ is not completely multiplicative.
+3. Find the function $f$ such that $f = 1 * 1$.
+4. Show that $\lambda * |\mu| = \varepsilon$.
+5. Let $q(n)$ be the arithmetic function which evaluates to $1$ if $n$ is a perfect square and $0$ if $n$ is not a perfect square. Find the function $f$ such that $f * 1 = q$.
+6. Prove that if an arithmetic function $f$ is multiplicative, then its Dirichlet inverse $f^{-1}$ is also multiplicative.
+7. Let $g_{k}$ be an arithmetic function such that $g_{k}(n) = \gcd(n, k)$ for some fixed integer $k$. Demonstrate whether or not $g_{k}$ is multiplicative for all $k$.
+8. A perfect number is a number $n$ such that the sum of the proper divisors of $n$ is equal to $n$. Equivalently, $n$ is perfect if $\sigma(n) = 2n$. Where $k$ is a positive integer, prove that if $2^k - 1$ is prime, then $2^{k-1}(2^{k} - 1)$ is perfect.[^2]
 
 ## Notes
 
