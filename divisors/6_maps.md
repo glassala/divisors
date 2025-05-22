@@ -54,7 +54,7 @@
 52. An endomorphism $\epsilon : A \to A$ is a group homomorphism from a group to a subgroup of itself.
 53. The set of endomorphisms of a group $A$ forms a group under pointwise addition if and only if $A$ is abelian. This group will be denoted $\text{End}(A)^+$.
 54. Suppose $\phi : A \to A$ and $\psi : A \to A$ are endomorphisms of $A$.
-55. For $\text{End}(A)^+$ to be a group, then $\phi + \psi$ must be endomorphisms of $A$.
+55. For $\text{End}(A)^+$ to be a group, then $\phi + \psi$ must be an endomorphism of $A$.
 56. The pointwise addition of endomorphisms $\phi$, $\psi$ of an abelian group $A = (A', *)$ is defined such that for all $a \in A'$,  $(\phi + \psi)(a) = \phi(a) * \psi(a)$.
 57. So, for endomorphisms to be themselves a group, it has to be the case that, for all endomorphisms $\phi$, $\psi$ in the set $\text{End}(A)$ and $a$, $b$ in $A$, $(\phi + \psi)(a * b) = (\phi + \psi)(a) * (\phi + \psi)(b)$.
 58. This can be rewritten to $\phi(a * b) * \psi(a * b) = \phi(a) * \phi(b) * \psi(a) * \psi(b)$.
