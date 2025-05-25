@@ -82,7 +82,7 @@
 80. The ring homomorphism $\phi : \mathbb{Z} \hookrightarrow \mathbb{Q}$ where $\phi(n) = \frac{n}{1}$ is not the only embedding of the integers into the rationals, but it can be considered the most canonical embedding.
 81. That is, $\psi : \mathbb{Z} \hookrightarrow \mathbb{Q}$ where $\psi(n) = \frac{kn}{k}$ for some $k \in \mathbb{Z}$  has an image identical to $\text{im}(\phi)$because it maps integers to the same equivalence classes, i.e. reduced fractions.
 82. The definition of $\psi$ is not "minimal," however, so it is a less attractive choice for canonization.
-83. If $R$ is an integral domain, then let $R' = R \setminus \set{0}$. Then, there is an equivalence relation $Q$ which one can impose on $R \times R'$, defined where $(a, b) \sim (x, y)$ if and only if $ay = bx$. 
+83. If $R$ is an integral domain, then let $R' = R \setminus \set{0}$. Then, there is an equivalence relation $Q$ which one can impose on $R \times R'$, defined where $(a, b) \sim (x, y)$ if and only if $ay = bx$.
 84. The equivalence classes of $(R \times R') / Q$ are *fractions*, written the form $\frac{a}{b}$, where $a$ is the *numerator* from $R$ and $b$ is the *denominator* from $R'$.
 85. Given two fractions $\frac{a}{b}$ and $\frac{x}{y}$, addition is defined as $\frac{a}{b} + \frac{x}{y} = \frac{ay + bx}{by}$ and multiplication is defined as $(\frac{a}{b}) (\frac{x}{y}) = \frac{ax}{by}$.
 86. Since $R$ is an integral domain, one can check for oneself that $(R \times R') / Q$ inherits all of the integral domain properties of $R$ with these operations.
