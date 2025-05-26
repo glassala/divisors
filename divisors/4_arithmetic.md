@@ -135,9 +135,8 @@
 5. Let $q(n)$ be the arithmetic function which evaluates to $1$ if $n$ is a perfect square and $0$ if $n$ is not a perfect square. Find the function $f$ such that $f * 1 = q$.
 6. Prove that if an arithmetic function $f$ is multiplicative, then its Dirichlet inverse $f^{-1}$ is also multiplicative.
 7. Let $g_{k}$ be an arithmetic function such that $g_{k}(n) = \gcd(n, k)$ for some fixed integer $k$. Demonstrate whether or not $g_{k}$ is multiplicative for all $k$.
-8. A perfect number is a number $n$ such that the sum of the proper divisors of $n$ is equal to $n$. Equivalently, $n$ is perfect if $\sigma(n) = 2n$. Where $k$ is a positive integer, prove that if $2^k - 1$ is prime, then $2^{k-1}(2^{k} - 1)$ is perfect.[^2]
+8. A perfect number is a number $n$ such that the sum of the proper divisors of $n$ is equal to $n$. Equivalently, $n$ is perfect if $\sigma(n) = 2n$. Where $k$ is a positive integer, prove that if $2^k - 1$ is prime, then $2^{k-1}(2^{k} - 1)$ is perfect.
 
 ## Notes
 
-[^1]: As much as I would love to take credit for this ingenious derivation of the Dirichlet inverse formula, that particular argument was fully adapted from section 2.7 of Tom M. Apostol's *Introduction to Analytic Number Theory* (1976).
-[^2]: See also exercise 18, chapter 2, Apostol.
+[^1]: See also section 2.7 of Tom M. Apostol's *Introduction to Analytic Number Theory* (1976).
