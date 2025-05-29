@@ -28,7 +28,7 @@
 20. If a number $d$ divides $n$, then the set of divisors of $d$ is a subset of the set of divisors of $n$.
 21. If $d$ is a proper divisor of $n$, then the set of divisors of $d$ is a proper subset of the divisors of $n$.
 22. A proper divisor of a natural number $n$ has strictly fewer divisors than $n$.
-23. Another characterization of a prime number $p$ is that the only proper divisor of $p$ is $1$.
+23. A characterization of a *prime number* $p$ is that the only proper divisor of $p$ is $1$.
 24. $1$ divides every integer, and uniquely has only $1$ divisor.
 25. If a positive integer $p > 1$ has exactly $2$ divisors, then its divisors are exactly $1$ and $p$.
 26. A positive integer with exactly $2$ divisors is called a prime number.
