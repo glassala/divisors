@@ -77,10 +77,85 @@
 69. We can then substitute back until we can express the GCD purely as the multiples of $a$ and $b$.
 70. To illustrate, note that $r_1 = a - bq_1$, so we can rewrite $a = bq_1 + r_1$ -> $a = bq_1 + (a - bq_1)$ and $b = r_1q_2 + r_2$ -> $b = (a - bq_1)q_2 + r_2$.
 71. Since $r_2 = b - (a - bq_1)q_2$, we can rewrite $b = (a - bq_1)q_2 + r_2$ -> $b = (a - bq_1)q_2 + (b - (a - bq_1)q_2)$, and so on.
-72. It is clear that any remainder taken through this process can be expressed as a linear combination of $a$ and $b$.
+72. It is clear that any remainder taken through this process can be expressed as a sum of multiples of $a$ and $b$.
+73. There is a function of a natural number called the *factorial* function.
+74. The factorial of a number $n$ is denoted $n!$ and characterized by a recursive formula: the base case is that $0! = 1$, and the recursive step is that $n! = (n-1)!n$.
+75. In practice, for any positive integer $n$, $n!$ is the product of every positive integer less than or equal to $n$.
+76. As a consequence of this, for all positive integers $k \le n$, $k$ divides $n!$.
+77. There are infinitely many prime numbers.
+78. This is called Euclid's theorem.
+79. Since $a > b \implies \gcd(a, b) = \gcd(b, a \pmod{b})$, for any number $n$, the only divisor common to $n$ and $n+1$ is $1$.
+80. Suppose there is a largest prime number $p$.
+81. Then, $p!$ is divisible by every prime number.
+82. However, this would imply that $p! + 1$ is divisible by *no* prime number, which cannot be the case.
+83. As such, for every largest prime number which is found, a larger prime exists.
+84. If two numbers $a$ and $b$ have a GCD of $1$, then $a$ and $b$ are called *relatively prime* to one another. A way to denote that $a$ and $b$ are relatively prime is $a \bot b$.
+85. A way to characterize a prime number $n$ is as a number which is relatively prime to every positive integer less than $n$.
+86. There is a function defined on positive integers called *Euler's phi function*.
+87. For a number $n$, $\varphi(n)$ counts the number of positive integers less than *or equal to* $n$ which are relatively prime to $n$.
+88. $1$ is the unique number which is relatively prime to itself, because $\gcd(n, n) = n$.
+89. This means that $1$ is the unique value for $n$ such that $\varphi(n) = n$.
+90. It is the case that $p$ is a prime number if and only if $\varphi(p) = p - 1$.
+91. For $\varphi(p) = p - 1$ to not be the case, then there would have to be a number less than $p$ but greater than $1$ which divides $p$.
+92. If a prime number $p$ divides a composite number $ab$, then $p$ divides at least either $a$ or $b$.
+93. If $p$ does not divide $a$, then, because $1$ is the only other divisor of $p$, $\gcd(p, a)=1$.
+94. So, there must exist integers $x$ and $y$ such that $px + ay = 1$.
+95. Suppose we multiply this expression by $b$: $pbx + aby = b$.
+96. We know that $p \mid ab$, so we can see that $p$ can be factored out of the left side, and so $p \mid b$.
+97. This property is called Euclid's lemma.
+98. This lemma is indeed a lemma about division attributed to Euclid, but it is not to be confused with Euclid's division lemma.
+99. Every natural number which is greater than $1$ has a unique representation as a product of the powers of prime numbers.
+100. The *prime factorization* of a number $n$ is the unique representation of $n$ as a product of powers of prime numbers.
+101. If $n$ is prime, then that product is exactly $n$.
+102. Since $2$ has a prime factorization, assume every number $2 < n \le k$ for some number $k$ has a prime factorization.
+103. If $k + 1$ is prime, then $k + 1$ is its factorization.
+104. If $k + 1$ is composite, then there exist numbers $a$, $b$ which are greater than $1$ and less than $k+1$ such that $k+1 = ab$.
+105. Since $a$ and $b$ have prime factorizations, $k+1$ must have one as well.
+106. Suppose a number $m$ has multiple prime factorizations.
+107. Then, there would be products $m = p_{0}p_{1}...p_{j} = q_{0}q_{1}...q_{i}$ for some $i$and $j$, where individual primes in these products are not necessarily unique.
+108. By Euclid's lemma, each term of $p_{0}p_{1}...p_{j}$, must divide at least one of $q_{0}q_{1}...q_{i}$.
+109. Since the terms of $p_{0}p_{1}...p_{j}$ and $q_{0}q_{1}...q_{i}$ are all prime numbers, however, if one term divides another term, those terms must be equal.
+110. So, each term of $p_{0}p_{1}...p_{j}$ corresponds exactly to a term of $q_{0}q_{1}...q_{i}$.
+111. As such, the prime factorization of $m$ is unique.
+112. This property is called the fundamental theorem of arithmetic.
+113. There is a function defined on positive integers called the *small omega* function $\omega$.
+114. The small omega, $\omega(n)$, counts the number of *unique* prime numbers which divide $n$.
+115. Higher powers of a number introduce no new unique prime factors, so for all positive integers $k$, $\omega(n)=\omega(n^k)$.
+116. There is a function defined on positive integers called the *big omega* function $\Omega$.
+117. The big omega, $\Omega(n)$, counts the number of prime numbers which divide $n$, including their multiples.
+118. Another way of putting it is that $\Omega(n)$ counts the sum of all powers to which the prime factors of $n$ are taken.
+119. That is, $\Omega(n^k)=k\Omega(n)$.
+120. The small omega function is an *additive* function.
+121. An additive function is a function $f$ of a positive integer such that if some numbers $a$ and $b$ are relatively prime, then $f(ab) = f(a) + f(b)$.
+122. The big omega function is a *completely additive* function.
+123. A completely additive function is a function $f$ for which the property $f(ab) = f(a) + f(b)$ holds for *all* positive integers $a$ and $b$.
+124. A *square-free* number is a positive integer such that no prime in its factorization is raised to a power higher than $1$.
+125. $1$ is square-free, because there are no primes in its factorization.
+126. Every prime number is square-free.
+127. If a composite number $ab$ is square-free, then $a \bot b$.
+128. However, if $a \bot b$, it is not necessarily the case that $ab$ is square-free, as $a$ and/or $b$ could themselves contain higher powers of primes in their factorizations.
+129. Given a set $S$, a $k$-combination of elements of $S$ is a subset of $S$ with $k$ elements.
+130. The products of numbers $a$ and $b$ which are relatively prime to one another have nicer combinatorial properties around the sets of divisors of $a$ and $b$ as opposed to products of numbers which are not relatively prime.
+131. For example, suppose $x = ab$ and $y = cd$ for some prime numbers $a$, $b$, $c$, and $d$.
+132. Then, $xy = abcd$, and as such, the divisors of $xy$ are exactly the $16$ products of $k$-combinations of its prime factors $a$, $b$, $c$, and $d$, where $1$ is the product of a $0$-combination.
+133. Since the set of all $k$-combinations of the elements of a set $S$ is effectively the power set of $S$, if $S$ has $n$ elements, then there are $2^n$ $k$-combinations of elements of $S$.
+134. If a number $a$ has $n$ prime factors and a number $b$ has $m$ prime factors, and $a$ is relatively prime to $b$, then $ab$ has $n + m$ prime factors.
+135. This is a restatement of the additivity of the small omega function.
+136. Suppose that $n = ab$ and $m = ac$ for some prime numbers $a$, $b$, and $c$.
+137. Then, $nm = a^2bc$, i.e. $\omega(n) = 2$ and $\omega(m) = 2$, but $\omega(nm) = 3$: this is an example of how the additive function property fails to hold for numbers which are not relatively prime.
+138. As such, the divisors of $nm$ are not exactly the products of the $k$-combinations of its prime factors $a$, $b$, and $c$.
+139. Moreover, while e.g. $\Omega(abc) = \Omega(a^2b) = 3$, the latter has fewer divisors than the former.
+140. Starting from $ab$, we have the divisors $1$, $a$, $b$, and $ab$.
+141. Multiplying $c$ by $ab$, we gain $c$, $ac$, $bc$, and $abc$ as new divisors.
+142. However, multiplying $a$ by $ab$, we only gain $a^2$ and $a^2b$ as new divisors.
+143. The set of divisors of a square-free number $n$ has the same structure as the power set of the prime factors of $n$.
+144. If a number $n$ is *not* square-free, then the set of divisors of $n$ lacks this correspondence to the power set of its prime factors.
 
 ## Exercises
 
 1. The least common multiple of two integers $a$ and $b$ is the smallest positive integer $c$ such that $a \mid c$ and $b \mid c$. It can be expressed as a ratio in terms of $a$, $b$, and $\gcd(a, b)$. Find and justify the expression for this ratio. Hint: since $\text{lcm}(a, b)$ is always positive, it would not be insensible to consider the absolute value function's involvement.
 2. The Fibonacci sequence is defined by a recurrence relation where $F_0 = 0$, $F_1 = 1$, and $F_n = F_{n-1} + F_{n-2}$ for $n > 1$. Show that for $n > 5$, finding $\gcd(F_n, F_{n-1})$ via Euclid's algorithm takes $n - 2$ steps.
 3. Given the expression of Bézout's identity, $ax + by = \gcd(a, b)$, the integers $x$ and $y$ are not unique, and are in fact infinite in legion. During the computation of $\gcd(a, b)$ via Euclid's algorithm, the quotient is at each step thrown away while the remainder is carried along to its destination. Using these forlorn quotients, derive an "*extended Euclidean algorithm*," which, given two integers $a$ and $b$, computes not only $\gcd(a, b)$, but also some pair of integers $x$ and $y$ such that $ax + by = \gcd(a, b)$.
+4. If $p^k$ is a prime power, i.e. $p$ is a prime number and $k$ is a positive integer, how many divisors does $p^k$ have?
+5. Show that if a prime number $p$ is greater than $3$, then it is the case that either $p = 6k + 1$ or $p = 6k - 1$ for some positive integer $k$.
+6. Demonstrate that, if $k$ is a fixed integer, then $f(n) = k^{\omega(n)}$ has the property that, for relatively prime $n$, $m$, $f(nm) = f(n)f(m)$.
