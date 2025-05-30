@@ -217,7 +217,7 @@
 215. The primitive part $P \in \mathbb{Z}[x]$ is a primitive polynomial, and via both forms of Gauss' lemma, primitive polynomials in $\mathbb{Z}[x]$ have a unique factorization into prime primitive polynomials in $\mathbb{Q}[x]$and therefore this unique factorization exists up to cleared denominators and associates in $\mathbb{Z}[x]$.
 216. Since the content and primitive part of any non-zero, non-unit integer polynomial each have unique factorizations, we can conclude that $\mathbb{Z}[x]$ is a unique factorization domain.
 
-## Exercises 8
+## Exercises
 
 1. Suppose a polynomial $Q$ has no solution in $\mathbb{Z}[x]$ but has a solution in $\mathbb{Q}[x]$. What is the degree of $Q$?
 2. Prove that maximal ideals are always prime ideals in any commutative ring.
