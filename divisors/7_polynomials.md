@@ -39,7 +39,7 @@
 37. In a similar vein, a polynomial $3x - 9$ can be factored into a product of elements of $\mathbb{Z}[x]$, namely $(3)(x-3)$.
 38. A polynomial like $x^2 - 2$ can be factored into $(x + \sqrt{2})(x - \sqrt{2})$, but this factorization requires the use of coefficients which are irrational numbers.
 39. Similarly, the polynomial $x^2 + 1$ factors into $(x + i)(x - i)$, but this factorization requires the use of coefficients which are complex numbers.
-40. This is all to say that a polynomial in some ring is *irreducible* in that ring if it cannot be factored into non-unit polynomials with coefficients in its coefficient ring.
+40. This is all to say that a non-zero, non-unit polynomial in some ring is *irreducible* in that ring if it is cannot be factored into non-unit polynomials with coefficients in its coefficient ring.
 41. So, $x^2 - 2$ and $x^2 + 1$ are irreducible in $\mathbb{Z}[x]$.
 42. Irreducibility in a ring does not mean there are no solutions which can be drawn from its coefficient ring, however.
 43. For example, $x - 1$ is irreducible in the integers, but it's clear that given the equation $x - 1 = 0$, $x= 1$.
