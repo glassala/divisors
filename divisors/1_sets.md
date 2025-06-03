@@ -1,8 +1,8 @@
-# The language of sets
+# A terse primer on the language of sets
+
+*Sets. Elements and subsets. The empty set. Cardinality of a set. Set union and intersection. Relative complement and symmetric difference. Natural numbers. Cartesian products and relations. Set functions.*
 
 I am not here to justify set theory. I am here to graciously thank others for doing the hard work of justifying set theory, so that I may use the tools it offers for talking about integers and their divisors.
-
-## A terse primer
 
 1. A set is a collection of elements.
 2. An element is an arbitrary object.

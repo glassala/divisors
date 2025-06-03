@@ -1,10 +1,8 @@
-# Divisors in brief
+# Integer divisibility
+
+*Divisor of an integer. Prime and composite numbers. Euclidean division. Greatest common divisor. Euclid's algorithm. Bézout's identity. Factorial function. Euclid's theorem. Euler's phi function. Euclid's lemma. Fundamental theorem of arithmetic. Prime omega functions. Square-free numbers.*
 
 "Number" by itself is always to be taken as meaning "natural number" or "nonzero natural number" when it doesn't make sense for zero to be part of the conversation.
-
-"->" is usually used to mean "rewrite."
-
-## Elementary divisibility
 
 1. A nonzero integer $m$ *divides* an integer $n$ if there exists an integer $k$ such that $n = mk$.
 2. A number which divides $n$ is called a *divisor* of $n$.
@@ -88,7 +86,7 @@
 80. Suppose there is a largest prime number $p$.
 81. Then, $p!$ is divisible by every prime number.
 82. However, this would imply that $p! + 1$ is divisible by *no* prime number, which cannot be the case.
-83. As such, for every largest prime number which is found, a larger prime exists.
+83. As such, for every largest prime number, a larger prime exists.
 84. If two numbers $a$ and $b$ have a GCD of $1$, then $a$ and $b$ are called *relatively prime* to one another. A way to denote that $a$ and $b$ are relatively prime is $a \bot b$.
 85. A way to characterize a prime number $n$ is as a number which is relatively prime to every positive integer less than $n$.
 86. There is a function defined on positive integers called *Euler's phi function*.
