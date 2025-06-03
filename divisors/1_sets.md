@@ -1,4 +1,4 @@
-# A terse primer on the language of sets
+# Sets
 
 *Sets. Elements and subsets. The empty set. Cardinality of a set. Set union and intersection. Relative complement and symmetric difference. Natural numbers. Cartesian products and relations. Set functions.*
 
@@ -94,10 +94,6 @@ I am not here to justify set theory. I am here to graciously thank others for do
 88. The successor function $s : \mathbb{N} \to \mathbb{N}$ where $s(n) = n + 1$ is injective but it is not surjective, since $0$ is in $\mathbb{N}$ but not in the image of $s$.
 89. Any function which is not surjective can be redefined as a surjective function by restricting its codomain to be the same as its image.
 90. So, the variant of the successor $s : \mathbb{N} \to \mathbb{N}$ is not bijective, but $s : \mathbb{N} \to \mathbb{Z}^{+}$ is (where $\mathbb{Z}^{+}$ is the set of all *positive* integers), even though both are described by $s(n) = n + 1$.
-
-## On exercises
-
-The methodology of solving exercises (including the trivial methodology of not solving them) is to be treated at the reader's discretion. It is at the very least recommended to read them over and it is gently suggested to give them the old college try. It is not ever out of bounds to look things up. For one, finding the right textbooks is its own exercise. For another, learning how to read Wikipedia pages on math is its own hard-won skill. And if you have the mathematical ability required in order to parse nLab or the like, then this whole text is likely so much babbling of a small child who is only now learning to count. As hard as any given exercise may end up being, trying to write the blasted things to broadly appropriate difficulty levels is surely at least as hard.
 
 ## Exercises
 

@@ -1,4 +1,4 @@
-# Quotient rings and finite fields
+# Quotient rings
 
 *Quotient rings. Maximal ideals. Finite fields. Polynomials over finite fields. Field with four elements.*
 
