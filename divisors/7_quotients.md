@@ -110,3 +110,13 @@
 106. We can substitute in $a$, and, knowing that $a^p - a \equiv 0 \pmod{p},$ we can write $(a - a)Q + R \equiv 0 \pmod{p}$.
 107. $(a - a)Q$ is obviously $0$, so we are left with $R \equiv 0 \pmod{p}$, meaning $X - a$ divides $X^p - X$.
 108. We can use product notation to write $X^p - X = \prod_{a \in \mathbb{F}_p}(X - a)$.
+109. There is a second Lagrange's theorem.
+110. Suppose $P \in \mathbb{F}_p[x]$ and $\text{deg}(P) = n$ for some prime $p$. Then, either $P$ is the zero polynomial, or $P$ has at most $n$ roots.
+111. If the degree of a polynomial is $0$, it has $0$ roots.
+112. Assume that for $k > 0$, if a polynomial $Q \in \mathbb{F}_p[x]$ has degree $k$, it has at most $k$ roots.
+113. Suppose $A \in \mathbb{F}_p[x]$ and $\text{deg}(A) = k + 1$, where $A$ has at least one root $r \in \mathbb{F}_p$.
+114. Then, we know that $(x - r) \mid A$, so we can write $A = (x - r)B$ for some $B \in \mathbb{F}_p[x]$.
+115. Since $\text{deg}(A) = k + 1$, the degree of $B$ must be $k$.
+116. If $A$ has a root $s \neq r$, then $b$ is a root of $B$.
+117. By the inductive hypothesis, $B$ has at most $k$ roots.
+118. So, we can conclude that $A$ has at most $k + 1$ roots, and the degree of a non-zero polynomial in $\mathbb{F}_p[x]$ is the maximum number of roots it can have.
