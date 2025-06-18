@@ -272,7 +272,7 @@
 
 135. Suppose $a, b \in \mathbb{Z}/n\mathbb{Z}^+$ and both $a$ and $b$ are relatively prime to $n$. Then, the composition of the automorphisms defined by $\phi_a(x)$ and $\phi_b(x)$ for some $x \in \mathbb{Z}/n\mathbb{Z}^+$ takes the form $\phi_a(\phi_b(x)) = \phi_b(\phi_a(x)) =  abx$, and can be written $\phi_{ab}(x) = abx.$
 
-136. It is clear from this that composition of automorphisms of $\mathbb{Z}/n\mathbb{Z}^+$ inherits the group properties of $\mathbb{Z}/n\mathbb{Z}^{\times},$ and we can conclude that $\text{Aut}(\mathbb{Z}/n\mathbb{Z}^+) \cong \mathbb{Z}/n\mathbb{Z}^{\times}$.
+136. It is clear from this that composition of automorphisms of $\mathbb{Z}/n\mathbb{Z}^+$ inherits the identity and inverses of $\mathbb{Z}/n\mathbb{Z}^{\times},$ and we can conclude that $\text{Aut}(\mathbb{Z}/n\mathbb{Z}^+) \cong \mathbb{Z}/n\mathbb{Z}^{\times}$.
 
 137. Let $p$ be an odd prime, and let $k$ be relatively prime to $p$. Let $n$be the order of $k$ in $\mathbb{Z}/p\mathbb{Z}^{\times}$. Then, the automorphism $\pi_k \in \text{Aut}(\mathbb{Z}/p\mathbb{Z}^+)$defined by $\pi_k(x) \equiv kx \pmod{p}$ consists of $\frac{p-1}{n}$ disjoint cycles of length $n$ and one fixed point $(0)$.
 
