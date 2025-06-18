@@ -20,7 +20,7 @@ I am not here to justify set theory. I am here to graciously thank others for do
 
 8. We write this: $A = \set{x \in B \mid P(x)}$.
 
-9.  A calque of this is: $A$ is the set of elements $x$ in $B$ which satisfy the property described by $P$.
+9. A calque of this is: $A$ is the set of elements $x$ in $B$ which satisfy the property described by $P$.
 
 10. We write that $A$ is a subset of $B$ as $A \subseteq B$.
 

@@ -273,3 +273,25 @@
 135. Suppose $a, b \in \mathbb{Z}/n\mathbb{Z}^+$ and both $a$ and $b$ are relatively prime to $n$. Then, the composition of the automorphisms defined by $\phi_a(x)$ and $\phi_b(x)$ for some $x \in \mathbb{Z}/n\mathbb{Z}^+$ takes the form $\phi_a(\phi_b(x)) = \phi_b(\phi_a(x)) =  abx$, and can be written $\phi_{ab}(x) = abx.$
 
 136. It is clear from this that composition of automorphisms of $\mathbb{Z}/n\mathbb{Z}^+$ inherits the group properties of $\mathbb{Z}/n\mathbb{Z}^{\times},$ and we can conclude that $\text{Aut}(\mathbb{Z}/n\mathbb{Z}^+) \cong \mathbb{Z}/n\mathbb{Z}^{\times}$.
+
+137. Let $p$ be an odd prime, and let $k$ be relatively prime to $p$. Let $n$be the order of $k$ in $\mathbb{Z}/p\mathbb{Z}^{\times}$. Then, the automorphism $\pi_k \in \text{Aut}(\mathbb{Z}/p\mathbb{Z}^+)$defined by $\pi_k(x) \equiv kx \pmod{p}$ consists of $\frac{p-1}{n}$ disjoint cycles of length $n$ and one fixed point $(0)$.
+
+138. Consider that the powers of any $k \in \mathbb{Z}/p\mathbb{Z}^{\times}$ generate a cyclic subgroup of $\mathbb{Z}/p\mathbb{Z}^{\times}$ with order $n$.
+
+139. We can write the $n$-fold composition of some $\pi_k \in \text{Aut}(\mathbb{Z}/p\mathbb{Z}^+)$ with itself at some $x \in \mathbb{Z}/p\mathbb{Z}^+$ as $\pi_k^n(x) \equiv \pi_{k^n}(x) \equiv k^n x \pmod{p}$.
+
+140. This leads us to the conclusion that the order of $\pi_k \in \text{Aut}(\mathbb{Z}/p\mathbb{Z}^+)$ is exactly $n$.
+
+141. By Lagrange's theorem, $n$ must divide $|\mathbb{Z}/p\mathbb{Z}^{\times}| = p-1$, and, moreover, $\langle{k}\rangle$ partitions $\mathbb{Z}/p\mathbb{Z}^{\times}$ into $\frac{p-1}{n}$ disjoint cosets of size $n.$
+
+142. These cosets are all of the form $x\langle{k}\rangle = \set{xk' \mid k' \in \langle{k}\rangle}$ for $x \in \mathbb{Z}/p\mathbb{Z}^{\times},$ which are exactly the non-fixed cycles of $\pi_k.$
+
+143. It follows from this that if $g$ is a primitive root, then $\pi_g$ is an automorphism of $\mathbb{Z}/p\mathbb{Z}^+$ with cycle type $(p-1, 1)$, or, alternatively, a permutation of $\mathbb{Z}/p\mathbb{Z}^{\times}$ with cycle type $(p-1)$.
+
+144. Since $p$ is odd, $p-1$ is always even, and so $\text{sgn}(\pi_g) = -1$.
+
+145. Let $\pi_{-1}(x) \equiv -x \pmod{p}$ be a permutation of $\mathbb{Z}/p\mathbb{Z}^{\times}$ for an odd prime $p$. Because $-1$ is the unique element of order $2$ for any odd prime modulus, the cycles of $\pi_{-1}$ are all disjoint transpositions.
+
+146. As such, $\pi_{-1}$ consists of $\frac{p-1}{2}$ $2$-cycles.
+
+147. Therefore, $\pi_{-1}$ is even when $p \equiv 1 \pmod{4}$ and odd when $p \equiv 3 \pmod{4}.$
