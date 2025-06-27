@@ -1,4 +1,4 @@
-# Reciprocity
+# Quadratic reciprocity
 
 *Quadratic residues. Euler's criterion. Legendre symbol. Gauss' lemma for quadratic residues. Zolotarev's lemma. Quadratic reciprocity.*
 
