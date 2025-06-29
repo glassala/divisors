@@ -154,13 +154,11 @@
 
 76. Since $R$ is an integral domain, one can check for oneself that $(R \times R') / Q$ inherits all of the integral domain properties of $R$ with these operations.
 
-77. Note that $(R \times R') / Q$ is a ring, but $Q$ is an equivalence relation and not an ideal, so $(R \times R') / Q$ is a ring over a quotient set but not a quotient ring.
+77. Since $(\frac{p}{q})(\frac{q}{p}) = 1$ for nonzero $p$ and $q$, it follows that every non-zero element in $(R \times R') / Q$ is a unit, which means that it forms a field.
 
-78. Since $(\frac{p}{q})(\frac{q}{p}) = 1$ for nonzero $p$ and $q$, it follows that every non-zero element in $(R \times R') / Q$ is a unit, which means that it forms a field.
+78. We denote the field $(R \times R') / Q$ as $\text{Frac}(R)$, and call it the *field of fractions* of $R$.
 
-79. We denote the field $(R \times R') / Q$ as $\text{Frac}(R)$, and call it the *field of fractions* of $R$.
-
-80. The field $\text{Frac}(\mathbb{Z})$ is exactly the field of rational numbers $\mathbb{Q}$.
+79. The field $\text{Frac}(\mathbb{Z})$ is exactly the field of rational numbers $\mathbb{Q}$.
 
 ## Exercises
 
