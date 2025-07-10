@@ -198,7 +198,7 @@
 
 98. It can help to look at this from the view of a polynomial as a list of coefficients indexed by power.
 
-99.  Accounting for terms with a coefficient of $0$, for each term of a polynomial, there are $p$ choices for the coefficient of that term.
+99. Accounting for terms with a coefficient of $0$, for each term of a polynomial, there are $p$ choices for the coefficient of that term.
 
 100. That is, if $k$ is the degree of a polynomial, the set of all polynomials with degree less than $k$ in $\mathbb{F}_p[X]$ is effectively the set of all ordered $k$-tuples of the form $(a_0, a_1, {...}, a_{k-1})$, where $a_i \in \mathbb{F}_p.$
 
