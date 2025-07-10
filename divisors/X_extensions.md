@@ -1,6 +1,6 @@
-# Field extensions
+# Extensions
 
-*Vector spaces and properties of vectors. Linear combinations. Linear dependence and independence. Vector subspaces. Span and basis. Steinitz exchange lemma. Dimension of a vector space. Linear maps. Field extensions. Splitting fields. Adjunctions and simple extensions. Algebraic elements. Minimal polynomials. Formal derivative of a polynomial. Splitting field of $x^q$*
+*Vector spaces and properties of vectors. Linear combinations. Linear dependence and independence. Vector subspaces. Span and basis. Steinitz exchange lemma. Dimension of a vector space. Linear maps. Field extensions. Splitting fields. Adjunctions and simple extensions. Integral and algebraic elements. Minimal polynomials. Formal derivative of a polynomial. Splitting field of $x^q.$*
 
 1. A *vector space* $V$ is a set of $n$-tuples called *vectors* whose components are called *scalars*, where scalars are elements from some field $K$.
 
@@ -104,126 +104,198 @@
 
 51. Suppose $V$ is a two-dimensional vector space over a field $K,$ where $a, b, c, d \in K.$ Then, a linear map $f : V \to V$ can be written in the general form $f(x, y) = (ax + by, cx + dy)$ for basis vectors $x, y.$
 
-52. If $K$ and $L$ are fields such that $K \subseteq L$, then $K$ is a *subfield* of $L$, and $L$ is said to be an *extension* of $K$.
+52. If the dimension of a vector space $V$ is a non-negative integer $n,$ then an endomorphism of $V$ can be written as an $n$-tuple of linear combinations of $n$ basis vectors, where each vector is scaled by some factor in $K.$
 
-53. If $L$ is an extension of a field $K$, we can write $L : K$, which can be read as "$L$ over $K$."
+53. It is left to the doubly-indexed-sum-loving reader to derive the $n$-dimensional general form.
 
-54. A field which has no proper subfields is called a *prime field.*
+54. Linear maps of a given vector space can be added together.
 
-55. The archetypal examples are $\mathbb{F}_p$ for prime $p$ and the field of rational numbers $\mathbb{Q}.$
+55. For example, if $f(x, y) = (a_1 x + b_1 y, c_1 x + d_1 y)$ and $g(x, y) = (a_2 x + b_2 y, c_2 x + d_2 y)$ for basis vectors $x, y \in V,$ then $(f + g)(x, y) = ((a_1 + a_2)x + (b_1 + b_2)y, (c_1 + c_2)x + (d_1 + d_2)y).$
 
-56. If $L$ extends $K,$ then $L$ is a vector space with scalars in $K.$
+56. Let $V$ be a vector space over a field $K$ such that $\dim(V) = 2.$ Then, the subspaces of $V$ which are not $\set{0}$ or $V$ itself are exactly the sets of the form $\set{kv \mid k \in K}$ for a fixed vector $V.$
 
-57. The degree $[L:K]$ of the field extension $L : K$ is the dimension of $L$ considered as a vector space over $K.$
+57. Likewise, if we suppose $V$ is a three-dimensional vector space over $K$ and $x, y \in V$ are fixed and linearly independent, then the non-trivial proper subspaces of $V$ take the form $\set{ax + by \mid a, b \in K}.$
 
-58. For example, $\mathbb{Q}[i]$ is an extension of $\mathbb{Q}.$
+58. Any field $K$ can be interpreted as a one-dimensional vector space over itself.
 
-59. Every element of $\mathbb{Q}[i]$ can be written as a linear combination of $1$ and $i$ with scalars drawn from $\mathbb{Q}.$
+59. As such, if $V$ is a vector space over $K,$ then a function $f : V \to K$ which satisfies $f(v + w) = f(v) + f(w)$ and $f(kv) = kf(v)$ for $v, w \in V$ and $k \in K$ is a linear map.
 
-60. That is, one can view $a + bi \in \mathbb{Q}[i]$ as a vector $(a, b),$ and, as such, $\set{1, i}$ is a standard basis for the space $\mathbb{Q}[i].$
+60. A linear map from a vector space to its field of scalars is called a *linear form.*
 
-61. Then, $[\mathbb{Q}[i]: \mathbb{Q}] = 2.$
+61. Suppose $1 \le k \le n$ are integers and $\pi_k : V \to K$ for a vector space $V$over a field $K.$ If we define $\pi_k$ as $\pi_k(x_1, x_2, {...}, x_n) = x_k,$ then $\pi_k$ is an example of a linear form.
 
-62. Given a polynomial $P$ with coefficients in a field $K,$ the *splitting field* of $P$ is the smallest field extension of $K$ in which $P$ factors into a product of linear polynomials.
+62. There is a notion of a *quotient space* of a vector space.
 
-63. That is, if $L$ is the minimal-degree extension $L : K$ such that a polynomial $P$ in $K[x]$ factors into the product $P(x) = k\prod^{\text{deg}(P)}_{i = 1}(x - a_i)$ for $k \in K$ and $a_i \in L,$ then $L$ is the splitting field of $P.$
+63. Let $V$ be a vector space and let $S$ be a subspace of $V.$ Then, elements of $V/S$ are classes of the form $[v] = v + S = \set{v + s \mid s \in S}$ for $v \in V.$
 
-64. For example, $\mathbb{Q}[i]$ is the splitting field for $x^2 + 1 \in \mathbb{Q}[x].$
+64. For $u, v \in V$ and $k \in K,$ we define vector addition on $V/S$ as $[u] + [v] = [u + v]$ and scalar multiplication by $k[v] = [kv].$
 
-65. Let $L : K$ be a field extension. If $\lambda \in L$ is algebraic over $K,$ then the *adjunction* $K[\lambda]$ of $\lambda$ to $K$ is the set of all linear combinations in the form $a + b\lambda$ for $a, b \in K.$
+65. Linear maps have a notion of kernel and image: the kernel of a linear map $f : V \to W$ is the subspace of $V$ which maps to the zero vector under $f$, and $\text{im}(f) = \set{f(v) \mid v \in V}$ is a subspace of $W.$
 
-66. A field extension consisting of a single adjunction $K[\lambda] : K$ is called a *simple* extension.
+66. It follows that we have $V/\text{ker}(f) \cong \text{im}(f).$
 
-67. $\mathbb{Q}[i]$ and $\mathbb{Q}[\sqrt{2}]$ are examples of simple extensions.
+67. A polynomial ring over a field can be seen to satisfy the axioms of a vector space.
 
-68. If $n$ is a positive integer, we can define the *square root* $\sqrt{n}$ as the value $x$ such that $x^2 = n.$
+68. That is, polynomial addition is vector addition and polynomials respect scalar multiplication and the distributive laws.
 
-69. Similarly for the square roots of negative numbers, because $(-i)^2 = i^2 = -1,$ we refer to a *principal square root* such that $\sqrt{-n} = i\sqrt{n}.$
+69. A polynomial ring over a field is an infinite-dimensional vector space.
 
-70. It follows from this that we can also write $\mathbb{Q}[i]$ as $\mathbb{Q}[\sqrt{-1}].$
+70. That is, the standard basis for a polynomial ring in $x$ is $\set{1, x, x^2, x^3, {...}}.$
 
-71. Much like we could construct $\mathbb{Z}[i]$ via the quotient of $\mathbb{Z}[x]$ and the ideal generated by the irreducible polynomial $x^2 + 1,$ we can construct a ring $\mathbb{Z}[x]/(x^2 - 2)$ which is governed by a rule such that $x^2 \equiv 2 \pmod{x^2 - 2}.$
+71. Since a polynomial is a finite sum of monomials, a polynomial as an infinite-dimensional vector has finitely many non-zero elements.
 
-72. In the ring $\mathbb{Z}[x]/(x^2 - 2),$ we can then write every element in the form $q = a + b\sqrt{2}$ for integers $a$ and $b.$
+72. Suppose $L$ is a field. The evaluation map $\text{ev}_k : L[x] \to L$ at a fixed element $k \in L$ defined as $\text{ev}_k(P) = P(k)$ is a linear form.
 
-73. As such, we write $\mathbb{Z}[x]/(x^2 - 2)$ as $\mathbb{Z}[\sqrt{2}].$
+73. If $K$ and $L$ are fields such that $K \subseteq L$, then $K$ is a *subfield* of $L$, and $L$ is said to be an *extension* of $K$.
 
-74. Since $x^2 - 2$ is irreducible in $\mathbb{Z}[x],$ it generates a prime ideal $(x^2 - 2)$ so $\mathbb{Z}[\sqrt{2}]$ is an integral domain.
+74. If $L$ is an extension of a field $K$, we can write $L : K$, which can be read as "$L$ over $K$."
 
-75. Then, like with $\mathbb{Q}[i]$ from $\mathbb{Z}[i],$ we can construct a field of fractions $\mathbb{Q}[\sqrt{2}]$ from $\mathbb{Z}[\sqrt{2}].$
+75. A field which has no proper subfields is called a *prime field.*
 
-76. We have $(a + b\sqrt{2}) + (c + d\sqrt{2}) = (a + c) + (b + d)\sqrt{2}$ for addition and $(a + b\sqrt{2})(c + d\sqrt{2}) = (ac + 2bd) + (ad + bc)\sqrt{2}.$
+76. The archetypal examples are $\mathbb{F}_p$ for prime $p$ and the field of rational numbers $\mathbb{Q}.$
 
-77. The field extension $\mathbb{Q}[\sqrt{2}]: \mathbb{Q}$ has a basis of $\set{1, \sqrt{2}}$ and as such also has a degree of $2.$
+77. If $L$ extends $K,$ then $L$ is a vector space with scalars in $K.$
 
-78. Suppose an element $r$ is the root of a non-zero polynomial in $K[x]$ for a field $K.$ Then, $r$ is said to be *algebraic over $K.$*
+78. The degree $[L:K]$ of the field extension $L : K$ is the dimension of $L$ considered as a vector space over $K.$
 
-79. Let $L : K$ be a field extension. If every element of $L$ is algebraic over $K[x],$ then $L : K$ is an *algebraic extension.*
+79. For example, $\mathbb{Q}[i]$ is an extension of $\mathbb{Q}.$
 
-80. If $K$ is a field, then the set of all roots of polynomials in $K[x]$ is called the *algebraic closure* of $K.$
+80. Every element of $\mathbb{Q}[i]$ can be written as a linear combination of $1$ and $i$ with scalars drawn from $\mathbb{Q}.$
 
-81. Suppose $L$ extends the field $K$ and $a \in L.$ If $a$ is algebraic over $K,$ then the *minimal polynomial* of $a$ is the (non-zero) monic polynomial $P$ of lowest degree in $K[x]$ such that $a$ is a root of $P.$
+81. That is, one can view $a + bi \in \mathbb{Q}[i]$ as a vector $(a, b),$ and, as such, $\set{1, i}$ is a standard basis for the space $\mathbb{Q}[i].$
 
-82. For example, the minimal polynomial of $i$ in $\mathbb{Q}$ is $x^2 + 1$ and the minimal polynomial of $\sqrt{2}$ in $\mathbb{Q}$ is $x^2 - 2.$
+82. Then, $[\mathbb{Q}[i]: \mathbb{Q}] = 2.$
 
-83. Note that the minimal polynomial of $1 + i$ in $\mathbb{Q}$ is also $x^2 - 2.$
+83. Given a polynomial $P$ with coefficients in a field $K,$ the *splitting field* of $P$ is the smallest field extension of $K$ in which $P$ factors into a product of linear polynomials.
 
-84. A minimal polynomial is always irreducible.
+84. That is, if $L$ is the minimal-degree extension $L : K$ such that a polynomial $P$ in $K[x]$ factors into the product $P(x) = k\prod^{\text{deg}(P)}_{i = 1}(x - a_i)$ for $k \in K$ and $a_i \in L,$ then $L$ is the splitting field of $P.$
 
-85. That is, if $P = AB$ for non-unit polynomials over a field, then the integral domain property ensures that if $a$ is a root of $P$, then it must be a root of either $A$ or $B.$
+85. For example, $\mathbb{Q}[i]$ is the splitting field for $x^2 + 1 \in \mathbb{Q}[x].$
 
-86. If an element of a field extension $L : K$ has a minimal polynomial, then that element has only one minimal polynomial.
+86. Let $L : K$ be a field extension. If $\lambda \in L$ is algebraic over $K,$ then the *adjunction* $K[\lambda]$ of $\lambda$ to $K$ is the set of all linear combinations in the form $a + b\lambda$ for $a, b \in K.$
 
-87. Suppose $r \in L$ has minimal polynomials $M_1, M_2 \in K[x].$
+87. A field extension consisting of a single adjunction $K[\lambda] : K$ is called a *simple* extension.
 
-88. Consider the evaluation map $\alpha_r : K[x] \to L$ defined by $\alpha(P) = P(r),$ i.e. sending any $P \in K[x]$ to the value of the polynomial function of $P$ at $r.$
+88. $\mathbb{Q}[i]$ and $\mathbb{Q}[\sqrt{2}]$ are examples of simple extensions.
 
-89. Polynomial arithmetic tells us that this map is a ring homomorphism, so the kernel of $\alpha_r$ must be an ideal of $K[x].$
+89. If $k$ is a positive integer, we can define the *square root* $\sqrt{k}$ as the value $x$ such that $x^2 = k.$
 
-90. By definition, $M_1, M_2 \in \text{ker}(\alpha_r).$
+90. By the laws of exponents, we can write a square root $\sqrt{k}$ as a fractional power $k^{\frac{1}{2}}.$
 
-91. Since $K$ is a field, $\text{ker}(\alpha_r)$ must be a principal ideal.
+91. We also say that if $x^n = k,$ then $\sqrt[n]{k} = k^{\frac{1}{n}} = x,$ and $x$ is an $n$-th root of $k.$
 
-92. So, $M_1$ and $M_2$ must be multiples of the generator of $\text{ker}(\alpha_r).$
+92. Similarly for the square roots of negative numbers, because $(-i)^2 = i^2 = -1,$ we refer to a *principal square root* such that $\sqrt{-n} = i\sqrt{n}.$
 
-93. However, $M_1$ and $M_2$ are both irreducible, so $M_1$ must be an associate of $M_2.$
+93. It follows from this that we can also write $\mathbb{Q}[i]$ as $\mathbb{Q}[\sqrt{-1}].$
 
-94. Since $M_1$ and $M_2$ must be monic, $M_1 = M_2.$
+94. Much like we could construct $\mathbb{Z}[i]$ via the quotient of $\mathbb{Z}[x]$ and the ideal generated by the irreducible polynomial $x^2 + 1,$ we can construct a ring $\mathbb{Z}[x]/(x^2 - 2)$ which is governed by a rule such that $x^2 \equiv 2 \pmod{x^2 - 2}.$
 
-95. There is a notion of a *formal derivative* of a polynomial. Given a polynomial of the form $P = a_n x^n + a_{n-1} x^{n-1} + {...} + a_0,$ the formal derivative of $P$ is the polynomial $P' = na_n x^{n-1} + (n-1)a_{n-1}x^{n-2} + {...} + a_1.$
+95. In the ring $\mathbb{Z}[x]/(x^2 - 2),$ we can then write every element in the form $q = a + b\sqrt{2}$ for integers $a$ and $b.$
 
-96. If $a, b$ are elements of a ring $R$ and $P, Q \in R[x],$ then $(aP + bQ)' = aP' + bQ'.$
+96. As such, we write $\mathbb{Z}[x]/(x^2 - 2)$ as $\mathbb{Z}[\sqrt{2}].$
 
-97. The formal derivative of a polynomial which is the product of polynomials satisfies the *product rule,* where $(PQ)' = P'Q + PQ'.$
+97. Since $x^2 - 2$ is irreducible in $\mathbb{Z}[x],$ it generates a prime ideal $(x^2 - 2)$ so $\mathbb{Z}[\sqrt{2}]$ is an integral domain.
 
-98. The proof of this is annoying enough that it is left as an exercise for the reader.
+98. Then, like with $\mathbb{Q}[i]$ from $\mathbb{Z}[i],$ we can construct a field of fractions $\mathbb{Q}[\sqrt{2}]$ from $\mathbb{Z}[\sqrt{2}].$
 
-99. By the Euclidean algorithm, if $K$ is a field and $P \in K[x],$ then for a root $r$ of $P$ and a non-zero polynomial $Q \in K[x],$ we can write $P$ as a product $P = (x - r)^{m}Q,$ where $m$ is the *multiplicity* of $r$ as a root of $P.$
+99. We have $(a + b\sqrt{2}) + (c + d\sqrt{2}) = (a + c) + (b + d)\sqrt{2}$ for addition and $(a + b\sqrt{2})(c + d\sqrt{2}) = (ac + 2bd) + (ad + bc)\sqrt{2}.$
 
-100. The product rule tells us we can write the formal derivative $P' = m(x-r)^{m-1}Q + (x - r)^m Q.$ If we factor out $(x-r)^{m-1},$ we get a polynomial $A = mQ + (x - r)Q.$
+100. The field extension $\mathbb{Q}[\sqrt{2}]: \mathbb{Q}$ has a basis of $\set{1, \sqrt{2}}$ and as such also has a degree of $2.$
 
-101. Then, we can write $P' = (x - r)^{m-1}A.$
+101. Let $S$ be a subring of $R$. Then, an element $r \in R$ is *integral over*$S$ if $r$ is the root to a monic polynomial in $S[x].$
 
-102. So, if and only if a polynomial $P$ has multiple roots $r$ (i.e. if $m > 1$) then the polynomial function $P'(r) = 0.$
+102. The set of elements $r$ in $R$ which are integral over $S$ is called the *integral closure* of $S$ in $R.$
 
-103. Consider the polynomial $x^q - x$ in $\mathbb{F}_p[x]$ where $q = p^k$ for some prime $p$ and positive integer $k.$
+103. We can also say that, if every element of $R$ is integral over $S,$then $R$ is an *integral extension* of $S.$
 
-104. The formal derivative of this polynomial is $qx^{q-1} - 1.$ Since $q$ is a multiple of $p$, $qx^{q-1}$ vanishes modulo $p,$ and we are left with $-1.$
+104. Suppose $K$ is the field of fractions of an integral domain $R.$ Then, if the integral closure of $R$ in $K$ is $R$ itself, then $R$ is an *integrally closed domain.*
 
-105. Since $-1 \neq 0$, $x^q - x$ has no repeated roots in $\mathbb{F}_p[x].$
+105. Any unique factorization domain is integrally closed.
 
-106. Then, $x^q - x$ has exactly $q$ roots, so the splitting field of $x^q - x$must contain at least these $q$ elements.
+106. To illustrate, suppose $R$ is a unique factorization domain, $K = \text{Frac}(R),$ and $k \in K$ is integral over $R.$
 
-107. Let $K$ be the splitting field of $x^q - x \in \mathbb{F}_p[x].$ By definition, all of the roots of $x^q - x$ are in $K$, so let $R = \set{r \in K \mid r^q = r}$ be that set of $q$ roots.
+107. We can write $k = \frac{a}{b}$ for relatively prime $a,b \in R.$
 
-108. Since $(ab)^q = a^q b^q$ generally, and $q = p^k$ means $(a + b)^q = a^q + b^q,$ $a + b, ab \in R.$
+108. Since $k$ is integral over $R,$ we can write $k^n + c_{n-1}k^{n-1} + {...} + c_0 = 0$ for $c_i \in R.$
 
-109. Since $(-r)^q = (-1)^q r^q,$ and $(-1)^q = -1,$ $-r \in R.$
+109. It follows that we can rewrite this as $\frac{a^n}{b^n} + c_{n-1}\frac{a^{n-1}}{b^{n-1}} + {...} + c_0 = 0,$ then clear denominators and rearrange terms to get $a^n = -b(c_{n-1}a^{n-1} + {...} + c_0 b^{n-1}),$ which means $b$ divides $a^n,$ indicating that $b$ is a unit, since otherwise this would mean either $a$ is not relatively prime to $b$ or unique factorization fails.
 
-110. Since $(r^q)^{-1} = (r^{-1})^q$ and $r^q = r,$ $r^{-1} \in R.$
+110. The fact that unique factorization domains are always integrally closed implies that if the square root of an integer is not an integer, it is not a rational number either.
 
-111. By Fermat's little theorem, $\mathbb{F}_p$ is a subfield of $R.$
+111. An example of a ring which is not integrally closed is the ring $\mathbb{Z}[\sqrt{5}],$ which one can naturally construct by taking the quotient $\mathbb{Z}[x]/(x^2 - 5).$
 
-112. Since $R$ is a field which includes and $\mathbb{F}_p$ and contains exactly the $q$ roots of $x^q - x,$ it must be the splitting field $K$ of $x^q - x \in \mathbb{F}_p[x].$
+112. The field of fractions of $\mathbb{Z}[\sqrt{5}]$ is called the *golden field* $\mathbb{Q}[\sqrt{5}],$where every element can be written $a + b\sqrt{5}$ for $a, b \in \mathbb{Q}.$
 
-113. Since $K$ is a field with $q$ elements, $K \cong \mathbb{F}_q.$
+113. Since $x^2 - x - 1$ is a polynomial with all coefficients in $\mathbb{Z}[\sqrt{5}],$ but the value $\frac{1}{2} + \frac{1}{2}\sqrt{5}$ (aka, the *golden ratio* $\varphi = \frac{1 + \sqrt{5}}{2}$) is a root of this polynomial, and $\varphi$ is in $\mathbb{Q}[\sqrt{5}]$ but not in $\mathbb{Z}[\sqrt{5}],$ we can say that $\mathbb{Z}[\sqrt{5}]$ is not integrally closed.
+
+114. Suppose an element $r$ is the root of a non-zero polynomial in $K[x]$ for a field $K.$ Then, $r$ is said to be *algebraic over $K.$*
+
+115. Let $L : K$ be a field extension. If every element of $L$ is algebraic over $K[x],$ then $L : K$ is an *algebraic extension.*
+
+116. If $K$ is a field, then the set of all roots of polynomials in $K[x]$ is called the *algebraic closure* of $K.$
+
+117. Suppose $L$ extends the field $K$ and $a \in L.$ If $a$ is algebraic over $K,$ then the *minimal polynomial* of $a$ is the (non-zero) monic polynomial $P$ of lowest degree in $K[x]$ such that $a$ is a root of $P.$
+
+118. For example, the minimal polynomial of $i$ in $\mathbb{Q}$ is $x^2 + 1$ and the minimal polynomial of $\sqrt{2}$ in $\mathbb{Q}$ is $x^2 - 2.$
+
+119. Note that the minimal polynomial of $1 + i$ in $\mathbb{Q}$ is also $x^2 - 2.$
+
+120. A minimal polynomial is always irreducible.
+
+121. That is, if $P = AB$ for non-unit polynomials over a field, then the integral domain property ensures that if $a$ is a root of $P$, then it must be a root of either $A$ or $B.$
+
+122. If an element of a field extension $L : K$ has a minimal polynomial, then that element has only one minimal polynomial.
+
+123. Suppose $r \in L$ has minimal polynomials $M_1, M_2 \in K[x].$
+
+124. Consider the evaluation map $\alpha_r : K[x] \to L$ defined by $\alpha(P) = P(r),$ i.e. sending any $P \in K[x]$ to the value of the polynomial function of $P$ at $r.$
+
+125. Polynomial arithmetic tells us that this map is a ring homomorphism, so the kernel of $\alpha_r$ must be an ideal of $K[x].$
+
+126. By definition, $M_1, M_2 \in \text{ker}(\alpha_r).$
+
+127. Since $K$ is a field, $\text{ker}(\alpha_r)$ must be a principal ideal.
+
+128. So, $M_1$ and $M_2$ must be multiples of the generator of $\text{ker}(\alpha_r).$
+
+129. However, $M_1$ and $M_2$ are both irreducible, so $M_1$ must be an associate of $M_2.$
+
+130. Since $M_1$ and $M_2$ must be monic, $M_1 = M_2.$
+
+131. There is a notion of a *formal derivative* of a polynomial. Given a polynomial of the form $P = a_n x^n + a_{n-1} x^{n-1} + {...} + a_0,$ the formal derivative of $P$ is the polynomial $P' = na_n x^{n-1} + (n-1)a_{n-1}x^{n-2} + {...} + a_1.$
+
+132. If $a, b$ are elements of a ring $R$ and $P, Q \in R[x],$ then $(aP + bQ)' = aP' + bQ'.$
+
+133. The formal derivative of a polynomial which is the product of polynomials satisfies the *product rule,* where $(PQ)' = P'Q + PQ'.$
+
+134. The proof of this is annoying enough that it is left as an exercise for the reader.
+
+135. By the Euclidean algorithm, if $K$ is a field and $P \in K[x],$ then for a root $r$ of $P$ and a non-zero polynomial $Q \in K[x],$ we can write $P$ as a product $P = (x - r)^{m}Q,$ where $m$ is the *multiplicity* of $r$ as a root of $P.$
+
+136. The product rule tells us we can write the formal derivative $P' = m(x-r)^{m-1}Q + (x - r)^m Q.$ If we factor out $(x-r)^{m-1},$ we get a polynomial $A = mQ + (x - r)Q.$
+
+137. Then, we can write $P' = (x - r)^{m-1}A.$
+
+138. So, if and only if a polynomial $P$ has multiple roots $r$ (i.e. if $m > 1$) then the polynomial function $P'(r) = 0.$
+
+139. Consider the polynomial $x^q - x$ in $\mathbb{F}_p[x]$ where $q = p^k$ for some prime $p$ and positive integer $k.$
+
+140. The formal derivative of this polynomial is $qx^{q-1} - 1.$ Since $q$ is a multiple of $p$, $qx^{q-1}$ vanishes modulo $p,$ and we are left with $-1.$
+
+141. Since $-1 \neq 0$, $x^q - x$ has no repeated roots in $\mathbb{F}_p[x].$
+
+142. Then, $x^q - x$ has exactly $q$ roots, so the splitting field of $x^q - x$must contain at least these $q$ elements.
+
+143. Let $K$ be the splitting field of $x^q - x \in \mathbb{F}_p[x].$ By definition, all of the roots of $x^q - x$ are in $K$, so let $R = \set{r \in K \mid r^q = r}$ be that set of $q$ roots.
+
+144. Since $(ab)^q = a^q b^q$ generally, and $q = p^k$ means $(a + b)^q = a^q + b^q,$ $a + b, ab \in R.$
+
+145. Since $(-r)^q = (-1)^q r^q,$ and $(-1)^q = -1,$ $-r \in R.$
+
+146. Since $(r^q)^{-1} = (r^{-1})^q$ and $r^q = r,$ $r^{-1} \in R.$
+
+147. By Fermat's little theorem, $\mathbb{F}_p$ is a subfield of $R.$
+
+148. Since $R$ is a field which includes and $\mathbb{F}_p$ and contains exactly the $q$ roots of $x^q - x,$ it must be the splitting field $K$ of $x^q - x \in \mathbb{F}_p[x].$
+
+149. Since $K$ is a field with $q$ elements, $K \cong \mathbb{F}_q.$
