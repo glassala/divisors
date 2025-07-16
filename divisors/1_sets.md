@@ -137,6 +137,7 @@ I am not here to justify set theory. I am here to graciously thank others for do
 67. We write the set of natural numbers $\mathbb{N}.$
 
 68. We assign $0$ to $\varnothing.$
+
 69. We assign $n$ to the $n$-th successor of $S(0).$
 
 70. This provides a "natural" ordering where $n < S(n)$ and $n < m \land m < k \implies n < k$, and if neither $n < m$ nor $m < n$ then $n = m.$

@@ -1,6 +1,6 @@
 # Extensions
 
-*Vector spaces and properties of vectors. Linear combinations. Linear dependence and independence. Vector subspaces. Span and basis. Steinitz exchange lemma. Dimension of a vector space. Linear maps. Field extensions. Splitting fields. Adjunctions and simple extensions. Integral and algebraic elements. Minimal polynomials. Formal derivative of a polynomial. Splitting field of $x^q.$*
+*Vector spaces and properties of vectors. Linear combinations. Linear dependence and independence. Vector subspaces. Span and basis. Steinitz exchange lemma. Dimension of a vector space. Linear maps. Field extensions. Splitting fields. Integral and algebraic elements. Minimal polynomials. Formal derivative of a polynomial. Splitting field of $x^q.$*
 
 1. A *vector space* $V$ is a set of $n$-tuples called *vectors* whose components are called *scalars*, where scalars are elements from some field $K$.
 
@@ -228,97 +228,91 @@
 
 113. If $K$ is a field, then the set of all roots of polynomials in $K[x]$ is called the *algebraic closure* of $K.$
 
-114. Let $L : K$ be a field extension. If $\lambda \in L$ is algebraic over $K,$ then the *adjunction* $K[\lambda]$ of $\lambda$ to $K$ is the set of all linear combinations in the form $a + b\lambda$ for $a, b \in K.$
+114. Suppose $L$ extends the field $K$ and $a \in L.$ If $a$ is algebraic over $K,$ then the *minimal polynomial* of $a$ is the (non-zero) monic polynomial $P$ of lowest degree in $K[x]$ such that $a$ is a root of $P.$
 
-115. A field extension consisting of a single adjunction $K[\lambda] : K$ is called a *simple* extension.
+115. For example, the minimal polynomial of $i$ in $\mathbb{Q}$ is $x^2 + 1$ and the minimal polynomial of $\sqrt{2}$ in $\mathbb{Q}$ is $x^2 - 2.$
 
-116. $\mathbb{Q}[i]$ and $\mathbb{Q}[\sqrt{2}]$ are examples of simple extensions.
+116. Note that the minimal polynomial of $1 + i$ in $\mathbb{Q}$ is also $x^2 - 2.$
 
-117. Suppose $L$ extends the field $K$ and $a \in L.$ If $a$ is algebraic over $K,$ then the *minimal polynomial* of $a$ is the (non-zero) monic polynomial $P$ of lowest degree in $K[x]$ such that $a$ is a root of $P.$
+117. A minimal polynomial is always irreducible.
 
-118. For example, the minimal polynomial of $i$ in $\mathbb{Q}$ is $x^2 + 1$ and the minimal polynomial of $\sqrt{2}$ in $\mathbb{Q}$ is $x^2 - 2.$
+118. That is, if $P = AB$ for non-unit polynomials over a field, then the integral domain property ensures that if $a$ is a root of $P$, then it must be a root of either $A$ or $B.$
 
-119. Note that the minimal polynomial of $1 + i$ in $\mathbb{Q}$ is also $x^2 - 2.$
+119. If an element of a field extension $L : K$ has a minimal polynomial, then that element has only one minimal polynomial.
 
-120. A minimal polynomial is always irreducible.
+120. Suppose $r \in L$ has minimal polynomials $M_1, M_2 \in K[x].$
 
-121. That is, if $P = AB$ for non-unit polynomials over a field, then the integral domain property ensures that if $a$ is a root of $P$, then it must be a root of either $A$ or $B.$
+121. Consider the evaluation map $\alpha_r : K[x] \to L$ defined by $\alpha(P) = P(r),$ i.e. sending any $P \in K[x]$ to the value of the polynomial function of $P$ at $r.$
 
-122. If an element of a field extension $L : K$ has a minimal polynomial, then that element has only one minimal polynomial.
+122. Polynomial arithmetic tells us that this map is a ring homomorphism, so the kernel of $\alpha_r$ must be an ideal of $K[x].$
 
-123. Suppose $r \in L$ has minimal polynomials $M_1, M_2 \in K[x].$
+123. By definition, $M_1, M_2 \in \text{ker}(\alpha_r).$
 
-124. Consider the evaluation map $\alpha_r : K[x] \to L$ defined by $\alpha(P) = P(r),$ i.e. sending any $P \in K[x]$ to the value of the polynomial function of $P$ at $r.$
+124. Since $K$ is a field, $\text{ker}(\alpha_r)$ must be a principal ideal.
 
-125. Polynomial arithmetic tells us that this map is a ring homomorphism, so the kernel of $\alpha_r$ must be an ideal of $K[x].$
+125. So, $M_1$ and $M_2$ must be multiples of the generator of $\text{ker}(\alpha_r).$
 
-126. By definition, $M_1, M_2 \in \text{ker}(\alpha_r).$
+126. However, $M_1$ and $M_2$ are both irreducible, so $M_1$ must be an associate of $M_2.$
 
-127. Since $K$ is a field, $\text{ker}(\alpha_r)$ must be a principal ideal.
+127. Since $M_1$ and $M_2$ must be monic, $M_1 = M_2.$
 
-128. So, $M_1$ and $M_2$ must be multiples of the generator of $\text{ker}(\alpha_r).$
+128. There is a notion of a *formal derivative* of a polynomial. Given a polynomial of the form $P = a_n x^n + a_{n-1} x^{n-1} + {...} + a_0,$ the formal derivative of $P$ is the polynomial $P' = na_n x^{n-1} + (n-1)a_{n-1}x^{n-2} + {...} + a_1.$
 
-129. However, $M_1$ and $M_2$ are both irreducible, so $M_1$ must be an associate of $M_2.$
+129. If $a, b$ are elements of a ring $R$ and $P, Q \in R[x],$ then $(aP + bQ)' = aP' + bQ'.$
 
-130. Since $M_1$ and $M_2$ must be monic, $M_1 = M_2.$
+130. The formal derivative of a polynomial which is the product of polynomials satisfies the *product rule,* where $(PQ)' = P'Q + PQ'.$
 
-131. There is a notion of a *formal derivative* of a polynomial. Given a polynomial of the form $P = a_n x^n + a_{n-1} x^{n-1} + {...} + a_0,$ the formal derivative of $P$ is the polynomial $P' = na_n x^{n-1} + (n-1)a_{n-1}x^{n-2} + {...} + a_1.$
+131. The proof of this is annoying enough that it is left as an exercise for the reader.
 
-132. If $a, b$ are elements of a ring $R$ and $P, Q \in R[x],$ then $(aP + bQ)' = aP' + bQ'.$
+132. By the Euclidean algorithm, if $K$ is a field and $P \in K[x],$ then for a root $r$ of $P$ and a non-zero polynomial $Q \in K[x],$ we can write $P$ as a product $P = (x - r)^{m}Q,$ where $m$ is the *multiplicity* of $r$ as a root of $P.$
 
-133. The formal derivative of a polynomial which is the product of polynomials satisfies the *product rule,* where $(PQ)' = P'Q + PQ'.$
+133. The product rule tells us we can write the formal derivative $P' = m(x-r)^{m-1}Q + (x - r)^m Q.$ If we factor out $(x-r)^{m-1},$ we get a polynomial $A = mQ + (x - r)Q.$
 
-134. The proof of this is annoying enough that it is left as an exercise for the reader.
+134. Then, we can write $P' = (x - r)^{m-1}A.$
 
-135. By the Euclidean algorithm, if $K$ is a field and $P \in K[x],$ then for a root $r$ of $P$ and a non-zero polynomial $Q \in K[x],$ we can write $P$ as a product $P = (x - r)^{m}Q,$ where $m$ is the *multiplicity* of $r$ as a root of $P.$
+135. So, if and only if a polynomial $P$ has multiple roots $r$ (i.e. if $m > 1$) then the polynomial function $P'(r) = 0.$
 
-136. The product rule tells us we can write the formal derivative $P' = m(x-r)^{m-1}Q + (x - r)^m Q.$ If we factor out $(x-r)^{m-1},$ we get a polynomial $A = mQ + (x - r)Q.$
+136. Consider the polynomial $x^q - x$ in $\mathbb{F}_p[x]$ where $q = p^k$ for some prime $p$ and positive integer $k.$
 
-137. Then, we can write $P' = (x - r)^{m-1}A.$
+137. The formal derivative of this polynomial is $qx^{q-1} - 1.$ Since $q$ is a multiple of $p$, $qx^{q-1}$ vanishes modulo $p,$ and we are left with $-1.$
 
-138. So, if and only if a polynomial $P$ has multiple roots $r$ (i.e. if $m > 1$) then the polynomial function $P'(r) = 0.$
+138. Since $-1 \neq 0$, $x^q - x$ has no repeated roots in $\mathbb{F}_p[x].$
 
-139. Consider the polynomial $x^q - x$ in $\mathbb{F}_p[x]$ where $q = p^k$ for some prime $p$ and positive integer $k.$
+139. Then, $x^q - x$ has exactly $q$ roots, so the splitting field of $x^q - x$must contain at least these $q$ elements.
 
-140. The formal derivative of this polynomial is $qx^{q-1} - 1.$ Since $q$ is a multiple of $p$, $qx^{q-1}$ vanishes modulo $p,$ and we are left with $-1.$
+140. Let $K$ be the splitting field of $x^q - x \in \mathbb{F}_p[x].$ By definition, all of the roots of $x^q - x$ are in $K$, so let $R = \set{r \in K \mid r^q = r}$ be that set of $q$ roots.
 
-141. Since $-1 \neq 0$, $x^q - x$ has no repeated roots in $\mathbb{F}_p[x].$
+141. Since $(ab)^q = a^q b^q$ generally, and $q = p^k$ means $(a + b)^q = a^q + b^q,$ $a + b, ab \in R.$
 
-142. Then, $x^q - x$ has exactly $q$ roots, so the splitting field of $x^q - x$must contain at least these $q$ elements.
+142. Since $(-r)^q = (-1)^q r^q,$ and $(-1)^q = -1,$ $-r \in R.$
 
-143. Let $K$ be the splitting field of $x^q - x \in \mathbb{F}_p[x].$ By definition, all of the roots of $x^q - x$ are in $K$, so let $R = \set{r \in K \mid r^q = r}$ be that set of $q$ roots.
+143. Since $(r^q)^{-1} = (r^{-1})^q$ and $r^q = r,$ $r^{-1} \in R.$
 
-144. Since $(ab)^q = a^q b^q$ generally, and $q = p^k$ means $(a + b)^q = a^q + b^q,$ $a + b, ab \in R.$
+144. By Fermat's little theorem, $\mathbb{F}_p$ is a subfield of $R.$
 
-145. Since $(-r)^q = (-1)^q r^q,$ and $(-1)^q = -1,$ $-r \in R.$
+145. Since $R$ is a field which includes and $\mathbb{F}_p$ and contains exactly the $q$ roots of $x^q - x,$ it must be the splitting field $K$ of $x^q - x \in \mathbb{F}_p[x].$
 
-146. Since $(r^q)^{-1} = (r^{-1})^q$ and $r^q = r,$ $r^{-1} \in R.$
+146. Since $K$ is a field with $q$ elements, $K \cong \mathbb{F}_q.$
 
-147. By Fermat's little theorem, $\mathbb{F}_p$ is a subfield of $R.$
+147. Let $q = p^k$ for a prime number $p$ and positive integer $k.$ Then, $\mathbb{F}_q^{\times}$ is a cyclic group.
 
-148. Since $R$ is a field which includes and $\mathbb{F}_p$ and contains exactly the $q$ roots of $x^q - x,$ it must be the splitting field $K$ of $x^q - x \in \mathbb{F}_p[x].$
+148. We know that $\mathbb{F}_q^{\times}$ has an order of $q - 1.$
 
-149. Since $K$ is a field with $q$ elements, $K \cong \mathbb{F}_q.$
+149. $\mathbb{F}_q^{\times}$ is finite, so every element $a \in \mathbb{F}_q^{\times}$ has an order $k$ such that $a^k = 1.$
 
-150. Let $q = p^k$ for a prime number $p$ and positive integer $k.$ Then, $\mathbb{F}_q^{\times}$ is a cyclic group.
+150. By Lagrange's theorem, $k \mid q-1.$
 
-151. We know that $\mathbb{F}_q^{\times}$ has an order of $q - 1.$
+151. In a group where every element has a finite order, we can define an *exponent* $n$ of the group, which is the least common multiple of the orders of its elements.
 
-152. $\mathbb{F}_q^{\times}$ is finite, so every element $a \in \mathbb{F}_q^{\times}$ has an order $k$ such that $a^k = 1.$
+152. Here, this amounts to the smallest positive integer $n$ such that for all elements $a$ in the group, $a^n = 1.$
 
-153. By Lagrange's theorem, $k \mid q-1.$
+153. Suppose $n < q - 1.$ Then, every element in $\mathbb{F}_q^{\times}$ satisfies $a^n - 1 = 0,$ but $a^n - 1$ can have at most $n$ roots.
 
-154. In a group where every element has a finite order, we can define an *exponent* $n$ of the group, which is the least common multiple of the orders of its elements.
+154. So, it follows that $n = q - 1.$
 
-155. Here, this amounts to the smallest positive integer $n$ such that for all elements $a$ in the group, $a^n = 1.$
+155. This means that for there to not be an element of order $q - 1$ in $\mathbb{F}_q^{\times},$ then every order would divide a proper divisor $d$ of $q-1,$ and as such the exponent would be $d < q - 1,$ which is a contradiction.
 
-156. Suppose $n < q - 1.$ Then, every element in $\mathbb{F}_q^{\times}$ satisfies $a^n - 1 = 0,$ but $a^n - 1$ can have at most $n$ roots.
-
-157. So, it follows that $n = q - 1.$
-
-158. This means that for there to not be an element of order $q - 1$ in $\mathbb{F}_q^{\times},$ then every order would divide a proper divisor $d$ of $q-1,$and as such the exponent would be $d < q - 1,$ which is a contradiction.
-
-159. As such, $\mathbb{F}_q^{\times}$ has an element of order $q - 1$ and is therefore cyclic.
+156. As such, $\mathbb{F}_q^{\times}$ has an element of order $q - 1$ and is therefore cyclic.
 
 ## Notes
 
