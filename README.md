@@ -10,7 +10,8 @@ Indeed, on the sunrise, governed as it is by such well-understood physical princ
 
 For a proper reference, try Dummit and Foote's *Abstract Algebra* (3rd edition, 2004), and for a more conventional and less algebraic take on the arc from integer division to quadratic reciprocity, try Burton's *Elementary Number Theory* (7th edition, 2011).
 
-See also:
+For other books which proved indispensible in the writing of this one, see also:
 
 - *Introduction to Linear Algebra,* Serge Lang, 2nd edition, 1986
 - *Basic Algebra I,* Nathan Jacobson, 2nd edition, 1985
+- *Introduction to Analytic Number Theory,* Tom Apostol, 1st edition, 1976
