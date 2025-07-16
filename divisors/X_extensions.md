@@ -300,6 +300,26 @@
 
 149. Since $K$ is a field with $q$ elements, $K \cong \mathbb{F}_q.$
 
+150. Let $q = p^k$ for a prime number $p$ and positive integer $k.$ Then, $\mathbb{F}_q^{\times}$ is a cyclic group.
+
+151. We know that $\mathbb{F}_q^{\times}$ has an order of $q - 1.$
+
+152. $\mathbb{F}_q^{\times}$ is finite, so every element $a \in \mathbb{F}_q^{\times}$ has an order $k$ such that $a^k = 1.$
+
+153. By Lagrange's theorem, $k \mid q-1.$
+
+154. In a group where every element has a finite order, we can define an *exponent* $n$ of the group, which is the least common multiple of the orders of its elements.
+
+155. Here, this amounts to the smallest positive integer $n$ such that for all elements $a$ in the group, $a^n = 1.$
+
+156. Suppose $n < q - 1.$ Then, every element in $\mathbb{F}_q^{\times}$ satisfies $a^n - 1 = 0,$ but $a^n - 1$ can have at most $n$ roots.
+
+157. So, it follows that $n = q - 1.$
+
+158. This means that for there to not be an element of order $q - 1$ in $\mathbb{F}_q^{\times},$ then every order would divide a proper divisor $d$ of $q-1,$and as such the exponent would be $d < q - 1,$ which is a contradiction.
+
+159. As such, $\mathbb{F}_q^{\times}$ has an element of order $q - 1$ and is therefore cyclic.
+
 ## Notes
 
 [^1]: See *Algebra,* Lang, pp. 244-247
