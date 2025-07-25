@@ -226,7 +226,7 @@
 
 112. So, we can finally write $(\frac{p}{q})(\frac{q}{p}) = (-1)^{\frac{p-1}{2}\frac{q-1}{2}}.$
 
-### Notes
+## Notes
 
 [^1]: See *Algebra,* Lang, pp. 276-281
 [^2]: See *A Classical Introduction to Modern Number Theory,* Ireland & Rosen, pp.88-119
