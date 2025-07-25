@@ -168,95 +168,93 @@
 
 83. Since $\text{sgn}(\sigma_a) = 1$, $\text{sgn}(\alpha_p) = \text{sgn}(\pi_p),$ and by Zolotarev's lemma, $\text{sgn}(\alpha_p) = (\frac{p}{q}),$ and by extension, $\text{sgn}(\beta_q) = (\frac{q}{p}).$
 
-84. (...)
+84. By Sunzi's theorem, the function $\sigma: \mathbb{Z}/pq\mathbb{Z} \to \mathbb{Z}/p\mathbb{Z} \times \mathbb{Z}/q\mathbb{Z}$ defined as $\sigma(x) = (x, x)$ can be treated as a permutation.
 
-85. By Sunzi's theorem, the function $\sigma: \mathbb{Z}/pq\mathbb{Z} \to \mathbb{Z}/p\mathbb{Z} \times \mathbb{Z}/q\mathbb{Z}$ defined as $\sigma(x) = (x, x)$ can be treated as a permutation.
+85. We can view it as a map from some $x \bmod{pq}$ to the ordered pair $(x \bmod p, x \bmod q).$
 
-86. We can view it as a map from some $x \bmod{pq}$ to the ordered pair $(x \bmod p, x \bmod q).$
+86. $\sigma^{-1}$ can then be said to map the pair $(x \bmod p, x \bmod q)$ to the unique solution that satisfies both modulo $pq.$
 
-87. $\sigma^{-1}$ can then be said to map the pair $(x \bmod p, x \bmod q)$ to the unique solution that satisfies both modulo $pq.$
+87. Consider the function $\lambda : \mathbb{Z}/p\mathbb{Z} \times \mathbb{Z}/q\mathbb{Z} \to \mathbb{Z}/p\mathbb{Z} \times \mathbb{Z}/q\mathbb{Z}$ defined as $\lambda(a, b) = (a, a + pb);$ by Euclid's division lemma this function is well-defined if we consider $a + pb$ a least residue modulo $q.$
 
-88. Consider the function $\lambda : \mathbb{Z}/p\mathbb{Z} \times \mathbb{Z}/q\mathbb{Z} \to \mathbb{Z}/p\mathbb{Z} \times \mathbb{Z}/q\mathbb{Z}$ defined as $\lambda(a, b) = (a, a + pb);$ by Euclid's division lemma this function is well-defined if we consider $a + pb$ a least residue modulo $q.$
+88. Likewise, consider $\psi : \mathbb{Z}/p\mathbb{Z} \times \mathbb{Z}/q\mathbb{Z} \to \mathbb{Z}/p\mathbb{Z} \times \mathbb{Z}/q\mathbb{Z},$ defined as $\psi(a, b) = (b + qa, b).$
 
-89. Likewise, consider $\psi : \mathbb{Z}/p\mathbb{Z} \times \mathbb{Z}/q\mathbb{Z} \to \mathbb{Z}/p\mathbb{Z} \times \mathbb{Z}/q\mathbb{Z},$ defined as $\psi(a, b) = (b + qa, b).$
+89. Let us define yet another function $\phi: \mathbb{Z}/pq\mathbb{Z} \to \mathbb{Z}/pq\mathbb{Z}$ where $\phi(a + pb) = qa + b.$
 
-90. Let us define yet another function $\phi: \mathbb{Z}/pq\mathbb{Z} \to \mathbb{Z}/pq\mathbb{Z}$ where $\phi(a + pb) = qa + b.$
+90. Once again, this function is well defined because $a + pb$ and $qa + b$ both correspond to least residues modulo $pq.$
 
-91. Once again, this function is well defined because $a + pb$ and $qa + b$ both correspond to least residues modulo $pq.$
+91. Note that, to maintain bijectivity, $a$ must be considered as a least residue modulo $p$ and $b$ as a least residue modulo $q$, because otherwise there would be remainders left from non-unique multiples.
 
-92. Note that, to maintain bijectivity, $a$ must be considered as a least residue modulo $p$ and $b$ as a least residue modulo $q$, because otherwise there would be remainders left from non-unique multiples.
+92. Then, $\phi$ = $\sigma^{-1} \circ \psi \circ \lambda^{-1} \circ \sigma.$
 
-93. Then, $\phi$ = $\sigma^{-1} \circ \psi \circ \lambda^{-1} \circ \sigma.$
+93. We can say that $\sigma(a + pb) = (a + pb, a + pb),$ and $\lambda^{-1}(a + pb, a + pb) = \lambda^{-1}(a, a + pb) = (a, b),$ since components of these pairs are treated modulo $p$ and modulo $q$ respectively.
 
-94. We can say that $\sigma(a + pb) = (a + pb, a + pb),$ and $\lambda^{-1}(a + pb, a + pb) = \lambda^{-1}(a, a + pb) = (a, b),$ since components of these pairs are treated modulo $p$ and modulo $q$ respectively.
+94. Then, $\psi(a, b) = (qa + b, b).$
 
-95. Then, $\psi(a, b) = (qa + b, b).$
+95. $b \equiv qa + b \pmod q,$ so we can finally write $\sigma^{-1}(qa + b, b) = \sigma^{-1}(qa + b, qa + b) = qa + b,$ and so $\phi(a + pb) = \sigma^{-1}(\psi(\lambda^{-1}(\sigma(a + pb)))) = qa + b.$
 
-96. $b \equiv qa + b \pmod q,$ so we can finally write $\sigma^{-1}(qa + b, b) = \sigma^{-1}(qa + b, qa + b) = qa + b,$ and so $\phi(a + pb) = \sigma^{-1}(\psi(\lambda^{-1}(\sigma(a + pb)))) = qa + b.$
+96. It follows that $\text{sgn}(\phi) = \text{sgn}(\sigma^{-1})\text{sgn}(\psi)\text{sgn}(\lambda^{-1})\text{sgn}(\sigma),$ and, since permutations share signs with their inverses, $\text{sgn}(\phi) = \text{sgn}(\psi)\text{sgn}(\lambda).$
 
-97. It follows that $\text{sgn}(\phi) = \text{sgn}(\sigma^{-1})\text{sgn}(\psi)\text{sgn}(\lambda^{-1})\text{sgn}(\sigma),$ and, since permutations share signs with their inverses, $\text{sgn}(\phi) = \text{sgn}(\psi)\text{sgn}(\lambda).$
+97. For each $a \in Z/p\mathbb{Z},$ we can restrict $\lambda$ to $\lambda_a: \set{a} \times \mathbb{Z}/q\mathbb{Z}.$
 
-98. For each $a \in Z/p\mathbb{Z},$ we can restrict $\lambda$ to $\lambda_a: \set{a} \times \mathbb{Z}/q\mathbb{Z}.$
+98. Then, by Zolotarev's lemma, $\lambda_a(b) \equiv a + pb \pmod{q}$ is a permutation whose sign equals $(\frac{p}{q}).$
 
-99. Then, by Zolotarev's lemma, $\lambda_a(b) \equiv a + pb \pmod{q}$ is a permutation whose sign equals $(\frac{p}{q}).$
+99.  The sign of $\lambda_a$ is the same as the sign of unrestricted $\lambda.$
 
-100. The sign of $\lambda_a$ is the same as the sign of unrestricted $\lambda.$
+100. Consider that there are $p$ such $\lambda_a$ permutations total, and $\lambda$ is the identity of $a$ in its first position.
 
-101. Consider that there are $p$ such $\lambda_a$ permutations total, and $\lambda$ is the identity of $a$ in its first position.
+101. So, the permutation acting identically on $p$ disjoint subsets of $\mathbb{Z}/p\mathbb{Z} \times \mathbb{Z}/q\mathbb{Z}$ means that we can view $\lambda$ as the $p$-fold composition of some $\lambda_a$ and write $\text{sgn}(\lambda) = (\frac{p}{q})^p,$ so, since $p$ is odd, $\text{sgn}(\lambda) = (\frac{p}{q}).$
 
-102. So, the permutation acting identically on $p$ disjoint subsets of $\mathbb{Z}/p\mathbb{Z} \times \mathbb{Z}/q\mathbb{Z}$ means that we can view $\lambda$ as the $p$-fold composition of some $\lambda_a$ and write $\text{sgn}(\lambda) = (\frac{p}{q})^p,$ so, since $p$ is odd, $\text{sgn}(\lambda) = (\frac{p}{q}).$
+102. A similar argument affords the result that $\text{sgn}(\psi)=(\frac{q}{p}),$ and so we can say that because $\text{sgn}(\phi) = \text{sgn}(\lambda)\text{sgn}(\psi),$ $\text{sgn}(\phi) = (\frac{p}{q})(\frac{q}{p}).$
 
-103. A similar argument affords the result that $\text{sgn}(\psi)=(\frac{q}{p}),$ and so we can say that because $\text{sgn}(\phi) = \text{sgn}(\lambda)\text{sgn}(\psi),$ $\text{sgn}(\phi) = (\frac{p}{q})(\frac{q}{p}).$
+103. We can now look at the sign of $\phi$ from the point of view of its inversions.
 
-104. We can now look at the sign of $\phi$ from the point of view of its inversions.
+104. Recall that a pair $(i, j)$ is an inversion under $\phi$ if $i < j$ and $\phi(j) < \phi(i).$
 
-105. Recall that a pair $(i, j)$ is an inversion under $\phi$ if $i < j$ and $\phi(j) < \phi(i).$
+105. So, if $a_1 + pb_1 < a_2 + pb_2$ and $\phi(a_2 + pb_2) < \phi(a_1 + pb_1),$ then $(a_1 + pb_1, a_2 + pb_2)$ is an inversion under $\phi$.
 
-106. So, if $a_1 + pb_1 < a_2 + pb_2$ and $\phi(a_2 + pb_2) < \phi(a_1 + pb_1),$ then $(a_1 + pb_1, a_2 + pb_2)$ is an inversion under $\phi$.
+106. Another way of putting it is that, by the definition of $\phi,$ $(a_1 + pb_1, a_2 + pb_2)$ is an inversion if $a_1 + pb_1 < a_2 + pb_2$ and $b_2 + qa_2 < b_1 + qa_1.$
 
-107. Another way of putting it is that, by the definition of $\phi,$ $(a_1 + pb_1, a_2 + pb_2)$ is an inversion if $a_1 + pb_1 < a_2 + pb_2$ and $b_2 + qa_2 < b_1 + qa_1.$
+107. Observe that if $a_1 + pb_1 < a_2 + pb_2$ and $b_2 + qa_2 < b_1 + qa_1,$ then $a_1 - a_2 < p(b_2 - b_1) < pq(a_1 - a_2).$
 
-108. Observe that if $a_1 + pb_1 < a_2 + pb_2$ and $b_2 + qa_2 < b_1 + qa_1,$ then $a_1 - a_2 < p(b_2 - b_1) < pq(a_1 - a_2).$
+108. Subtracting $a_2$ and $pb_1$ from both sides of the first inequality yields $a_1 - a_2 < p(b_2 - b_1).$
 
-109. Subtracting $a_2$ and $pb_1$ from both sides of the first inequality yields $a_1 - a_2 < p(b_2 - b_1).$
+109. Subtracting $b_1$ and $qa_2$ from both sides of the second inequality yields $b_2 - b_1 < q(a_1 - a_2).$
 
-110. Subtracting $b_1$ and $qa_2$ from both sides of the second inequality yields $b_2 - b_1 < q(a_1 - a_2).$
+110. Multiplying both sides by $p$, we get $p(b_2 - b_1) < pq(a_1 - a_2),$ completing the third inequality.
 
-111. Multiplying both sides by $p$, we get $p(b_2 - b_1) < pq(a_1 - a_2),$ completing the third inequality.
+111. Since $a_1 - a_2 < pq(a_1 - a_2)$ and $pq$ is positive, this inequality only holds if $a_1 - a_2 > 0,$ which requires that $b_2 - b_1 > 0,$ i.e. $a_1 > a_2$ and $b_2 > b_1.$
 
-112. Since $a_1 - a_2 < pq(a_1 - a_2)$ and $pq$ is positive, this inequality only holds if $a_1 - a_2 > 0,$ which requires that $b_2 - b_1 > 0,$ i.e. $a_1 > a_2$ and $b_2 > b_1.$
+112. Moreover, if it is the case that $a_1 > a_2$ and $b_2 > b_1,$ then $(a_1 + pb_1, a_2 + pb_2)$ is an inversion under $\phi.$
 
-113. Moreover, if it is the case that $a_1 > a_2$ and $b_2 > b_1,$ then $(a_1 + pb_1, a_2 + pb_2)$ is an inversion under $\phi.$
+113. That is, the expression $a_1 - a_2 < p(b_2 - b_1)$ leads us back to $a_1 + pb_1 < a_2 + pb_2,$ since we know that $a_1 - a_2$ is at most $p-1$ and $b_2 - b_1$ is positive.
 
-114. That is, the expression $a_1 - a_2 < p(b_2 - b_1)$ leads us back to $a_1 + pb_1 < a_2 + pb_2,$ since we know that $a_1 - a_2$ is at most $p-1$ and $b_2 - b_1$ is positive.
+114. A similar argument holds for $b_2 + qa_2 < b_1 + qa_1$ and so $(a_1 + pb_1, a_2 + pb_2)$ is an inversion under $\phi$ if and only if $a_1 > a_2$ and $b_2 > b_1.$
 
-115. A similar argument holds for $b_2 + qa_2 < b_1 + qa_1$ and so $(a_1 + pb_1, a_2 + pb_2)$ is an inversion under $\phi$ if and only if $a_1 > a_2$ and $b_2 > b_1.$
+115. So, each inversion induced by $\phi$ is a pair of pairs in the form $(a_1, a_2), (b_1, b_2)$ where $a_1, a_2 \in \mathbb{Z}/p\mathbb{Z}$, $b_1, b_2 \in \mathbb{Z}/q/\mathbb{Z},$ $a_1 > a_2$ and $b_2 > b_1,$ and where $(a_i, a_j)$ and $(a_j, a_i)$ are different only with respect to notation (but not to the inversion count).
 
-116. So, each inversion induced by $\phi$ is a pair of pairs in the form $(a_1, a_2), (b_1, b_2)$ where $a_1, a_2 \in \mathbb{Z}/p\mathbb{Z}$, $b_1, b_2 \in \mathbb{Z}/q/\mathbb{Z},$ $a_1 > a_2$ and $b_2 > b_1,$ and where $(a_i, a_j)$ and $(a_j, a_i)$ are different only with respect to notation (but not to the inversion count).
+116. Since there are $\binom{p}{2}$ such pairs in $\mathbb{Z}/p\mathbb{Z}$ and $\binom{q}{2}$ such pairs in $\mathbb{Z}/q\mathbb{Z},$ by Sunzi's theorem, there are $\binom{p}{2}\binom{q}{2}$ such inversions induced in $\mathbb{Z}/pq\mathbb{Z}$ by $\phi.$
 
-117. Since there are $\binom{p}{2}$ such pairs in $\mathbb{Z}/p\mathbb{Z}$ and $\binom{q}{2}$ such pairs in $\mathbb{Z}/q\mathbb{Z},$ by Sunzi's theorem, there are $\binom{p}{2}\binom{q}{2}$ such inversions induced in $\mathbb{Z}/pq\mathbb{Z}$ by $\phi.$
+117. Recall that $\binom{n}{2} = \frac{n!}{2!(n-2)!}.$ Because of the divisibility properties of the factorial, we can factor $(n-2)!$ out to get $\frac{n(n-1)}{2}.$
 
-118. Recall that $\binom{n}{2} = \frac{n!}{2!(n-2)!}.$ Because of the divisibility properties of the factorial, we can factor $(n-2)!$ out to get $\frac{n(n-1)}{2}.$
+118. So, we can write $\binom{p}{2}\binom{q}{2} = \frac{p(p-1)}{2}\frac{q(q-1)}{2} = p\frac{p-1}{2}q\frac{q-1}{2}.$ Both $p$ and $q$ are odd, so $\binom{p}{2}\binom{q}{2} \equiv \frac{p-1}{2}\frac{q-1}{2} \pmod{2}.$
 
-119. So, we can write $\binom{p}{2}\binom{q}{2} = \frac{p(p-1)}{2}\frac{q(q-1)}{2} = p\frac{p-1}{2}q\frac{q-1}{2}.$ Both $p$ and $q$ are odd, so $\binom{p}{2}\binom{q}{2} \equiv \frac{p-1}{2}\frac{q-1}{2} \pmod{2}.$
+119. Since $a \equiv b \pmod{2} \implies (-1)^a =(-1)^b,$ we can comfortably write $\text{sgn}(\phi) = (-1)^{\frac{p-1}{2}\frac{q-1}{2}}.$
 
-120. Since $a \equiv b \pmod{2} \implies (-1)^a =(-1)^b,$ we can comfortably write $\text{sgn}(\phi) = (-1)^{\frac{p-1}{2}\frac{q-1}{2}}.$
+120. Since $\text{sgn}(\phi) = (\frac{p}{q})(\frac{q}{p}),$ we can finally say that $(\frac{p}{q})(\frac{q}{p}) = (-1)^{\frac{p-1}{2}\frac{q-1}{2}}$.
 
-121. Since $\text{sgn}(\phi) = (\frac{p}{q})(\frac{q}{p}),$ we can finally say that $(\frac{p}{q})(\frac{q}{p}) = (-1)^{\frac{p-1}{2}\frac{q-1}{2}}$.
+121. It follows that $(\frac{p}{q}) = (\frac{q}{p})$ if either $p$ or $q$ is congruent to $1 \pmod{4}$, but $(\frac{p}{q}) = -(\frac{q}{p})$ only if both $p$ and $q$ are congruent to $3 \pmod{4}$.
 
-122. It follows that $(\frac{p}{q}) = (\frac{q}{p})$ if either $p$ or $q$ is congruent to $1 \pmod{4}$, but $(\frac{p}{q}) = -(\frac{q}{p})$ only if both $p$ and $q$ are congruent to $3 \pmod{4}$.
+122. First, let us look at the right side $(-1)^{\frac{p-1}{2}\frac{q-1}{2}}$.
 
-123. First, let us look at the right side $(-1)^{\frac{p-1}{2}\frac{q-1}{2}}$.
+123. Consider that, by virtue of the modulus of $4$ and the denominator of $2$, $\frac{p-1}{2}$ is even when $p \equiv 1 \pmod{4},$ and $\frac{p-1}{2}$ is odd when $p \equiv 3 \pmod{4}$.
 
-124. Consider that, by virtue of the modulus of $4$ and the denominator of $2$, $\frac{p-1}{2}$ is even when $p \equiv 1 \pmod{4},$ and $\frac{p-1}{2}$ is odd when $p \equiv 3 \pmod{4}$.
+124. So, the product $\frac{p-1}{2}\frac{q-1}{2}$ is odd exactly when both $p$ and $q$ are congruent to $3 \pmod{4}$, and even otherwise.
 
-125. So, the product $\frac{p-1}{2}\frac{q-1}{2}$ is odd exactly when both $p$ and $q$ are congruent to $3 \pmod{4}$, and even otherwise.
+125. If $p$ and $q$ are odd primes, then $(\frac{p}{q})$ and $(\frac{q}{p})$ can only take values of $1$ and $-1$.
 
-126. If $p$ and $q$ are odd primes, then $(\frac{p}{q})$ and $(\frac{q}{p})$ can only take values of $1$ and $-1$.
+126. So, it is exactly when $(\frac{p}{q}) = (\frac{q}{p})$ that $(\frac{p}{q})(\frac{q}{p}) = 1$, and exactly when $(\frac{p}{q}) \neq (\frac{q}{p})$ that $(\frac{p}{q})(\frac{q}{p}) = -1$.
 
-127. So, it is exactly when $(\frac{p}{q}) = (\frac{q}{p})$ that $(\frac{p}{q})(\frac{q}{p}) = 1$, and exactly when $(\frac{p}{q}) \neq (\frac{q}{p})$ that $(\frac{p}{q})(\frac{q}{p}) = -1$.
-
-128. That $(\frac{p}{q})(\frac{q}{p}) = (-1)^{\frac{p-1}{2}\frac{q-1}{2}}$ for distinct odd primes $p$ and $q$ is called the law of *quadratic reciprocity.*[^1]
+127. That $(\frac{p}{q})(\frac{q}{p}) = (-1)^{\frac{p-1}{2}\frac{q-1}{2}}$ for distinct odd primes $p$ and $q$ is called the law of *quadratic reciprocity.*[^1]
 
 ## Footnotes
 
