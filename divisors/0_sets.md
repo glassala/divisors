@@ -1,4 +1,4 @@
-# Prologue - Sets
+# 0 - Sets
 
 *A brief primer on the language of sets.*
 
@@ -160,7 +160,7 @@
 
 21. This is called the *well-ordering theorem* or *Zermelo's theorem,* and can here be treated as an axiom.
 
-## 4.
+### 4.
 
 *Relations between sets.*
 
@@ -204,48 +204,70 @@
 
 1. Reflexivity, symmetry, and transitivity are the conditions for a relation to be an equivalence relation.
 
-2. A relation $\sim$ is *symmetric* if $a \sim b \iff b \sim a.$
+2. Equality is an equivalence relation.
 
-3. Equality is an equivalence relation.
+3. An equivalence relation splits a set into *equivalence classes.*
 
-4. An equivalence relation splits a set into *equivalence classes.*
+4. The set of equivalence classes one gets from partitioning a set $S$ according to an equivalence relation $R$ is called a *quotient set*, and it is denoted $S / R.$
 
-5. The set of equivalence classes one gets from partitioning a set $S$ according to an equivalence relation $R$ is called a *quotient set*, and it is denoted $S / R.$
+5. The set of integers $\mathbb{Z}$ can be constructed via the imposition of an equivalence relation on $\mathbb{N} \times \mathbb{N}.$ 
 
-6. The set of integers $\mathbb{Z}$ can be constructed via the imposition of an equivalence relation on $\mathbb{N} \times \mathbb{N}.$
+6. Suppose $R$ stands for the relation where for $(a, b), (c, d) \in \mathbb{N} \times \mathbb{N},$ $(a, b) = (c, d)$ if $a + d = b + c.$
 
-7. Suppose $R$ stands for the relation where for $(a, b), (c, d) \in \mathbb{N} \times \mathbb{N},$ $(a, b) = (c, d)$ if $a + d = b + c.$
+7. Addition is defined such that $(a, b) + (c, d) = (a + c, b + d).$
 
-8. Addition is defined such that $(a, b) + (c, d) = (a + c, b + d).$
+8. Multiplication is defined such that $(a, b)(c, d) = (ac + bd, ad + bc).$ 
 
-9.  Multiplication is defined such that $(a, b)(c, d) = (ac + bd, ad + bc).$
+9. Then, an equivalence class of pairs in $(\mathbb{N} \times \mathbb{N})/R$ is an integer.
 
-10. Then, an equivalence class of pairs in $(\mathbb{N} \times \mathbb{N})/R$ is an integer.
+10. Intuitively, an integer $n$ stands for a class of pairs $(a, b)$ where $n = a - b.$
 
-11. Intuitively, an integer $n$ stands for a class of pairs $(a, b)$ where $n = a - b.$
+11. Then, if $a > b,$ then $n$ is positive.
 
-12. Then, if $a > b,$ then $n$ is positive.
+12. If $a < b,$ then $n$ is negative.
 
-13. If $a < b,$ then $n$ is negative.
+13. Finally, if $a = b,$ then $n = 0.$ 
 
-14. Finally, if $a = b,$ then $n = 0.$
+14. An integer $n$ has an *absolute value* $|n|,$ where if $n \ge 0,$ then $|n| = n,$ and if $n < 0,$ then $|n| = -n.$
 
-15. An integer $n$ has an *absolute value* $|n|,$ where if $n \ge 0,$ then $|n| = n,$ and if $n < 0,$ then $|n| = -n.$
+15. An equivalence relation one can impose on the integers is $|n| = |m|.$ We will call this relation $A.$
 
-16. An equivalence relation one can impose on the integers is $|n| = |m|.$ We will call this relation $A.$
+16. If one takes the set of all subsets of $\mathbb{Z}$ where the absolute value of every element of the subset equals the absolute value of every other in the subset, then we can partition $\mathbb{Z}$ into a set of equivalence classes $\mathbb{Z} / A = \set{\set{0}, \set{-1, 1}, \set{-2, 2}, ...}.$
 
-17. If one takes the set of all subsets of $\mathbb{Z}$ where the absolute value of every element of the subset equals the absolute value of every other in the subset, then we can partition $\mathbb{Z}$ into a set of equivalence classes $\mathbb{Z} / A = \set{\set{0}, \set{-1, 1}, \set{-2, 2}, ...}.$
+17. When one has a set of equivalence classes, it is often frequent to treat a class as if it were a particular *class representative.*
 
-18. When one has a set of equivalence classes, it is often frequent to treat a class as if it were a certain *class representative.*
+18. That is, in a set like $\mathbb{Z} / A = \set{\set{0}, \set{-1, 1}, \set{-2, 2}, ...},$ it can be seen as natural to treat each class in the set as the non-negative element of the class.
 
-19. That is, in a set like $\mathbb{Z} / A = \set{\set{0}, \set{-1, 1}, \set{-2, 2}, ...},$ it can be seen as natural to treat each class in the set as the non-negative element of the class.
+19. So, if we take the set of non-negative *class representatives* of $\mathbb{Z}/A$, then we get $\mathbb{N}.$
 
-20. So, if we take the set of non-negative *class representatives* of $\mathbb{Z}/A$, then we get $\mathbb{N}.$
+## 6.
+
+*Induction.*
+
+1. The well-ordering theorem (or, alternatively, the existence of inductive sets) gives rise to the method of *induction,* one of the most powerful ways to prove things about numbers.
+
+2. One of the most common forms of induction is "weak" induction on natural numbers, which takes $3$ steps.
+
+3. If one wants to prove some property $P$ holds for all natural numbers, first, one proves a base case.
+
+4. That is, depending on the property, one demonstrates that $P$ is the case for $0$ or $1,$ or even some other number when appropriate.
+
+5. Second, one makes an assumption called the *inductive hypothesis,* that $P$ holds for some arbitrary natural number $k.$
+
+6. Finally, one proves that if $P$ is the case for $k,$ then $P$ must be the case for $k + 1.$
+
+7. Then, it follows that $P$ holds for natural numbers greater than or equal to the number featured in the base case.
+
+8. That is, one proves a specific case, then one proves a general implication: if $P$ holding for $k$ implies $P$ holds for $k + 1,$ and we can point to a value $b$ for which $P$ holds, then it follows that $P$ must hold for $b + 1,$ which implies that $P$ holds for $b + 2,$ ad infinitum.
+
+9. There are numerous variants and generalizations of induction, including the "strong" form, which makes an inductive hypothesis that $P$ holds *for all* values less than some $k,$ and is ultimately logically equivalent to weak induction, but makes certain arguments easier to make. 
 
 ### Exercises
 
-1. A function between infinite sets is one of infinitely many rules of element assignment, but a function is fully determined by the assignment of elements from one set to the other, as opposed to the abstract rule. So, a function between finite sets is one of finitely many regimes of element assignment. If $A$ and $B$ are each sets with finitely many elements, how many possible functions are there from $A$ to $B$?
+1. Prove that if $a$ and $b$ are positive integers, then there exists a positive integer $n$ such that $na \ge b.$ This is called the *Archimedean property.*
 
-2. Prove that the sum of the first $n$ odd numbers is equal to $n^2$. Hint: *Induction* is one of the most powerful methods for proving things about numbers. Induction takes 3 steps. If one wants to prove P by (weak) induction, first, one proves a base case. For number theory problems, this is usually to prove P holds for 0 or 1. Second, one *assumes* $P$ is true for an arbitrary natural number $k$. This is called an *inductive hypothesis*. Third, one proves that $P$ holding true for $k$ implies that $P$ is also true for $k + 1$. This proves $P$ for all natural numbers.
+2. A function between infinite sets is one of infinitely many rules of element assignment, but a function is fully determined by the assignment of elements from one set to the other, as opposed to the abstract rule. So, a function between finite sets is one of finitely many regimes of element assignment. If $A$ and $B$ are each sets with finitely many elements, how many possible functions are there from $A$ to $B$?
 
-3. An axiom which is part of the standard set-theoretic formulation of mathematics is called the *axiom of choice.* The axiom of choice states that, given a collection of non-empty sets, it is possible to "choose" some element from each set in the collection and construct a new set consisting exactly of the chosen elements. Demonstrate that the axiom of choice is equivalent to the well-ordering theorem.
+3. Using induction, prove that the sum of the first $n$ odd numbers is equal to $n^2$. 
+
+4. An axiom which is part of the standard set-theoretic formulation of mathematics is called the *axiom of choice.* The axiom of choice states that, given a collection of non-empty sets, it is possible to "choose" some element from each set in the collection and construct a new set consisting exactly of the chosen elements. Demonstrate that the axiom of choice is equivalent to the well-ordering theorem.
