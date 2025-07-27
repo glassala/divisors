@@ -160,6 +160,12 @@
 
 21. This is called the *well-ordering theorem* or *Zermelo's theorem,* and can here be treated as an axiom.
 
+22. A special case of the well-ordering theorem is called the *well-ordering principle,* a property about natural numbers: every non-empty set of natural numbers has a least element under the "natural" arithmetic ordering.
+
+23. We have to phrase this in terms of natural numbers because if we take the set of all integers $\mathbb{Z},$ i.e. all natural numbers and their negative counterparts, under the "natural," order, then there is no minimum element.
+
+24. To adapt the well-ordering principle to negative numbers, we can say "every non-empty set of non-positive integers has a *greatest* element."
+
 ### 4.
 
 *Relations between sets.*
@@ -216,7 +222,7 @@
 
 7. Addition is defined such that $(a, b) + (c, d) = (a + c, b + d).$
 
-8. Multiplication is defined such that $(a, b)(c, d) = (ac + bd, ad + bc).$ 
+8. Multiplication is defined such that $(a, b)(c, d) = (ac + bd, ad + bc).$
 
 9. Then, an equivalence class of pairs in $(\mathbb{N} \times \mathbb{N})/R$ is an integer.
 
@@ -226,7 +232,7 @@
 
 12. If $a < b,$ then $n$ is negative.
 
-13. Finally, if $a = b,$ then $n = 0.$ 
+13. Finally, if $a = b,$ then $n = 0.$
 
 14. An integer $n$ has an *absolute value* $|n|,$ where if $n \ge 0,$ then $|n| = n,$ and if $n < 0,$ then $|n| = -n.$
 
@@ -260,7 +266,7 @@
 
 8. That is, one proves a specific case, then one proves a general implication: if $P$ holding for $k$ implies $P$ holds for $k + 1,$ and we can point to a value $b$ for which $P$ holds, then it follows that $P$ must hold for $b + 1,$ which implies that $P$ holds for $b + 2,$ ad infinitum.
 
-9. There are numerous variants and generalizations of induction, including the "strong" form, which makes an inductive hypothesis that $P$ holds *for all* values less than some $k,$ and is ultimately logically equivalent to weak induction, but makes certain arguments easier to make. 
+9. There are numerous variants and generalizations of induction, including the "strong" form, which makes an inductive hypothesis that $P$ holds *for all* values less than some $k,$ and is ultimately logically equivalent to weak induction, but makes certain arguments easier to make.
 
 ### Exercises
 
@@ -271,3 +277,5 @@
 3. Using induction, prove that the sum of the first $n$ odd numbers is equal to $n^2$. 
 
 4. An axiom which is part of the standard set-theoretic formulation of mathematics is called the *axiom of choice.* The axiom of choice states that, given a collection of non-empty sets, it is possible to "choose" some element from each set in the collection and construct a new set consisting exactly of the chosen elements. Demonstrate that the axiom of choice is equivalent to the well-ordering theorem.
+
+5. The well-ordering principle and the principle of induction are logically equivalent, and one can be selected as an axiom by which to prove the other. Choose one: prove the principle of strong induction via the well-ordering principle of natural numbers, *or,* prove the well-ordering principle of natural numbers via strong induction.
