@@ -248,13 +248,13 @@
 
 2. One of the most common forms of induction is "weak" induction on natural numbers, which takes $3$ steps.
 
-3. If one wants to prove some property $P$ holds for all natural numbers, first, one proves a base case.
+3. If one wants to prove some property $P$ holds for all natural numbers, first, one proves a *base case.*
 
-4. That is, depending on the property, one demonstrates that $P$ is the case for $0$ or $1,$ or even some other number when appropriate.
+4. That is, depending on the property, one demonstrates that $P$ is the case for $0$ or $1,$ or even some other number if appropriate.
 
 5. Second, one makes an assumption called the *inductive hypothesis,* that $P$ holds for some arbitrary natural number $k.$
 
-6. Finally, one proves that if $P$ is the case for $k,$ then $P$ must be the case for $k + 1.$
+6. Finally, one proves that if $P$ is the case for $k,$ then $P$ must be the case for $k + 1.$ This is called the *inductive step.*
 
 7. Then, it follows that $P$ holds for natural numbers greater than or equal to the number featured in the base case.
 

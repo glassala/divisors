@@ -1,7 +1,5 @@
 # Integer divisibility
 
-*Divisor of an integer. Prime and composite numbers. Euclidean division. Greatest common divisor. Euclid's algorithm. Bézout's identity. Factorial function. Euclid's theorem. Euler's phi function. Euclid's lemma. Fundamental theorem of arithmetic. Prime omega functions. Square-free numbers.*
-
 *"Number" by itself is always to be taken as meaning "natural number" or "nonzero natural number" when it doesn't make sense for zero to be part of the conversation.*
 
 ## 1.
@@ -208,7 +206,6 @@
 
 14. This property is called Euclid's lemma.
 
-
 15. Every natural number which is greater than $1$ has a unique representation as a product of the powers of prime numbers.
 
 16. The *prime factorization* of a number $n$ is the unique representation of $n$ as a product of powers of prime numbers.
@@ -316,7 +313,7 @@
 1. A *multiplicative function* is a function $f$ of a positive integer such that for relatively prime numbers $n$ and $m$, $f(nm)=f(n)f(m)$.
 
 2. If the property $f(nm)=f(n)f(m)$ holds even when $n$ and $m$ are not relatively prime, then $f$ is called *completely multiplicative.*
-
+  
 3. There is a family of multiplicative functions $\sigma_{k}$ of a positive integer which are called the *$k$th-power divisor sigma* functions.
 
 4. The $k$th-power divisor sigma function at a number $n$ is the sum of the $k$-th powers of the positive divisors of $n$.
@@ -395,6 +392,7 @@
 
 *Liouville function and Kronecker delta. Möbius function.*
 
+
 1. The Liouville function is a function of a positive integer $n$ defined as $\lambda(n)=(-1)^{\Omega(n)}$.
 
 2. The Liouville function indicates via sign whether $n$ is the product of evenly or oddly many prime numbers.
@@ -422,6 +420,7 @@
 ## 9.
 
 *Dirichlet convolution.*
+
 
 1. There is an operation of two functions of a positive integer $f$ and $g$ which yields a new function of a positive integer called the *Dirichlet convolution* of $f$ and $g$, denoted $f * g$.
 
@@ -569,14 +568,20 @@
 
 ## Exercises
 
-1. The least common multiple of two integers $a$ and $b$ is the smallest positive integer $c$ such that $a \mid c$ and $b \mid c.$ It can be expressed as a ratio in terms of $a$, $b$, and $\gcd(a, b).$ Find and justify the expression for this ratio. Hint: since $\text{lcm}(a, b)$ is always positive, it would not be insensible to consider the absolute value function's involvement.
+1. Demonstrate that if for some natural numbers $n$ and $k,$ $n! \ge n^k,$ then $m! \ge m^k$ for all $m > n.$
 
-2. The Fibonacci sequence is defined by a recurrence relation where $F_0 = 0$, $F_1 = 1$, and $F_n = F_{n-1} + F_{n-2}$ for $n > 1.$ Show that for $n > 5$, finding $\gcd(F_n, F_{n-1})$ via Euclid's algorithm takes $n - 2$ steps.
+2. Prove that, for all positive integers $n,$ $1(1!) + 2(2!) + {...} + n(n!) = (n + 1)! - 1.$
 
-3. Given the expression of Bézout's identity, $ax + by = \gcd(a, b)$, the integers $x$ and $y$ are not unique, and are in fact infinite in legion. During the computation of $\gcd(a, b)$ via Euclid's algorithm, the quotient is at each step thrown away while the remainder is carried along to its destination. Using these forlorn quotients, derive an "*extended Euclidean algorithm*," which, given two integers $a$ and $b$, computes not only $\gcd(a, b)$, but also some pair of integers $x$ and $y$ such that $ax + by = \gcd(a, b).$
+3. Prove that $\sum_{k=0}^n\binom{n}{k} = 2^n.$
 
-4. If $p^k$ is a prime power, i.e. $p$ is a prime number and $k$ is a positive integer, how many divisors does $p^k$ have?
+4. The least common multiple of two integers $a$ and $b$ is the smallest positive integer $c$ such that $a \mid c$ and $b \mid c.$ It can be expressed as a ratio in terms of $a$, $b$, and $\gcd(a, b).$ Find and justify the expression for this ratio. Hint: since $\text{lcm}(a, b)$ is always positive, it would not be insensible to consider the absolute value function's involvement.
 
-5. Show that if a prime number $p$ is greater than $3$, then it is the case that either $p = 6k + 1$ or $p = 6k - 1$ for some positive integer $k.$
+5. The Fibonacci sequence is defined by a recurrence relation where $F_0 = 0$, $F_1 = 1$, and $F_n = F_{n-1} + F_{n-2}$ for $n > 1.$ Show that for $n > 5$, finding $\gcd(F_n, F_{n-1})$ via Euclid's algorithm takes $n - 2$ steps.
 
-6. Demonstrate that, if $k$ is a fixed integer, then $f(n) = k^{\omega(n)}$ has the property that, for relatively prime $n$, $m$, $f(nm) = f(n)f(m).$
+6. Given the expression of Bézout's identity, $ax + by = \gcd(a, b)$, the integers $x$ and $y$ are not unique, and are in fact infinite in legion. During the computation of $\gcd(a, b)$ via Euclid's algorithm, the quotient is at each step thrown away while the remainder is carried along to its destination. Using these forlorn quotients, derive an "*extended Euclidean algorithm*," which, given two integers $a$ and $b$, computes not only $\gcd(a, b)$, but also some pair of integers $x$ and $y$ such that $ax + by = \gcd(a, b).$
+
+7. If $p^k$ is a prime power, i.e. $p$ is a prime number and $k$ is a positive integer, how many divisors does $p^k$ have?
+
+8. Show that if a prime number $p$ is greater than $3$, then it is the case that either $p = 6k + 1$ or $p = 6k - 1$ for some positive integer $k.$
+
+9. Demonstrate that, if $k$ is a fixed integer, then $f(n) = k^{\omega(n)}$ has the property that, for relatively prime $n$, $m$, $f(nm) = f(n)f(m).$
