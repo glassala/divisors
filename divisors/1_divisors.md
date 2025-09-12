@@ -1,16 +1,14 @@
 # Dividing integers
 
-*"Number" by itself is always to be taken as meaning "natural number" or "nonzero natural number" when it doesn't make sense for zero to be part of the conversation.*
-
 *Assume all indeterminates are integers unless otherwise stated for all exercises in this chapter.*
 
 ## 1.
 
 *Elementary properties of integer divisibility.*
 
-1. A nonzero integer $m$ *divides* an integer $n$ if there exists an integer $k$ such that $n = mk.$ A number which divides $n$ is called a *divisor* of $n.$ If $k$ is nonzero, then $k$ also divides $n.$
+1. A nonzero integer $m$ *divides* an integer $n$ if there exists an integer $k$ such that $n = mk.$ An integer which divides $n$ is called a *divisor* of $n.$ If $k$ is nonzero, then $k$ also divides $n.$
 
-2. The symbol to denote that $n$ divides $m$ is $n \mid m.$ The notation for if a number $n$ *doesn't* divide another number $m$is $n \nmid m.$
+2. The symbol to denote that $n$ divides $m$ is $n \mid m.$ The notation for if an integer $n$ *doesn't* divide another integer $m$ is $n \nmid m.$
 
 3. Division by $0$ is undefined. Every nonzero integer divides $0$: for every integer $n$, $0 = 0n.$
 
@@ -26,11 +24,11 @@
 
 9. This is to say, the divisibility relation is reflexive, antisymmetric, and transitive.
 
-10. A proper divisor of a number $n$ is a divisor of $n$ which is not itself $n.$ A proper divisor of a natural number $n$ has strictly fewer divisors than $n.$
+10. A proper divisor of an integer $n$ is a divisor of $n$ which is not itself $n.$ A proper divisor of an integer $n$ has strictly fewer divisors than $n.$
 
-11. If a number $d$ divides $n$, then the set of divisors of $d$ is a subset of the set of divisors of $n.$ If $d$ is a proper divisor of $n$, then the set of divisors of $d$ is a proper subset of the divisors of $n.$
+11. If an integer $d$ divides $n$, then the set of divisors of $d$ is a subset of the set of divisors of $n.$ If $d$ is a proper divisor of $n$, then the set of divisors of $d$ is a proper subset of the divisors of $n.$
 
-12. A characterization of a *prime number* $p$ is that the only proper divisor of $p$ is $1.$
+12. A characterization of a *prime number* $p$ is that $p$ is positive and the only proper divisor of $p$ is $1.$
 
 13. If a positive integer $p > 1$ has exactly $2$ divisors, then its divisors are exactly $1$ and $p.$
 
@@ -38,7 +36,7 @@
 
 15. $1$ is neither prime nor composite.
 
-16. If a number is divisible by $2$, it is called an *even* number. If a number is not divisible by $2$, it is called an *odd* number.
+16. If an integer is divisible by $2$, it is called an *even* number. If a number is not divisible by $2$, it is called an *odd* number.
 
 17. $0$ is even, but neither prime nor composite.
 
@@ -46,7 +44,7 @@
 
 19. A perfect square is a positive integer $n$ such that there exists an integer $k$ such that $n = k^2.$
 
-20. If a number has an odd amount of divisors, it must be a perfect square.
+20. If a positive integer has an odd amount of divisors, it must be a perfect square.
 
 21. This is because divisors come in pairs. Consider the meaning of a divisor of a positive integer, i.e. $(\exists{k \in \mathbb{Z}^+} : m = nk)\implies(n \mid m \land k \mid m).$ That is, if $n$ divides $m$, there exists some $k$ which divides $m.$
 
@@ -216,21 +214,21 @@
 
 *Relative primality and Euler's phi function.*
 
-1. If two numbers $a$ and $b$ have a GCD of $1$, then $a$ and $b$ are called *relatively prime* to one another. A way to denote that $a$ and $b$ are relatively prime is $a \bot b.$
+1. If two natural numbers $a$ and $b$ have a GCD of $1$, then $a$ and $b$ are called *relatively prime* to one another. A way to denote that $a$ and $b$ are relatively prime is $a \bot b.$
 
 2. A way to characterize a prime number $n$ is as a positive integer which is relatively prime to every positive integer less than $n.$
 
 3. There is a function defined on positive integers called *Euler's phi function*.
 
-4. For a number $n$, $\varphi(n)$ counts the number of positive integers less than *or equal to* $n$ which are relatively prime to $n.$
+4. For a positive $n$, $\varphi(n)$ counts the number of positive integers less than *or equal to* $n$ which are relatively prime to $n.$
 
-5. $1$ is the unique number which is relatively prime to itself, because $\gcd(n, n) = n.$
+5. $1$ is the unique natural number which is relatively prime to itself, because $\gcd(n, n) = n.$
 
 6. This means that $1$ is the unique value for $n$ such that $\varphi(n) = n.$
 
 7. It is the case that $p$ is a prime number if and only if $\varphi(p) = p - 1.$
 
-8. That is, for $\varphi(p) = p - 1$ to not be the case, then there would have to be a number less than $p$ but greater than $1$ which divides $p.$
+8. That is, for $\varphi(p) = p - 1$ to not be the case, then there would have to be a natural number less than $p$ but greater than $1$ which divides $p.$
 
 ### Exercises
 
@@ -271,19 +269,19 @@
 
 2. This property is called the *fundamental theorem of arithmetic.*
 
-3. The *prime factorization* of a number $n$ is the unique representation of $n$ as a product of powers of prime numbers.
+3. The *prime factorization* of a natural number $n$ is the unique representation of $n$ as a product of powers of prime numbers.
 
 4. If $n$ is prime, then that product is exactly $n.$
 
-5. Since $2$ has a prime factorization, assume every number $2 < n \le k$ for some number $k$ has a prime factorization.
+5. Since $2$ has a prime factorization, assume every natural number $2 < n \le k$ for some natural number $k$ has a prime factorization.
 
 6. If $k + 1$ is prime, then $k + 1$ is its factorization.
 
-7. If $k + 1$ is composite, then there exist numbers $a$, $b$ which are greater than $1$ and less than $k+1$ such that $k+1 = ab.$
+7. If $k + 1$ is composite, then there exist natural numbers $a$, $b$ which are greater than $1$ and less than $k+1$ such that $k+1 = ab.$
 
 8. Since $a$ and $b$ have prime factorizations, $k+1$ must have one as well.
 
-9. Suppose a number $m$ has multiple prime factorizations.
+9. Suppose a natural number $m$ has multiple prime factorizations.
 
 10. Then, there would be products $m = p_{0}p_{1}...p_{j} = q_{0}q_{1}...q_{i}$ for some $i$and $j$, where individual primes in these products are not necessarily unique.
 
@@ -311,7 +309,7 @@
 
 2. The small omega, $\omega(n)$, counts the number of *unique* prime numbers which divide $n.$
 
-3. Higher powers of a number introduce no new unique prime factors, so for all positive integers $k$, $\omega(n)=\omega(n^k).$
+3. Higher powers of a natural number introduce no new unique prime factors, so for all positive integers $k$, $\omega(n)=\omega(n^k).$
 
 4. There is a function defined on positive integers called the *big omega* function $\Omega.$
 
@@ -323,7 +321,7 @@
 
 8. The small omega function is an *additive* function.
 
-9. An additive function is a function $f$ of a positive integer such that if some numbers $a$ and $b$ are relatively prime, then $f(ab) = f(a) + f(b).$
+9. An additive function is a function $f$ of a positive integer such that if some natural numbers $a$ and $b$ are relatively prime, then $f(ab) = f(a) + f(b).$
 
 10. The big omega function is a *completely additive* function: a function $f$ for which the property $f(ab) = f(a) + f(b)$ holds for *all* positive integers $a$ and $b.$
 
@@ -355,7 +353,7 @@
 
 7. Given a set $S$, a $k$-combination of elements of $S$ is a subset of $S$ with $k$ elements.
 
-8. The products of numbers $a$ and $b$ which are relatively prime to one another have nicer combinatorial properties around the sets of divisors of $a$ and $b$ as opposed to products of numbers which are not relatively prime.
+8. The products of natural numbers $a$ and $b$ which are relatively prime to one another have nicer combinatorial properties around the sets of divisors of $a$ and $b$ as opposed to products of natural numbers which are not relatively prime.
 
 9. For example, suppose $x = ab$ and $y = cd$ for some prime numbers $a$, $b,$ $c$, and $d.$
 
@@ -363,13 +361,13 @@
 
 11. Since the set of all $k$-combinations of the elements of a set $S$ is the power set of $S$, if $S$ has $n$ elements, then there are $2^n$ $k$-combinations of elements of $S.$
 
-12. If a number $a$ has $n$ prime factors and a number $b$ has $m$ prime factors, and $a$ is relatively prime to $b$, then $ab$ has $n + m$ prime factors.
+12. If a natural number $a$ has $n$ prime factors and a natural number $b$ has $m$ prime factors, and $a$ is relatively prime to $b$, then $ab$ has $n + m$ prime factors.
 
 13. This is effectively a restatement of the additivity of the small omega function.
 
 14. Suppose that $n = ab$ and $m = ac$ for some prime numbers $a$, $b$, and $c.$
 
-15. Then, $nm = a^2bc$, i.e. $\omega(n) = 2$ and $\omega(m) = 2$, but $\omega(nm) = 3$: this is an example of how the additive function property fails to hold for numbers which are not relatively prime.
+15. Then, $nm = a^2bc$, i.e. $\omega(n) = 2$ and $\omega(m) = 2$, but $\omega(nm) = 3$: this is an example of how the additive function property fails to hold for natural numbers which are not relatively prime.
 
 16. As such, the divisors of $nm$ do not correspond one-to-one to the products of the $k$-combinations of its prime factors $a$, $b$, and $c.$
 
@@ -383,7 +381,7 @@
 
 21. The set of divisors of a square-free number $n$ has the same structure as the power set of the prime factors of $n.$
 
-22. If a number $n$ is *not* square-free, then the set of divisors of $n$ lacks this particular structure.
+22. If a natural number $n$ is *not* square-free, then the set of divisors of $n$ lacks this particular structure.
 
 ### Exercises
 
@@ -399,11 +397,11 @@
   
 3. There is a family of multiplicative functions $\sigma_{k}$ of a positive integer which are called the *$k$th-power divisor sigma* functions.
 
-4. The $k$th-power divisor sigma function at a number $n$ is the sum of the $k$-th powers of the positive divisors of $n$.
+4. The $k$th-power divisor sigma function at a natural number $n$ is the sum of the $k$-th powers of the positive divisors of $n$.
 
-5. In the case where $k=0$, since any number taken to the $0$-th power is $1$, $\sigma_{0}(n)$ is often called the *divisor-counting function*, and it is also denoted $\tau(n)$.
+5. In the case where $k=0$, since any natural number taken to the $0$-th power is $1$, $\sigma_{0}(n)$ is often called the *divisor-counting function*, and it is also denoted $\tau(n)$.
 
-6. To account for the multiplicativity of these functions, we can look at the correspondence between products of numbers $n$, $m$ and the Cartesian products of their divisor sets $D_n$, $D_m$.
+6. To account for the multiplicativity of these functions, we can look at the correspondence between products of natural numbers $n$, $m$ and the Cartesian products of their divisor sets $D_n$, $D_m$.
 
 7. For example, suppose $n = ab$ and $m = xy$, so $D_n = \set{1, a, b, ab}$ and $D_m = \set{1, x, y, xy}$, where $n$ and $m$ are relatively prime.
 
@@ -479,7 +477,7 @@
 - $\sum_{d \mid n}1(d) = \tau(n)$
 - $\sum_{d \mid n}\text{Id}(d) = \sigma(n)$
 
-3. A perfect number is a number $n$ such that the sum of the proper divisors of $n$ is equal to $n$. Equivalently, $n$ is perfect if $\sigma(n) = 2n$. Where $k$ is a positive integer, prove that if $2^k - 1$ is prime, then $2^{k-1}(2^{k} - 1)$ is perfect.
+3. A perfect number is a natural number $n$ such that the sum of the proper divisors of $n$ is equal to $n$. Equivalently, $n$ is perfect if $\sigma(n) = 2n$. Where $k$ is a positive integer, prove that if $2^k - 1$ is prime, then $2^{k-1}(2^{k} - 1)$ is perfect.
 
 
 ## 12.
@@ -504,7 +502,7 @@
 
 9. $\mu(n)$ evaluates to $-1$ if $n$ is square-free and has oddly many prime factors.
 
-10. A way to state that a number $n$ is square-free is that $\omega(n)=\Omega(n).$
+10. A way to state that a natural number $n$ is square-free is that $\omega(n)=\Omega(n).$
 
 11. It follows, then, that we can write the Möbius function as $\mu(n)=\delta_{\omega(n)\Omega(n)}\lambda(n)$, or, to emphasize that $\mu$ is multiplicative but *not* completely multiplicative, as $\mu(n)=\delta_{\omega(n)\Omega(n)}(-1)^{\omega(n)}$.
 
@@ -578,7 +576,7 @@
 
 *Binomial theorem.*
 
-1. The binomial theorem is a statement about expressions of the form: $(x + y)^n$: $(x + y)^n = \sum^{n}_{k=0}\binom{n}{k}x^{k}y^{n-k}$ where $\binom{n}{k} = \frac{n!}{k!(n - k)!}.$ 
+1. The binomial theorem is a statement about expressions of the form: $(x + y)^n$: $(x + y)^n = \sum^{n}_{k=0}\binom{n}{k}x^{k}y^{n-k}$ where $\binom{n}{k} = \frac{n!}{k!(n - k)!}.$
 
 2. $\binom{n}{k}$ is called a *binomial coefficient,* and is read out as "$n$ choose $k$."
 
@@ -602,7 +600,7 @@
 
 12. If $n$ is square-free, then $\text{rad}(n) = n$.
 
-13. If $n$ is not square-free, then $\text{rad}(n)$ is the number $r$ which has exactly the same unique prime factors as $n$, but with no duplicates, i.e. $\omega(r) = \Omega(r)$.
+13. If $n$ is not square-free, then $\text{rad}(n)$ is the natural number $r$ which has exactly the same unique prime factors as $n$, but with no duplicates, i.e. $\omega(r) = \Omega(r)$.
 
 14. Consider that for a square-free integer, its divisors correspond exactly to the $k$-combinations of its prime factors.
 
@@ -668,7 +666,7 @@
 
 9. For a prime power $p^k$, $\varphi(p^k) = p^{k} - p^{k-1}$.
 
-10. This stems from the fact that the numbers which are not relatively prime to $p$ are exactly the multiples of $p$.
+10. This stems from the fact that the positive integers which are not relatively prime to $p$ are exactly the multiples of $p$.
 
 11. Since, for example, $p^2$ is the $p$-th multiple of $p$, then there are exactly $p$ positive integers less than or equal to $p^2$ which are not relatively prime to $p$, and so $\varphi(p^2) = p^2 - p$.
 
@@ -679,6 +677,5 @@
 14. It is apparent that each term is subtracted by the next, leaving only $p^k$, meaning $(\varphi * 1)(n) = n$.
 
 ## Exercises
-
 
 1.  Show that $|\mu| * 1 = 2^{\omega}.$
