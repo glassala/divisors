@@ -678,4 +678,4 @@
 
 ## Exercises
 
-1.  Show that $|\mu| * 1 = 2^{\omega}.$
+1. Show that $|\mu| * 1 = 2^{\omega}.$
